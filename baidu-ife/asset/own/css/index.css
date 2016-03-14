@@ -1,0 +1,16 @@
+body {
+  font-family: "Lantinghei SC", "Open Sans", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #96b97d;
+  color: #002a3f;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+.img-example {
+  margin: 10px auto;
+}
+.img-example a, p a {
+  word-break: break-all;
+}
