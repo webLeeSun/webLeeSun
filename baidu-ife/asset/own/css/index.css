@@ -11,6 +11,6 @@ img {
 .img-example {
   margin: 10px auto;
 }
-.img-example a, p a {
+.img-example a, p, a {
   word-break: break-all;
 }
