@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>登录</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body id="login">
+    <div class="header">
+        <a href="javascript:;" class="icon-close"></a>
+        <h2>欢迎进入学声服务</h2>
+    </div>
+    <div class="login_wrap">
+        <div class="ele_box">
+            <input type="text" v-model="tel" placeholder="手机号：">
+        </div>
+        <div class="ele_box">
+            <span class="get_code" v-bind:class="{ 'active': get_code_flag}" v-if="!code_flag" v-on:click="get_code">获取验证码</span>
+            <span class="get_code active" v-if="code_flag">{{code_time}}</span>
+            <div class="ml_input">
+                <input type="text" v-model="code" placeholder="验证码：">
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="mid_btn" v-bind:class="{ 'active': login_flag}" v-on:click="login_submit">欢迎进入学声服务</a>
+</body>
+<script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="../bower_components/vue/dist/vue.min.js" charset="utf-8"></script>
+<script src="../js/login.js" charset="utf-8"></script>
+
+</html>

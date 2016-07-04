@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>加入会员</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="../stylesheets/datapicker.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="../stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body id="joinvip">
+    <div class="header">
+        <a href="javascript:;" class="icon-back"></a>
+        <h2>加入会员</h2>
+    </div>
+    <div class="section">
+        <div class="form_ele">
+            <label>姓名：</label>
+            <div class="ele_wrap">
+                <input type="text" v-model="submit_data.name" placeholder="请填写姓名">
+            </div>
+        </div>
+        <div class="form_ele">
+            <label>邮箱：</label>
+            <div class="ele_wrap">
+                <input type="text" v-model="submit_data.email" placeholder="请填写邮箱">
+            </div>
+        </div>
+        <div class="form_ele">
+            <label>所在地：</label>
+            <div class="ele_wrap">
+                <input type="text" v-model="submit_data.address" placeholder="请填写所在地">
+            </div>
+        </div>
+        <div class="form_ele">
+            <label>职业/专业</label>
+            <div class="ele_wrap">
+                <input type="text" v-model="submit_data.profession" placeholder="请填写职业/专业">
+            </div>
+        </div>
+        <div class="form_ele">
+            <label>生日</label>
+            <div class="ele_wrap">
+                <input type="text" id="birthday" v-model="submit_data.birthday" placeholder="请选择生日">
+            </div>
+        </div>
+        <div class="form_ele">
+            <label>性别</label>
+            <div class="ele_wrap">
+                <select class="" name="" v-model="submit_data.sex">
+                    <option id="0">男</option>
+                    <option id="1">女</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="fav_warp">
+            <h3 class="fav_title">请您任选下面1-2个感兴趣的版块</h3>
+            <div class="fav_list">
+                <div class="fav_outer">
+                    <a href="javascript:;" v-on:click="choose_hobby">足球讲解</a>
+                </div>
+                <div class="fav_outer">
+                    <a href="javascript:;" v-on:click="choose_hobby">配音</a>
+                </div>
+                <div class="fav_outer">
+                    <a href="javascript:;" v-on:click="choose_hobby">表演</a>
+                </div>
+                <div class="fav_outer">
+                    <a href="javascript:;" v-on:click="choose_hobby">主持艺术</a>
+                </div>
+                <div class="fav_outer">
+                    <a href="javascript:;" v-on:click="choose_hobby">朗诵</a>
+                </div>
+                <div class="fav_outer">
+                    <a href="javascript:;" v-on:click="choose_hobby">商务演讲</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="orders">
+            <div class="od">
+                <span data="365"><b class="icon-nochoose icon-choose"></b>年费：¥365</span>
+            </div>
+            <div class="od">
+                <span data="200"><b class="icon-nochoose"></b>半年费：¥200</span>
+            </div>
+        </div>
+    </div>
+    <a href="javascript:;" class="mid_btn spe" v-bind:class="{ 'active': pay_flag}" v-on:click="pay_action">立即支付</a>
+    <div class="cur" v-bind:class="{ 'show': pop_flag}">
+        <div class="pay_panel">
+            <div class="panel_title">
+                <label>需支付</label>
+                <span><b>¥</b>365</span>
+            </div>
+            <div class="panel_main">
+                <div class="t">
+                    <h2>选择支付方式</h2>
+                </div>
+                <div class="t">
+                    <span class="m"><b class="icon-wx"></b>微信支付</span>
+                    <span class="icon-active"></span>
+                </div>
+            </div>
+            <div class="panel_end">
+                <a href="javascript:;" class="pay_now" v-on:click="pay_submit">立即付款</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="../bower_components/vue/dist/vue.min.js" charset="utf-8"></script>
+<script src="../js/datapicker.js" charset="utf-8"></script>
+<script src="../js/joinvip.js" charset="utf-8"></script>
+
+</html>
