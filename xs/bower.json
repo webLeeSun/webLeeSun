@@ -1,0 +1,22 @@
+{
+    "name": "xs",
+    "description": "xs page",
+    "main": "index.js",
+    "authors": [
+        ""
+    ],
+    "license": "ISC",
+    "homepage": "",
+    "moduleType": [],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "vue": "^1.0.26",
+        "jquery": "^3.0.0"
+    }
+}

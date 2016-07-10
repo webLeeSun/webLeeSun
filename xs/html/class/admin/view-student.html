@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>学员组成员</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/stylesheets/datapicker.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body id="joinvip">
+    <div class="header">
+        <a href="javascript:;" class="icon-back"></a>
+        <h2>学员组成员</h2>
+        <a class="right_btn" id="edit" href="javascript:;">编辑</a>
+    </div>
+
+    <div class="search_bar">
+        <span></span>
+        <div class="search_input">
+            <input type="text" placeholder="搜索">
+        </div>
+    </div>
+
+    <div class="view_list">
+        <a href="javascript:;" class="v_one" id="1">
+            <div class="v_wrap">
+                <div class="avatar">
+                    <img src="" alt="头像">
+                    <span class="check"></span>
+                </div>
+                <div class="info">
+                    <h2>昵称（学员）</h2>
+                    <p>关于学员的简介文字等等等关于学员的简介文字等等等</p>
+                </div>
+            </div>
+        </a>
+        <a href="javascript:;" class="v_one" id="2">
+            <div class="v_wrap">
+                <div class="avatar">
+                    <img src="" alt="头像">
+                    <span class="check"></span>
+                </div>
+                <div class="info">
+                    <h2>昵称（学员）</h2>
+                    <p>关于学员的简介文字等等等关于学员的简介文字等等等</p>
+                </div>
+            </div>
+        </a>
+        <a href="javascript:;" class="v_one" id="3">
+            <div class="v_wrap">
+                <div class="avatar">
+                    <img src="" alt="头像">
+                    <span class="check"></span>
+                </div>
+                <div class="info">
+                    <h2>昵称（学员）</h2>
+                    <p>关于学员的简介文字等等等关于学员的简介文字等等等</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="edit_footer student">
+        <a href="javascript:;" class="check_all">
+            <span>全选</span>
+        </a>
+        <a href="javascript:;" class="delete">
+            <span>删除</span>
+        </a>
+        <a href="javascript:;" class="add">
+            <span>添加</span>
+        </a>
+    </div>
+</body>
+<script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#edit").click(function() {
+            var othis = $(this);
+            if (othis.hasClass("active")) {
+                othis.removeClass("active").text("编辑");
+                $("body").removeClass("hasfooter");
+                $(".edit_footer").removeClass("show");
+                $(".view_list").removeClass("edit");
+                $(".v_one").removeClass("active");
+                $(".check_all").removeClass("active");
+            } else {
+                othis.addClass("active").text("完成");
+                $("body").addClass("hasfooter");
+                $(".edit_footer").addClass("show");
+                $(".view_list").addClass("edit");
+            }
+        })
+        $(".view_list").on("click", ".v_one", function(e) {
+            e.preventDefault();
+            var othis = $(this);
+            if ($(".view_list").hasClass("edit")) {
+                othis.toggleClass("active");
+                if ($(".v_one.active").length == $(".v_one").length) {
+                    $(".check_all").addClass("active");
+                } else {
+                    $(".check_all").removeClass("active")
+                }
+
+                //选中成员id数组 —— test
+                var arr = getIdArr();
+                console.log(arr);
+            } else {
+                //非编辑状态，跳转
+                window.location = othis.attr('href');
+            }
+        })
+
+        $(".check_all").click(function() {
+            var othis = $(this);
+            if (othis.hasClass("active")) {
+                othis.removeClass("active");
+                $(".v_one").removeClass("active");
+
+                //选中成员id数组 —— test
+                var arr = getIdArr();
+                console.log(arr);
+            } else {
+                othis.addClass("active");
+                $(".v_one").addClass("active");
+
+                //选中成员id数组 —— test
+                var arr = getIdArr();
+                console.log(arr);
+            }
+        })
+
+        //获取需要操作的成员id数组
+        function getIdArr() {
+            var arr = [];
+            $(".v_one.active").each(function() {
+                arr.push($(this).attr("id"))
+            })
+            return arr;
+        }
+    })
+</script>
+
+</html>

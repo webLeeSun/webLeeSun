@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>预约信息</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body class="hasfooter">
+    <div class="header">
+        <a href="javascript:;" class="icon-back"></a>
+        <h2>预约信息</h2>
+    </div>
+    <div class="section">
+        <div class="user_box">
+            <div class="avatar">
+                <img src="/images/avatar.png">
+            </div>
+            <div class="info">
+                <div class="fo">
+                    <label>微信昵称</label>
+                    <p>王一</p>
+                </div>
+                <div class="fo">
+                    <label>注册手机号：</label>
+                    <p>12345678902</p>
+                </div>
+            </div>
+        </div>
+        <div class="form_ele">
+            <label><span>*</span>邮箱：</label>
+            <div class="ele_wrap">
+                <input type="text" v-model="submit_data.email" placeholder="请填写邮箱">
+            </div>
+        </div>
+        <div class="form_ele">
+            <label><span>*</span>职业/专业</label>
+            <div class="ele_wrap">
+                <input type="text" v-model="submit_data.profession" placeholder="请填写职业/专业">
+            </div>
+        </div>
+        <a href="javascript:;" class="link_a" style="font-size:1rem;">提示：为确保您的上课效果，请您认真填写以上信息。</a>
+    </div>
+    <a href="javascript:;" class="mid_btn spe active fixed">立即支付</a>
+</body>
+
+</html>

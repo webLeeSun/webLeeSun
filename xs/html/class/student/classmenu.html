@@ -9,8 +9,8 @@
     <title>公开课</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../stylesheets/datapicker.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="../stylesheets/common.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/datapicker.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/common.css" media="screen" charset="utf-8">
 </head>
 
 <body id="joinvip">
@@ -29,14 +29,17 @@
         <a href="javascript:;" class="link_a" id="clear">清空聊天记录</a>
     </div>
 </body>
-<script src="../bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="/js/common.js" charset="utf-8"></script>
 <script type="text/javascript">
     $("#clear").click(function() {
-        var conf = confirm("确定要删除聊天记录么？")
-        if (conf) {
-            //ajax
-            alert("已删除！")
-        }
+        my_confirm({
+            des: "确定要删除聊天记录吗?",
+            callback_ok: function() {
+                //ajax 删除聊天记录
+                alert("已删除");
+            }
+        })
     })
 </script>
 

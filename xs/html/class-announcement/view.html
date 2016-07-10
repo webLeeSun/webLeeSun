@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>配音大师课</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body class="hasfooter">
+    <div class="header">
+        <a href="javascript:;" class="icon-back"></a>
+        <h2>配音大师课</h2>
+    </div>
+
+    <a href="javascript:;" class="yy_btn">预约课程</a>
+</body>
+<script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="/js/common.js" charset="utf-8"></script>
+<script type="text/javascript">
+    //用来展示两种情况，可删除
+    var temp = true;
+    $(".yy_btn").click(function() {
+        if (temp) {
+            my_confirm({
+                title: "提示",
+                des: "亲爱的用户，该课程共10课时，已进行了3课时，剩余7课时。您是否要购买余下的7课时？",
+                callback_ok: function() {
+
+                }
+            })
+            temp = false;
+        } else {
+          my_confirm({
+              title:"提示",
+              des: "亲爱的用户，该课程已结束，请查看其他课程",
+              one_btn:true,
+              callback_ok: function() {
+
+              }
+          })
+
+          temp = true;
+        }
+    })
+</script>
+
+</html>

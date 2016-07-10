@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>公开课</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/stylesheets/datapicker.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body id="joinvip">
+    <div class="header">
+        <a href="javascript:;" class="icon-close"></a>
+        <h2>搜索</h2>
+    </div>
+
+    <div class="search_bar">
+        <span></span>
+        <div class="search_input">
+            <input type="text" placeholder="搜索">
+        </div>
+    </div>
+</body>
+<script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $("#clear").click(function() {
+        var conf = confirm("确定要删除聊天记录么？")
+        if (conf) {
+            //ajax
+            alert("已删除！")
+        }
+    })
+</script>
+
+</html>
