@@ -307,13 +307,13 @@ a.mid_btn {
                 overflow: hidden;
                 label {
                     @include line-height(28);
-                    @include width(160);
+                    @include width(180);
                     display: block;
                     float: left;
                 }
                 p {
                     @include line-height(28);
-                    @include margin-left(160);
+                    @include margin-left(180);
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;

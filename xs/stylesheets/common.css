@@ -557,14 +557,14 @@ a.mid_btn.spe.active.fixed {
 /* line 308, ../sass/common.scss */
 .section .user_box .info .fo label {
   line-height: 1.4rem;
-  width: 8rem;
+  width: 9rem;
   display: block;
   float: left;
 }
 /* line 314, ../sass/common.scss */
 .section .user_box .info .fo p {
   line-height: 1.4rem;
-  margin-left: 8rem;
+  margin-left: 9rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
