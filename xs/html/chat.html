@@ -9,82 +9,160 @@
     <title>讨论组1：儿童口才班</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+      <link rel="stylesheet" href="/xs/stylesheets/iscroll.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/xs/stylesheets/common.css" media="screen" charset="utf-8">
 </head>
 
-<body class="hasfooter">
+<body onload="loaded()">
     <div class="header">
         <a href="javascript:;" class="icon-back"></a>
         <h2>讨论组1：儿童口才班</h2>
+
+        <!-- +按钮 -->
+        <a href="javascript:;" class="control_btn"></a>
+        <!-- 管理员控制按钮 -->
+        <div class="cor"></div>
+        <div class="control_panel">
+            <div class="active"><span class="voice_on">开启发言</span></div>
+            <div><span class="voice_off">关闭发言</span></div>
+            <div><span class="members">查看小组信息</span></div>
+        </div>
+
+
+        <!-- 头像按钮 -->
+        <!-- <a href="javascript:;" class="user_btn"></a> -->
+
+        <!-- 更多按钮 -->
+        <!-- <a href="javascript:;" class="more_btn"></a> -->
     </div>
-    <div class="chat_box">
-        <span class="time">2016-06-28  17：29：30</span>
-        <div class="msg in">
-            <div class="avatar">
-                <img src="/xs/images/class_demo.png">
-            </div>
-            <div class="info">
-                <h3>王一（导师）</h3>
-                <span><b class="cor"></b>容聊天容</span>
-            </div>
-        </div>
-        <div class="msg in">
-            <div class="avatar">
-                <img src="/xs/images/class_demo.png">
-            </div>
-            <div class="info">
-                <h3>王一（导师）</h3>
-                <span><b class="cor"></b>聊天测聊天测试内容聊天测试内容</span>
-            </div>
-        </div>
-        <div class="msg in">
-            <div class="avatar">
-                <img src="/xs/images/class_demo.png">
-            </div>
-            <div class="info">
-                <h3>王一（导师）</h3>
-                <span><b class="cor"></b>聊天测试测试内内容</span>
-            </div>
-        </div>
-        <div class="msg in">
-            <div class="avatar">
-                <img src="/xs/images/class_demo.png">
-            </div>
-            <div class="info">
-                <h3>王一（导师）</h3>
-                <span><b class="cor"></b>聊天测试内聊天测试内容聊天测试内容</span>
-            </div>
-        </div>
-        <div class="msg in">
-            <div class="avatar">
-                <img src="/xs/images/class_demo.png">
-            </div>
-            <div class="info">
-                <h3>王一（导师）</h3>
-                <span><b class="cor"></b>聊天测试内容聊天测试内容聊天测试内容聊天测试内容聊天测试内容</span>
-            </div>
-        </div>
-        <div class="msg out">
-            <div class="avatar">
-                <img src="/xs/images/class_demo.png">
-            </div>
-            <div class="info">
-                <span><b class="cor"></b>聊天测试内容聊天测试内容聊天测试内容聊天测试内容聊天测试内容</span>
+    <div id="wrapper">
+        <div id="scroller">
+            <div class="chat_box" id="chat">
+                <span class="tip">您已关闭学员组发言</span>
+                <span class="time">2016-06-28  17：29：30</span>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>容聊天容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>容聊天容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>容聊天容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>容聊天容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>容聊天容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>聊天测聊天测试内容聊天测试内容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>聊天测试测试内内容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>聊天测试内聊天测试内容聊天测试内容</span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span><b class="cor"></b>聊天测试内容聊天测试内容聊天测试内容聊天测试内容聊天测试内容</span>
+                    </div>
+                </div>
+                <div class="msg out">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <span><b class="cor"></b>聊天测试内容聊天测试内容聊天测试内容聊天测试内容聊天测试内容</span>
+                    </div>
+                </div>
+
+                <span class="holder"></span>
             </div>
         </div>
     </div>
     <div class="chat_footer">
         <div class="add">
-          <input type="file" name="file"  capture="camera">
+            <form class="form-horizontal" role="form" id="myForm" action="/upload_image.do" method="post" enctype="multipart/form-data">
+                <input type="file" id="newImg" name="file" capture="camera">
+            </form>
         </div>
+        <div class="send_message" id="send_message">发送</div>
         <div class="voice"></div>
         <div class="input_box">
             <span class="emoj"></span>
             <div class="input_wrap">
-                <input type="text">
+                <form onsubmit="onSubmit(); return false;">
+                    <input type="text" id="text_input">
+                </form>
             </div>
+        </div>
+        <div class="voice_on_btn">按住 说话</div>
+    </div>
+    <div class="mic_pop">
+        <div class="mic_wrap">
+            <img class="voice_img" src="/xs/images/mic.png">
+            <div class="voice_bar saying"></div>
         </div>
     </div>
 </body>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
+<script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="/xs/js/iscroll-lite.js" charset="utf-8"></script>
+<script src="/xs/js/chat.js" charset="utf-8"></script>
+<script src="/xs/js/voice.js" charset="utf-8"></script>
 
 </html>

@@ -108,6 +108,92 @@ textarea {
         background: url("../images/search.png") no-repeat center center;
         background-size: 1.85rem auto;
     }
+    a.control_btn {
+        @include right(22);
+        @include top(27);
+        @include width(37);
+        @include height(37);
+        left: auto;
+        position: absolute;
+        background: url("../images/contr_btn.png") no-repeat center center;
+        background-size: 1.85rem auto;
+    }
+    a.user_btn {
+        @include right(22);
+        @include top(25);
+        @include width(28);
+        @include height(39);
+        left: auto;
+        position: absolute;
+        background: url("../images/users.png") no-repeat center center;
+        background-size: 1.4rem auto;
+    }
+    a.more_btn {
+        @include right(22);
+        @include top(26);
+        @include width(37);
+        @include height(38);
+        left: auto;
+        position: absolute;
+        background: url("../images/more.png") no-repeat center center;
+        background-size: 1.85rem auto;
+    }
+    .cor {
+        @include width(30);
+        @include height(30);
+        @include right(22);
+        @include top(70);
+        display: none;
+        z-index: 2;
+        position: absolute;
+        background: url("../images/t_arrow.png") no-repeat center center;
+        background-size: 1.5rem auto;
+    }
+    .control_panel {
+        @include width(234);
+        @include right(22);
+        @include top(92);
+        @include border-radius(5);
+        display: none;
+        z-index: 3;
+        position: absolute;
+        div {
+            @include line-height(52);
+            @include padding(0,10,0,10);
+            border-bottom: 1px solid #78b2a6;
+            background-color: #016f58;
+            &.active {
+                background-color: #025745;
+            }
+            &:first-child {
+                border-top-left-radius: 0.25rem;
+                border-top-right-radius: 0.25rem;
+            }
+            &:last-child {
+                border-bottom-left-radius: 0.25rem;
+                border-bottom-right-radius: 0.25rem;
+            }
+            span {
+                @include padding-left(60);
+                @include font-size(24);
+                @include line-height(52);
+                display: inline-block;
+                color: #fff;
+                &.voice_on {
+                    background: url("../images/voice_on.png") no-repeat left center;
+                    background-size: 2.8rem auto;
+                }
+                &.voice_off {
+                    background: url("../images/voice_off.png") no-repeat left center;
+                    background-size: 2.8rem auto;
+                }
+                &.members {
+                    background: url("../images/members.png") no-repeat left center;
+                    background-size: 2.8rem auto;
+                }
+            }
+        }
+    }
     .right_btn {
         @include font-size(28);
         @include line-height(92);
@@ -1026,12 +1112,14 @@ a.link_a_2 {
     }
 }
 .class_list {
-    @include padding-bottom(150);
     a.c_one {
         @include padding(30,23,30,23);
         border-bottom: 1px solid #bebebe;
         overflow: hidden;
         display: block;
+        &:last-child{
+          border-bottom: none;
+        }
         .c_wrap {
             display: table;
             width: 100%;
@@ -1204,12 +1292,20 @@ a.link_a_2 {
 }
 .chat_box {
     @include margin(0,18,0,18);
-    overflow: hidden;
+    @include padding-bottom(40);
+    z-index: 99;
     .time {
         @include font-size(24);
         @include line-height(80);
         display: block;
         text-align: center;
+    }
+    .tip {
+        @include font-size(28);
+        @include line-height(80);
+        display: block;
+        text-align: center;
+        color: #ff1212;
     }
     .msg {
         @include margin-top(28);
@@ -1293,15 +1389,19 @@ a.link_a_2 {
     .voice {
         @include width(60);
         @include height(60);
-        @include margin-top(8);
+        @include margin-top(13);
         background: url("../images/voice.png") no-repeat center center;
         background-size: 3rem auto;
         float: left;
+        &.bord {
+            background: url("../images/bord.png") no-repeat center center;
+            background-size: 3rem auto;
+        }
     }
     .add {
         @include width(60);
         @include height(60);
-        @include margin-top(8);
+        @include margin-top(13);
         background: url("../images/add.png") no-repeat center center;
         background-size: 3rem auto;
         float: right;
@@ -1318,6 +1418,20 @@ a.link_a_2 {
             opacity: 0;
         }
     }
+    .send_message {
+        @include width(60);
+        @include height(40);
+        @include border-radius(3);
+        @include line-height(40);
+        @include margin-top(20);
+        @include font-size(24);
+        float: right;
+        display: none;
+        text-align: center;
+        background: #07c106;
+        text-align: center;
+        color: #fff;
+    }
     .input_box {
         @include margin(8,75,9,75);
         @include line-height(60);
@@ -1325,7 +1439,7 @@ a.link_a_2 {
         .emoj {
             @include width(50);
             @include height(50);
-            @include margin-top(5);
+            @include margin-top(10);
             background: url("../images/emoj.png") no-repeat center center;
             background-size: 2.5rem auto;
             float: right;
@@ -1336,6 +1450,118 @@ a.link_a_2 {
                 @include font-size(24);
             }
         }
+    }
+    .voice_on_btn {
+        @include margin(8,75,9,75);
+        @include line-height(60);
+        @include border-radius(5);
+        @include font-size(28);
+        text-align: center;
+        border: 1px solid #bebebe;
+        display: none;
+    }
+}
+.mic_pop {
+    @include width(200);
+    @include height(200);
+    @include border-radius(10);
+    background: rgba(0,0,0,.45);
+    margin-left: -5rem;
+    margin-top: -5rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    display: none;
+    .mic_wrap {
+        position: relative;
+        img {
+            @include width(128);
+            display: block;
+            margin: 1.8rem auto;
+        }
+        .voice_bar {
+            position: absolute;
+            left: 50%;
+            margin-left: -1rem;
+            bottom: 2rem;
+            width: 1.8rem;
+            height: 0;
+            background: #fff;
+            border-radius: 0 0 1rem 1rem;
+            animation: saying 2s infinite;
+            -webkit-animation: saying 2s infinite;
+        }
+    }
+}
+@keyframes saying {
+    0% {
+        height: 15px;
+    }
+    10% {
+        height: 20px;
+    }
+    20% {
+        height: 25px;
+    }
+    30% {
+        height: 30px;
+    }
+    40% {
+        height: 27px;
+    }
+    50% {
+        height: 28px;
+    }
+    60% {
+        height: 26px;
+    }
+    70% {
+        height: 28px;
+    }
+    80% {
+        height: 25px;
+    }
+    90% {
+        height: 20px;
+    }
+    100% {
+        height: 18px;
+    }
+}
+@-webkit-keyframes saying {
+    0% {
+        height: 15px;
+    }
+    10% {
+        height: 20px;
+    }
+    20% {
+        height: 25px;
+    }
+    30% {
+        height: 30px;
+    }
+    40% {
+        height: 27px;
+    }
+    50% {
+        height: 28px;
+    }
+    60% {
+        height: 26px;
+    }
+    70% {
+        height: 28px;
+    }
+    80% {
+        height: 25px;
+    }
+    90% {
+        height: 20px;
+    }
+    100% {
+        height: 18px;
     }
 }
 .icon-back {

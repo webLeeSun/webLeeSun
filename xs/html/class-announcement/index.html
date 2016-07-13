@@ -9,6 +9,7 @@
     <title>课程公告</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="/xs/stylesheets/pullToRefresh.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/xs/stylesheets/common.css" media="screen" charset="utf-8">
 </head>
 
@@ -18,50 +19,118 @@
         <h2>课程公告</h2>
     </div>
 
-    <div class="class_list">
-        <a href="javascript:;" class="c_one new">
-            <div class="c_wrap">
-                <div class="class_img">
-                    <img src="/xs/images/class_demo.png" alt="">
-                </div>
-                <div class="info">
-                    <h2>配音大师课</h2>
-                    <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>
-                    <h3>授课时间</h3>
-                    <p class="p1">2016年7月15号--8月15号</p>
-                    <span class="tag"></span>
-                </div>
-            </div>
-        </a>
-        <a href="javascript:;" class="c_one doing">
-            <div class="c_wrap">
-                <div class="class_img">
-                    <img src="/xs/images/class_demo.png" alt="">
-                </div>
-                <div class="info">
-                    <h2>配音大师课</h2>
-                    <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>
-                    <h3>授课时间</h3>
-                    <p class="p1">2016年7月15号--8月15号</p>
-                    <span class="tag"></span>
-                </div>
-            </div>
-        </a>
-        <a href="javascript:;" class="c_one overtime">
-            <div class="c_wrap">
-                <div class="class_img">
-                    <img src="/xs/images/class_demo.png" alt="">
-                </div>
-                <div class="info">
-                    <h2>配音大师课</h2>
-                    <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>
-                    <h3>授课时间</h3>
-                    <p class="p1">2016年7月15号--8月15号</p>
-                    <span class="tag"></span>
-                </div>
-            </div>
-        </a>
+    <div class="class_list" id="wrapper">
+        <ul>
+            <li>
+                <a href="javascript:;" class="c_one new">
+                    <div class="c_wrap">
+                        <div class="class_img">
+                            <img src="/xs/images/class_demo.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>配音大师课</h2>
+                            <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>
+                            <h3>授课时间</h3>
+                            <p class="p1">2016年7月15号--8月15号</p>
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="c_one doing">
+                    <div class="c_wrap">
+                        <div class="class_img">
+                            <img src="/xs/images/class_demo.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>配音大师课</h2>
+                            <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>
+                            <h3>授课时间</h3>
+                            <p class="p1">2016年7月15号--8月15号</p>
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="c_one overtime">
+                    <div class="c_wrap">
+                        <div class="class_img">
+                            <img src="/xs/images/class_demo.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h2>配音大师课</h2>
+                            <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>
+                            <h3>授课时间</h3>
+                            <p class="p1">2016年7月15号--8月15号</p>
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </body>
+<script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="/xs/js/iscroll.js"></script>
+<script type="text/javascript" src="/xs/js/pullToRefresh.js"></script>
+<script type="text/javascript">
+    refresher.init({
+        id: "wrapper",
+        pullDownAction: Refresh,
+        pullUpAction: Load
+    });
+    var pageindex = 1;
+
+    function Refresh() {
+        setTimeout(function() {
+            window.location.reload();
+        }, 1000);
+    }
+
+    function Load() {
+        // ajax
+        // pageindex += 1;
+        // $.ajax({
+        //     url: "<php>echo U('Index/textListJson')</php>",
+        //     type: "POST",
+        //     data: {
+        //         type: 2,
+        //         pageindex: pageindex
+        //     },
+        //     success: function(result) {
+        //         //添加html
+        //
+        //         wrapper.refresh();
+        //     }
+        // });
+
+        //模拟请求
+        setTimeout(function() {
+            var el, li, str;
+            el = document.querySelector("#wrapper ul");
+            li = document.createElement('li');
+            str =
+                '<a href="javascript:;" class="c_one overtime">\
+                <div class="c_wrap">\
+                    <div class="class_img">\
+                        <img src="/xs/images/class_demo.png" alt="">\
+                    </div>\
+                    <div class="info">\
+                        <h2>配音大师课</h2>\
+                        <p class="p2">2016年学声公开课-配音大师课第二期火爆开幕，就差你啦！</p>\
+                        <h3>授课时间</h3>\
+                        <p class="p1">2016年7月15号--8月15号</p>\
+                        <span class="tag"></span>\
+                    </div>\
+                </div>\
+            </a>';
+            li.innerHTML = str;
+            el.appendChild(li, el.childNodes[0]);
+            wrapper.refresh();
+        }, 1000)
+    }
+</script>
 
 </html>
