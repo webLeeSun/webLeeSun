@@ -1112,14 +1112,16 @@ a.link_a_2 {
     }
 }
 .class_list {
+    li:last-child{
+      a.c_one {
+        border-bottom: none;
+      }
+    }
     a.c_one {
         @include padding(30,23,30,23);
         border-bottom: 1px solid #bebebe;
         overflow: hidden;
         display: block;
-        &:last-child{
-          border-bottom: none;
-        }
         .c_wrap {
             display: table;
             width: 100%;
