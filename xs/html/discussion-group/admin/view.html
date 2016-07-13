@@ -9,6 +9,7 @@
     <title>小组信息（20）</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="/xs/stylesheets/datapicker.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/xs/stylesheets/common.css" media="screen" charset="utf-8">
 </head>
 
@@ -74,11 +75,14 @@
 
     <div class="section">
         <a href="javascript:;" class="link_a">群公告</a>
-        <a href="javascript:;" class="link_a">讨论区时间设置</a>
         <a href="javascript:;" class="link_a">讨论区创建时间<span>2016-05-05至2017-05-05</span></a>
-    </div>
-    <div class="section">
-        <a href="javascript:;" class="link_a">清空聊天记录</a>
+        <a href="javascript:;" class="link_a">
+            <label>讨论区禁言时间设置</label>
+            <div class="time_box">
+                <input type="text" placeholder="开始" id="start">--
+                <input type="text" placeholder="结束" id="end">
+            </div>
+        </a>
     </div>
     <div class="pb">
         <a href="javascript:;" class="mid_btn spe active" id="close_group">关闭该课程小组</a>
@@ -86,19 +90,64 @@
 
 </body>
 <script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="/xs/js/datapicker.js" charset="utf-8"></script>
 <script src="/xs/js/common.js" charset="utf-8"></script>
 <script type="text/javascript">
     $(function() {
         $("#close_group").click(function() {
             my_confirm({
-              title:"关闭讨论组",
-              des:"关闭该讨论组将会解散所有小组成员，并删除所有讨论记录。",
-              callback_ok:function(){
-                  //ajax 关闭讨论组
-                  alert("已关闭");
-              }
+                title: "关闭讨论组",
+                des: "关闭该讨论组将会解散所有小组成员，并删除所有讨论记录。",
+                callback_ok: function() {
+                    //ajax 关闭讨论组
+                    alert("已关闭");
+                }
             })
         })
+
+        var currYear = (new Date()).getFullYear();
+        var opt = {};
+        opt.time = {
+            preset: 'time'
+        };
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'hh-mm',
+            lang: 'zh',
+            showNow: true,
+            nowText: "当前",
+            startYear: currYear - 50,
+            endYear: currYear,
+            onSelect: function() {
+                var savaflag = false;
+                if ($("#start").val() != "" && $("#end").val() != "") {
+                    var arr1 = $("#start").val().split(":"),
+                        arr2 = $("#end").val().split(":");
+                    if (arr1[0] < arr2[0]) {
+                        savaflag = true;
+                    } else if (arr1[0] == arr2[0]) {
+                        if (arr1[1] <= arr2[1]) {
+                            savaflag = true;
+                        } else {
+                            savaflag = false;
+                        }
+                    } else {
+                        savaflag = false;
+                    }
+
+                    if (savaflag) {
+                        //ajax 保存时间区间
+                        console.log("sava");
+                    } else {
+                        alert("开始时间不能大于结束时间！")
+                    }
+                }
+            }
+        };
+        $("#start").mobiscroll($.extend(opt['time'], opt['default']));
+        $("#end").mobiscroll($.extend(opt['time'], opt['default']));
     })
 </script>
 

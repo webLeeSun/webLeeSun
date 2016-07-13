@@ -3,7 +3,8 @@ var myScroll;
 
 function loaded() {
     myScroll = new IScroll('#wrapper', {
-        mouseWheel: true
+        mouseWheel: true,
+        preventDefault: false
     });
     myScroll.on('scrollStart', function() {
         $("#text_input").blur();
@@ -58,7 +59,7 @@ $("#newImg").on("change", function() {
         contentType: false,
         processData: false,
         success: function(data) {
-          //do something
+            //do something
         },
         error: function(e) {
             alert(e);
@@ -66,6 +67,37 @@ $("#newImg").on("change", function() {
     });
 })
 
+//长按撤回
+var timer = 0,
+    timerhandle = null;
+$('.msg.out').on("touchstart", ".info", function(e) {
+    e.stopPropagation();
+    if (e.target.outerHTML == '<b class="back_space"></b>') {
+        $(e.target).parent().parent().parent().remove();
+        //ajax
+        //...
+        $("#chat").append('<span class="back">你撤回了一条消息</span>');
+    } else {
+        $(".back_space").remove();
+        var othis = $(this);
+        timer = 0;
+        clearInterval(timerhandle);
+        timerhandle = setInterval(function() {
+            timer++;
+            if (timer >= 1) {
+                clearInterval(timerhandle);
+                othis.find("span").append('<b class="back_space"></b>');
+            }
+        }, 1000);
+    }
+});
+$('.msg.out').on("touchend", ".info", function(e) {
+    if (timer < 1) {
+        timer = 0;
+        clearInterval(timerhandle);
+        $(".back_space").remove();
+    }
+})
 //websocketJs
 //----连接服务端
 function connect() {

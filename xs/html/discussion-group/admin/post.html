@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <title>发布群公告</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/xs/stylesheets/common.css" media="screen" charset="utf-8">
+</head>
+
+<body class="bg_w">
+    <div class="header">
+        <a href="javascript:;" class="icon-close"></a>
+        <h2>群公告</h2>
+        <span class="right_btn" id="post_btn">提交</span>
+    </div>
+    <div class="post_an">
+        <textarea name="name" id="post_words" placeholder="请填写公告内容..."></textarea>
+    </div>
+</body>
+<script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="/xs/js/common.js" charset="utf-8"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#post_btn").click(function() {
+            if($.trim($("#post_words").val())==""){
+              alert("请填写公告内容！")
+              return false;
+            }
+            my_confirm({
+                title: "提示",
+                des: "公告内容会通知全体群成员，是否发布？",
+                callback_ok: function() {
+                    //ajax 关闭讨论组
+                    alert("已发布");
+                }
+            })
+        })
+    })
+</script>
+
+</html>

@@ -34,6 +34,9 @@ body {
     &.hasfooter_spe {
         @include padding-bottom(245);
     }
+    &.bg_w {
+        background: #fff;
+    }
 }
 a img {
     border: 0;
@@ -253,7 +256,8 @@ textarea {
         @include margin-right(150);
     }
     input {
-        @include line-height(83);
+        @include margin-top(25);
+        @include line-height(33);
         @include font-size(28);
         color: #202020;
     }
@@ -465,6 +469,18 @@ a.link_a {
         right: 0;
         top: 0;
     }
+    .time_box {
+        float: right;
+        color: #bebebe;
+        input {
+            @include width(80);
+            @include font-size(24);
+            color: #bebebe;
+            text-align: center;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
 }
 .info_a {
     @include line-height(83);
@@ -623,8 +639,7 @@ a.link_a {
 }
 .orders {
     @include padding(0,32,0,32);
-    @include height(83);
-    @include line-height(83);
+    @include line-height(88);
     overflow: hidden;
     .od {
         width: 50%;
@@ -635,6 +650,8 @@ a.link_a {
             @include font-size(28);
             display: inline-block;
             position: relative;
+            min-width: 6rem;
+            text-align: left;
             b {
                 @include top(26);
                 left: 0;
@@ -1112,10 +1129,10 @@ a.link_a_2 {
     }
 }
 .class_list {
-    li:last-child{
-      a.c_one {
-        border-bottom: none;
-      }
+    li:last-child {
+        a.c_one {
+            border-bottom: none;
+        }
     }
     a.c_one {
         @include padding(30,23,30,23);
@@ -1309,9 +1326,15 @@ a.link_a_2 {
         text-align: center;
         color: #ff1212;
     }
+    .back {
+        @include font-size(24);
+        @include line-height(70);
+        display: block;
+        text-align: center;
+    }
     .msg {
         @include margin-top(28);
-        overflow: hidden;
+        @include margin-bottom(28);
         .avatar {
             @include width(70);
             @include width(70);
@@ -1344,6 +1367,17 @@ a.link_a_2 {
                     display: block;
                     position: absolute;
                 }
+                .back_space {
+                    @include width(107);
+                    @include height(57);
+                    z-index: 99;
+                    display: block;
+                    position: absolute;
+                    top: -2.9rem;
+                    left: -2rem;
+                    background: url("../images/back_space.png") no-repeat center center;
+                    background-size: auto 2.85rem;
+                }
             }
         }
         &.in {
@@ -1367,6 +1401,7 @@ a.link_a_2 {
             }
             .info {
                 @include margin(22,95,0,80);
+                text-align: right;
                 span {
                     .cor {
                         right: -0.5rem;
@@ -1564,6 +1599,70 @@ a.link_a_2 {
     }
     100% {
         height: 18px;
+    }
+}
+.acc_list {
+    a {
+        @include padding(20,23,20,23);
+        display: block;
+        border-bottom: 1px solid #bebebe;
+        overflow: hidden;
+        display: table;
+        width: 100%;
+        box-sizing: border-box;
+        .left_img {
+            @include width(160);
+            @include height(125);
+            float: left;
+            background-color: #00b7ee;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .info {
+            @include padding-left(12);
+            @include height(125);
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+            h2 {
+                @include font-size(28);
+                @include line-height(28);
+                @include margin-bottom(25);
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+            }
+            p {
+                @include font-size(28);
+                @include line-height(28);
+                color: #565656;
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+            }
+            span {
+                @include font-size(18);
+                @include top(30);
+                @include right(30);
+                color: #565656;
+                position: absolute;
+            }
+        }
+    }
+}
+.post_an {
+    @include padding(20,23,20,23);
+    textarea {
+        @include font-size(30);
+        @include line-height(40);
+        min-height: 40rem;
+        text-align: justify;
     }
 }
 .icon-back {
