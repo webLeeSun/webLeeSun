@@ -310,65 +310,6 @@ a.mid_btn {
     &.mg {
         @include padding-bottom(280);
     }
-    .p_wrap {
-        @include padding(0,23,230,23);
-        .user_box {
-            border-bottom: 1px solid #bebebe;
-        }
-        .class_box {
-            @include padding(20,0,20,0);
-            border-bottom: 1px solid #bebebe;
-            .des_box {
-                @include padding-right(60);
-                position: relative;
-                h2 {
-                    @include font-size(28);
-                    @include line-height(58);
-                }
-                p {
-                    @include font-size(24);
-                    @include line-height(54);
-                    span {
-                        @include margin-left(50);
-                    }
-                }
-                .progress {
-                    @include top(15);
-                    @include width(50);
-                    @include padding-top(50);
-                    right: 0;
-                    position: absolute;
-                    background: url("../images/progress.png") no-repeat top center;
-                    background-size: 2.5rem auto;
-                    text-align: center;
-                    span {
-                        @include font-size(22);
-                        color: #2abc9d;
-                        b {
-                            font-weight: normal;
-                            color: #202020;
-                        }
-                    }
-                }
-            }
-            .in_class {
-                @include width(198);
-                @include height(48);
-                @include line-height(48);
-                margin: 0 auto;
-                @include margin-top(30);
-                @include font-size(30);
-                @include border-radius(20);
-                color: #fff;
-                text-align: center;
-                display: block;
-                background: #29c0a0;
-                &.over {
-                    background: #bebebe;
-                }
-            }
-        }
-    }
     .user_box {
         @include padding(30,23,30,23);
         overflow: hidden;
@@ -428,6 +369,72 @@ a.mid_btn {
             @include line-height(44);
             @include margin-left(50);
             text-align: justify;
+        }
+    }
+}
+.user_box {
+    border-bottom: 1px solid #bebebe;
+}
+.myclass_wrap {
+    background: #fff;
+    li:last-child{
+      .class_box {
+        border-bottom: 0;
+      }
+    }
+    .class_box {
+        @include margin(0,23,0,23);
+        @include padding(20,0,20,0);
+        border-bottom: 1px solid #bebebe;
+        background: #fff;
+        .des_box {
+            @include padding-right(60);
+            position: relative;
+            h2 {
+                @include font-size(28);
+                @include line-height(58);
+            }
+            p {
+                @include font-size(24);
+                @include line-height(54);
+                span {
+                    @include margin-left(50);
+                }
+            }
+            .progress {
+                @include top(15);
+                @include width(50);
+                @include padding-top(50);
+                right: 0;
+                position: absolute;
+                background: url("../images/progress.png") no-repeat top center;
+                background-size: 2.5rem auto;
+                text-align: center;
+                span {
+                    @include font-size(22);
+                    color: #202020;
+                    b {
+                        font-weight: normal;
+                        color: #202020;
+                    }
+                }
+            }
+        }
+        .in_class {
+            @include width(198);
+            @include height(48);
+            @include line-height(48);
+            margin: 0 auto;
+            @include margin-top(30);
+            @include font-size(30);
+            @include border-radius(20);
+            color: #fff;
+            text-align: center;
+            display: block;
+            background: #29c0a0;
+            &.over {
+                background: #bebebe;
+            }
         }
     }
 }
@@ -517,17 +524,21 @@ a.link_a {
 }
 .pro_ul {
     li {
-        @include padding(0,23,0,23);
-        border-bottom: 1px solid #bebebe;
+        border-bottom: 1rem solid #f3f3f3;
         &:last-child {
             border-bottom: none;
         }
         .pi {
+            @include margin(0,23,0,23);
             @include line-height(83);
-            border-bottom: 1px solid #bebebe;
+            border-top: 1px solid #bebebe;
             overflow: hidden;
-            &:last-child {
-                border-bottom: none;
+            &:first-child {
+                border-top: 0;
+            }
+            &:nth-child(2) {
+                @include padding(0,23,0,23);
+                margin: 0;
             }
             h3 {
                 @include line-height(83);
@@ -560,19 +571,30 @@ a.link_a {
     &.spe {
         li {
             .pi {
-                label {
-                    @include margin-left(35);
-                }
-                p {
-                    @include margin-right(35);
-                }
                 h3 {
                     @include padding-left(35);
                     background: url("../images/ycho.png") no-repeat left center;
-                    background-size: 1.55rem auto;
+                    background-size: 1.45rem auto;
                 }
                 span {
                     color: #fe6a2a;
+                    &.vip {
+                        padding: 0.7rem 0;
+                        text-align: right;
+                        b {
+                            font-weight: normal;
+                            display: block;
+                            line-height: 2rem;
+                            &:first-child {
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    @include padding(0,23,0,23);
+                    @include line-height(66);
+                    margin: 0;
                 }
             }
         }
@@ -653,9 +675,19 @@ a.link_a {
             min-width: 6rem;
             text-align: left;
             b {
-                @include top(26);
+                @include width(29);
+                @include height(29);
+                @include top(27);
                 left: 0;
                 position: absolute;
+                &.icon-nochoose {
+                    background: url("../images/ncho.png") no-repeat center center;
+                    background-size: 1.45rem auto;
+                }
+                &.icon-choose {
+                    background: url("../images/ycho.png") no-repeat center center;
+                    background-size: 1.45rem auto;
+                }
             }
         }
     }
@@ -729,8 +761,12 @@ a.link_a {
                         position: absolute;
                     }
                 }
-                span.icon-active {
-                    @include margin-top(28);
+                span.active-icon {
+                    @include width(29);
+                    @include height(29);
+                    @include margin-top(27);
+                    background: url("../images/ycho.png") no-repeat center center;
+                    background-size: 1.45rem auto;
                     display: block;
                     float: right;
                 }
@@ -970,12 +1006,9 @@ a.link_a_2 {
         overflow: hidden;
         display: block;
         .v_wrap {
-            @include padding-right(20);
             display: table;
             width: 100%;
             box-sizing: border-box;
-            background: url("../images/right_arrow.png") no-repeat right center;
-            background-size: 1rem auto;
             .avatar {
                 @include width(140);
                 @include height(140);
@@ -987,14 +1020,14 @@ a.link_a_2 {
                     height: 100%;
                 }
                 span.check {
-                    @include width(31);
-                    @include height(31);
+                    @include width(29);
+                    @include height(29);
                     @include right(5);
                     @include bottom(5);
                     position: absolute;
                     display: block;
                     background: url("../images/ncho.png") no-repeat center center;
-                    background-size: 1.55rem auto;
+                    background-size: 1.45rem auto;
                     visibility: hidden;
                 }
             }
@@ -1356,10 +1389,11 @@ a.link_a_2 {
                 color: #fff;
                 text-align: center;
                 min-width: 5rem;
-                background-color: #bebebe;
+                background-color: #008a6d;
                 position: relative;
                 box-sizing: border-box;
                 display: inline-block;
+                text-align: left;
                 .cor {
                     @include width(10);
                     @include height(15);
@@ -1387,6 +1421,7 @@ a.link_a_2 {
             .info {
                 @include margin(0,80,0,95);
                 span {
+                    background-color: #2abc9d;
                     .cor {
                         left: -0.5rem;
                         background: url("../images/ll.png") no-repeat center center;

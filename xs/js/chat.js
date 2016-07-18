@@ -15,6 +15,12 @@ document.addEventListener('touchmove', function(e) {
     e.preventDefault();
 }, false);
 
+//需要滚动到底部时调用
+function scrollChat() {
+    myScroll.refresh();
+    myScroll.scrollTo(0, myScroll.maxScrollY, 1000,  IScroll.utils.ease.bounce)
+}
+
 //input focus 滚动页面 显示输入框
 $("#text_input").focus(function() {
     setTimeout(function() {
@@ -92,14 +98,14 @@ $('.msg.out').on("touchstart", ".info", function(e) {
     }
 });
 $('.msg.out').on("touchend", ".info", function(e) {
-    if (timer < 1) {
-        timer = 0;
-        clearInterval(timerhandle);
-        $(".back_space").remove();
-    }
-})
-//websocketJs
-//----连接服务端
+        if (timer < 1) {
+            timer = 0;
+            clearInterval(timerhandle);
+            $(".back_space").remove();
+        }
+    })
+    //websocketJs
+    //----连接服务端
 function connect() {
     // 创建websocket
     ws = new WebSocket("ws://" + document.domain + ":7272");
@@ -154,6 +160,9 @@ function say(avatar, nickname, content, time) {
 
 //----提交对话
 function onSubmit() {
+
+    scrollChat();
+
     alert("已提交");
     var input = document.getElementById("text_input");
     ws.send('{"type":"say","content":"' + input.value);

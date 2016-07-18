@@ -6,20 +6,21 @@
     <meta content="width=device-width,user-scalable=0,initial-scale=1,maximum-scale=1" name="viewport">
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" type="image/x-icon" href="" />
-    <title>历史记录</title>
+    <title>确认订单</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="/xs/stylesheets/common.css" media="screen" charset="utf-8">
 </head>
 
-<body class="hasfooter_spe">
+<body>
     <div class="header">
         <a href="javascript:;" class="icon-back"></a>
-        <h2>历史记录</h2>
+        <h2>确认订单</h2>
         <span class="right_btn" id="delete">删除</span>
     </div>
     <div class="section">
         <ul class="pro_ul spe">
+            <!-- 进行中 -->
             <li>
                 <div class="pi">
                     <h3>商品信息</h3>
@@ -45,9 +46,11 @@
                     <p>7课时</p>
                 </div>
                 <div class="pi">
-                    <span>合计：¥350</span>
+                    <span>结算：¥350</span>
                 </div>
             </li>
+
+            <!-- 新课程 -->
             <li>
                 <div class="pi">
                     <h3>商品信息</h3>
@@ -65,22 +68,17 @@
                     <p>10课时</p>
                 </div>
                 <div class="pi">
-                    <span>合计：¥500</span>
+                    <!-- 会员价添加class vip,价格用b包裹 -->
+                    <span class="vip">
+                      <b>结算：¥500</b>
+                      <b>会员价结算：¥350</b>
+                    </span>
                 </div>
             </li>
         </ul>
     </div>
-    <div class="order_footer">
-        <!-- 会员价添加class vip ↓ -->
-        <div class="mm_box">
-            <span class="check">全选</span>
-            <div class="money">
-                <span>共<b>1</b>件商品 结算：¥  <b >850.00</b></span>
-                <!-- 会员价 -->
-                <!-- <span>共<b>1</b>件商品  <b class="line">结算：¥ 350.00</b></span>
-                <span>会员价：¥ <b>350.00</b></span> -->
-            </div>
-        </div>
+
+    <div class="pb">
         <a href="javascript:;" class="mid_btn spe active" id="pay">确认付款</a>
     </div>
 
@@ -96,7 +94,7 @@
                 </div>
                 <div class="t">
                     <span class="m"><b class="icon-wx"></b>微信支付</span>
-                    <span class="icon-active"></span>
+                    <span class="active-icon"></span>
                 </div>
             </div>
             <div class="panel_end">
