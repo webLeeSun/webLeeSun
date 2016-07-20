@@ -10,6 +10,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="stylesheet" href="/xs/stylesheets/iscroll.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/xs/stylesheets/swiper-3.3.1.min.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="/xs/stylesheets/common.css" media="screen" charset="utf-8">
 </head>
 
@@ -155,8 +156,9 @@
                     <input type="text" id="text_input">
                 </form>
             </div>
+
+            <div class="voice_on_btn">按住 说话</div>
         </div>
-        <div class="voice_on_btn">按住 说话</div>
     </div>
     <div class="mic_pop">
         <div class="mic_wrap">
@@ -164,10 +166,105 @@
             <div class="voice_bar saying"></div>
         </div>
     </div>
+
+    <div class="emoj_box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_1.png" alt="">
+                            </div>
+                            <span>查作业</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_2.png" alt="">
+                            </div>
+                            <span>到</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_3.gif" alt="">
+                            </div>
+                            <span>点名了</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_4.gif" alt="">
+                            </div>
+                            <span>点名了</span>
+                        </li>
+                        <span class="justify_fix"></span>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_5.png" alt="">
+                            </div>
+                            <span>哈哈哈</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_6.png" alt="">
+                            </div>
+                            <span>怒赞</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_7.jpg" alt="">
+                            </div>
+                            <span>通知</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_8.png" alt="">
+                            </div>
+                            <span>休息一下</span>
+                        </li>
+                        <span class="justify_fix"></span>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_9.gif" alt="">
+                            </div>
+                            <span>哈哈哈</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_10.jpg" alt="">
+                            </div>
+                            <span>怒赞</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_11.gif" alt="">
+                            </div>
+                            <span>通知</span>
+                        </li>
+                        <li>
+                            <div class="emoj_img">
+                                <img src="../images/emoj/emoj_12.gif" alt="">
+                            </div>
+                            <span>休息一下</span>
+                        </li>
+                        <span class="justify_fix"></span>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
 </body>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript"></script>
 <script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 <script src="/xs/js/iscroll-lite.js" charset="utf-8"></script>
+<script src="/xs/js/swiper-3.3.1.jquery.min.js" charset="utf-8"></script>
 <script src="/xs/js/chat.js" charset="utf-8"></script>
 <script src="/xs/js/voice.js" charset="utf-8"></script>
 

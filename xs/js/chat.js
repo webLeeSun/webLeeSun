@@ -1,3 +1,26 @@
+//new add 0721
+//emoj打开
+$(".emoj").click(function() {
+    $(".chat_footer").toggleClass("emoj_show");
+    $(".emoj_box").toggleClass("emoj_show");
+    $("#wrapper").toggleClass("emoj_show");
+
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+})
+
+//new add 0721
+//发送emoj
+$(".emoj_img").click(function(){
+   var img_src = $(this).find("img").attr("src");
+   alert("待发送emoj："+img_src);
+   //ajax
+   //...
+})
+
+
 //初始化iscroll
 var myScroll;
 
@@ -9,6 +32,11 @@ function loaded() {
     myScroll.on('scrollStart', function() {
         $("#text_input").blur();
         myScroll.refresh();
+
+        //new add 0721
+        $(".chat_footer").removeClass("emoj_show");
+        $(".emoj_box").removeClass("emoj_show");
+        $("#wrapper").removeClass("emoj_show");
     });
 }
 document.addEventListener('touchmove', function(e) {
@@ -18,7 +46,7 @@ document.addEventListener('touchmove', function(e) {
 //需要滚动到底部时调用
 function scrollChat() {
     myScroll.refresh();
-    myScroll.scrollTo(0, myScroll.maxScrollY, 1000,  IScroll.utils.ease.bounce)
+    myScroll.scrollTo(0, myScroll.maxScrollY, 1000, IScroll.utils.ease.bounce)
 }
 
 //input focus 滚动页面 显示输入框
@@ -27,7 +55,12 @@ $("#text_input").focus(function() {
         $('html,body').animate({
             scrollTop: $('.chat_footer').offset().top
         }, 100);
-    }, 200)
+    }, 200);
+
+    //new add 0721
+    $(".chat_footer").removeClass("emoj_show");
+    $(".emoj_box").removeClass("emoj_show");
+    $("#wrapper").removeClass("emoj_show");
 })
 
 $("#text_input").on("input propertychange", function() {
@@ -49,8 +82,13 @@ $(".control_btn").click(function() {
 //切换语音文字
 $(".voice").click(function() {
     $(this).toggleClass("bord");
-    $(".input_box").toggle();
+    $(".input_wrap").toggle();
     $(".voice_on_btn").toggle();
+
+    //new add 0721
+    $(".chat_footer").removeClass("emoj_show");
+    $(".emoj_box").removeClass("emoj_show");
+    $("#wrapper").removeClass("emoj_show");
 })
 
 //上传图片

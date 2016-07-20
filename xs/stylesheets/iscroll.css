@@ -1,13 +1,16 @@
 
 #wrapper {
     top:4.6rem;
-    bottom:4.35rem;
+    bottom:5.05rem;
     position: absolute;
     z-index: 1;
     left: 0;
     right: 0;
     width: 100%;
     overflow: hidden;
+}
+#wrapper.emoj_show{
+    bottom:25.05rem;
 }
 #scroller {
     position: absolute;
