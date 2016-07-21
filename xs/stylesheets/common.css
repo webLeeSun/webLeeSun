@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*All icon*/
 /* line 128, icon/*.png */
 .icon-sprite, .icon-active, .icon-back, .icon-choose, .icon-class, .icon-close, .icon-group, .icon-nochoose, .icon-notice, .icon-user, .icon-warning, .icon-wx {
-  background-image: url('/images/icon-s1e9f14f4be.png');
+  background-image: url('../images/icon-s1e9f14f4be.png');
   background-repeat: no-repeat;
 }
 
@@ -2352,6 +2352,25 @@ a.link_a_2 {
 }
 
 /* line 1780, ../sass/common.scss */
+.history_info {
+  position: fixed;
+  top: 5.5rem;
+  right: 0;
+  display: block;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 0 8px 0 12px;
+  background: #fff;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  color: #020202;
+  border: solid rgba(190, 190, 190, 0.5);
+  border-width: 1px 0 1px 1px;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+/* line 1797, ../sass/common.scss */
 .icon-back {
   width: 1.95rem;
   height: 1.95rem;
@@ -2359,7 +2378,7 @@ a.link_a_2 {
   background-position: 0 7%;
 }
 
-/* line 1786, ../sass/common.scss */
+/* line 1803, ../sass/common.scss */
 .icon-close {
   width: 1.75rem;
   height: 1.75rem;
@@ -2367,7 +2386,7 @@ a.link_a_2 {
   background-position: 0 37%;
 }
 
-/* line 1792, ../sass/common.scss */
+/* line 1809, ../sass/common.scss */
 .icon-class,
 .icon-group,
 .icon-notice,
@@ -2378,27 +2397,27 @@ a.link_a_2 {
   background-position: 0 37%;
 }
 
-/* line 1801, ../sass/common.scss */
+/* line 1818, ../sass/common.scss */
 .icon-notice {
   background-position: 0 68%;
 }
 
-/* line 1804, ../sass/common.scss */
+/* line 1821, ../sass/common.scss */
 .icon-class {
   background-position: 0 25.2%;
 }
 
-/* line 1807, ../sass/common.scss */
+/* line 1824, ../sass/common.scss */
 .icon-group {
   background-position: 0 47.6%;
 }
 
-/* line 1810, ../sass/common.scss */
+/* line 1827, ../sass/common.scss */
 .icon-user {
   background-position: 0 81%;
 }
 
-/* line 1813, ../sass/common.scss */
+/* line 1830, ../sass/common.scss */
 .icon-warning {
   width: 2rem;
   height: 1.75rem;
@@ -2406,7 +2425,7 @@ a.link_a_2 {
   background-position: 0 90.1%;
 }
 
-/* line 1819, ../sass/common.scss */
+/* line 1836, ../sass/common.scss */
 .icon-nochoose {
   width: 1.55rem;
   height: 1.5rem;
@@ -2414,7 +2433,7 @@ a.link_a_2 {
   background-position: 0 57.5%;
 }
 
-/* line 1825, ../sass/common.scss */
+/* line 1842, ../sass/common.scss */
 .icon-choose {
   width: 1.55rem;
   height: 1.5rem;
@@ -2422,7 +2441,7 @@ a.link_a_2 {
   background-position: 0 16.5%;
 }
 
-/* line 1831, ../sass/common.scss */
+/* line 1848, ../sass/common.scss */
 .icon-wx {
   width: 2.25rem;
   height: 2rem;
@@ -2430,7 +2449,7 @@ a.link_a_2 {
   background-position: 0 100%;
 }
 
-/* line 1837, ../sass/common.scss */
+/* line 1854, ../sass/common.scss */
 .icon-active {
   width: 1.35rem;
   height: 1.3rem;

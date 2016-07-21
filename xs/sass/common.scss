@@ -1552,8 +1552,8 @@ a.link_a_2 {
     left: 0;
     right: 0;
     display: none;
-    &.emoj_show{
-    display: block;
+    &.emoj_show {
+        display: block;
     }
 }
 .swiper-container {
@@ -1776,6 +1776,23 @@ a.link_a_2 {
         min-height: 40rem;
         text-align: justify;
     }
+}
+.history_info {
+    position: fixed;
+    top: 5.5rem;
+    right: 0;
+    display: block;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 8px 0 12px;
+    background: #fff;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    color: #020202;
+    border: solid rgba(190, 190, 190, 0.5);
+    border-width: 1px 0 1px 1px;
+    z-index: 99999;
+    cursor: pointer;
 }
 .icon-back {
     @include width(39);

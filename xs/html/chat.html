@@ -20,7 +20,7 @@
         <h2>讨论组1：儿童口才班</h2>
 
         <!-- +按钮 -->
-        <a href="javascript:;" class="control_btn"></a>
+        <a href="/xs/html/discussion-group/admin/group.html" target="_blank" class="control_btn"></a>
         <!-- 管理员控制按钮 -->
         <div class="cor"></div>
         <div class="control_panel">
@@ -36,6 +36,10 @@
         <!-- 更多按钮 -->
         <!-- <a href="javascript:;" class="more_btn"></a> -->
     </div>
+
+    <!-- 0722 add -->
+    <span class="history_info">历史消息</span>
+
     <div id="wrapper">
         <div id="scroller">
             <div class="chat_box" id="chat">
@@ -265,7 +269,34 @@
 <script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 <script src="/xs/js/iscroll-lite.js" charset="utf-8"></script>
 <script src="/xs/js/swiper-3.3.1.jquery.min.js" charset="utf-8"></script>
+<script src="/xs/js/layer.js" charset="utf-8"></script>
 <script src="/xs/js/chat.js" charset="utf-8"></script>
 <script src="/xs/js/voice.js" charset="utf-8"></script>
+<script type="text/javascript">
+    // 0722 add
+    //微信中图片预览接口，公众号中图片点击放大左右滑动效果
+    wx.ready(function() {
+        var srcList = [];
+        //这里的img给需要放大的图片添加class，来绑定事件，避免放大不需要的img标签
+        $.each($('.yourClassName'), function(i, item) {
+            if (item.src) {
+                srcList.push(item.src);
+                $(item).click(function(e) {
+                    alert(12)
+                    wx.previewImage({
+                        current: item.src, // 当前显示图片的http链接
+                        urls: srcList // 需要预览的图片http链接列表
+                    });
+                });
+            }
+        });
+    });
+    // 0722 add
+    $(".history_info").click(function(){
+        //get more info
+        console.log("get more");
+        alert(1)
+    })
+</script>
 
 </html>
