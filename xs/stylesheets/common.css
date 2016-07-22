@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*All icon*/
 /* line 128, icon/*.png */
 .icon-sprite, .icon-active, .icon-back, .icon-choose, .icon-class, .icon-close, .icon-group, .icon-nochoose, .icon-notice, .icon-user, .icon-warning, .icon-wx {
-  background-image: url('/images/icon-s1e9f14f4be.png');
+  background-image: url('../images/icon-s1e9f14f4be.png');
   background-repeat: no-repeat;
 }
 
