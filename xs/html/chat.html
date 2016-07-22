@@ -123,7 +123,16 @@
                     </div>
                     <div class="info">
                         <h3>王一（导师）</h3>
-                        <span><b class="cor"></b>聊天测试内容聊天测试内容聊天测试内容聊天测试内容聊天测试内容</span>
+                        <!-- 0722 add -->
+                        <span class="voice_bar">
+                          <b class="cor"></b>
+                          <audio src="/xs/mp3/test.mp3" controls="controls">
+                              Your browser does not support the audio element.
+                          </audio>
+                          <i class="voice_1"></i>
+                          <i class="voice_2"></i>
+                          <i class="voice_3"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="msg out">
@@ -132,6 +141,23 @@
                     </div>
                     <div class="info">
                         <span><b class="cor"></b>聊天测试内试内容</span>
+                    </div>
+                </div>
+                <div class="msg out">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <!-- 0722 add -->
+                        <span class="voice_bar">
+                          <b class="cor"></b>
+                          <audio src="/xs/mp3/test.mp3" controls="controls">
+                              Your browser does not support the audio element.
+                          </audio>
+                          <i class="voice_1"></i>
+                          <i class="voice_2"></i>
+                          <i class="voice_3"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="msg out">
@@ -292,11 +318,42 @@
         });
     });
     // 0722 add
-    $(".history_info").click(function(){
+    $(".history_info").click(function() {
         //get more info
         console.log("get more");
         alert(1)
     })
+
+    //0722 add
+    /*新增播放控制*/
+$(".chat_box").on('click', '.voice_bar', function(event) {
+    event.preventDefault();
+    //清除所有正在播放的动画
+    var othis = $(this);
+    var currentAudio = othis.find('audio')[0];
+
+    //如果当前项正在播放，则清除动画、重置时间、停止播放
+    if (!currentAudio.paused) {
+        othis.removeClass('active');
+        currentAudio.currentTime = 0;
+        currentAudio.pause();
+    } else {
+        $('.voice_bar').removeClass('active');
+        //停止所有播放的audio
+        for (var i = 0; i < $('audio').length; i++) {
+            $('audio')[i].currentTime = 0;
+            $('audio')[i].pause();
+        }
+        //当前项开会播放动画
+        othis.addClass('active')
+            //重置播放时间，开始播放
+        currentAudio.addEventListener('ended', function() {
+            othis.removeClass('active');
+        }, false);
+        currentAudio.currentTime = 0;
+        currentAudio.play();
+    }
+});
 </script>
 
 </html>

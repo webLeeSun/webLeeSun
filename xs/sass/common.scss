@@ -1386,6 +1386,7 @@ a.link_a_2 {
                 @include border-radius(5);
                 @include padding(15,15,15,15);
                 @include line-height(34);
+                min-height: 3.2rem;
                 color: #fff;
                 text-align: center;
                 min-width: 5rem;
@@ -1429,6 +1430,57 @@ a.link_a_2 {
                     }
                 }
             }
+            .voice_bar {
+                audio {
+                    position: absolute;
+                    left: -2000px;
+                    opacity: 0;
+                }
+                .voice_1 {
+                    width: 2px;
+                    height: 6px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -3px;
+                    left: 10px;
+                    background: url("../images/voice_1.png") no-repeat center center;
+                    background-size: 2px auto;
+                }
+                .voice_2 {
+                    width: 3px;
+                    height: 10px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -5px;
+                    left: 12px;
+                    background: url("../images/voice_2.png") no-repeat center center;
+                    background-size: 3px auto;
+                }
+                .voice_3 {
+                    width: 4px;
+                    height: 14px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -7px;
+                    left: 14px;
+                    background: url("../images/voice_3.png") no-repeat center center;
+                    background-size: 4px auto;
+                }
+                &.active {
+                    .voice_1 {
+                        animation: showhide_1 1.5s infinite;
+                        -webkit-animation: showhide_1 1.5s infinite;
+                    }
+                    .voice_2 {
+                        animation: showhide_2 1.5s infinite;
+                        -webkit-animation: showhide_2 1.5s infinite;
+                    }
+                    .voice_3 {
+                        animation: showhide_3 1.5s infinite;
+                        -webkit-animation: showhide_3 1.5s infinite;
+                    }
+                }
+            }
         }
         &.out {
             .avatar {
@@ -1445,7 +1497,124 @@ a.link_a_2 {
                     }
                 }
             }
+            .voice_bar {
+                audio {
+                    position: absolute;
+                    left: -2000px;
+                    opacity: 0;
+                }
+                .voice_1 {
+                    width: 2px;
+                    height: 6px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -3px;
+                    right: 10px;
+                    background: url("../images/voice_4.png") no-repeat center center;
+                    background-size: 2px auto;
+                }
+                .voice_2 {
+                    width: 3px;
+                    height: 10px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -5px;
+                    right: 12px;
+                    background: url("../images/voice_5.png") no-repeat center center;
+                    background-size: 3px auto;
+                }
+                .voice_3 {
+                    width: 4px;
+                    height: 14px;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -7px;
+                    right: 14px;
+                    background: url("../images/voice_6.png") no-repeat center center;
+                    background-size: 4px auto;
+                }
+                &.active {
+                    .voice_1 {
+                        animation: showhide_1 1.5s infinite;
+                        -webkit-animation: showhide_1 1.5s infinite;
+                    }
+                    .voice_2 {
+                        animation: showhide_2 1.5s infinite;
+                        -webkit-animation: showhide_2 1.5s infinite;
+                    }
+                    .voice_3 {
+                        animation: showhide_3 1.5s infinite;
+                        -webkit-animation: showhide_3 1.5s infinite;
+                    }
+                }
+            }
         }
+    }
+}
+@keyframes showhide_1 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes showhide_1 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes showhide_2 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes showhide_2 {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes showhide_3 {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes showhide_3 {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 .chat_footer {

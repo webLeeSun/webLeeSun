@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*All icon*/
 /* line 128, icon/*.png */
 .icon-sprite, .icon-active, .icon-back, .icon-choose, .icon-class, .icon-close, .icon-group, .icon-nochoose, .icon-notice, .icon-user, .icon-warning, .icon-wx {
-  background-image: url('../images/icon-s1e9f14f4be.png');
+  background-image: url('/images/icon-s1e9f14f4be.png');
   background-repeat: no-repeat;
 }
 
@@ -1895,6 +1895,7 @@ a.link_a_2 {
   padding-bottom: 0.75rem;
   padding-left: 0.75rem;
   line-height: 1.7rem;
+  min-height: 3.2rem;
   color: #fff;
   text-align: center;
   min-width: 5rem;
@@ -1904,7 +1905,7 @@ a.link_a_2 {
   display: inline-block;
   text-align: left;
 }
-/* line 1397, ../sass/common.scss */
+/* line 1398, ../sass/common.scss */
 .chat_box .msg .info span .cor {
   width: 0.5rem;
   height: 0.75rem;
@@ -1912,7 +1913,7 @@ a.link_a_2 {
   display: block;
   position: absolute;
 }
-/* line 1404, ../sass/common.scss */
+/* line 1405, ../sass/common.scss */
 .chat_box .msg .info span .back_space {
   width: 5.35rem;
   height: 2.85rem;
@@ -1924,32 +1925,86 @@ a.link_a_2 {
   background: url("../images/back_space.png") no-repeat center center;
   background-size: auto 2.85rem;
 }
-/* line 1418, ../sass/common.scss */
+/* line 1419, ../sass/common.scss */
 .chat_box .msg.in .avatar {
   float: left;
 }
-/* line 1421, ../sass/common.scss */
+/* line 1422, ../sass/common.scss */
 .chat_box .msg.in .info {
   margin-top: 0rem;
   margin-right: 4rem;
   margin-bottom: 0rem;
   margin-left: 4.75rem;
 }
-/* line 1423, ../sass/common.scss */
+/* line 1424, ../sass/common.scss */
 .chat_box .msg.in .info span {
   background-color: #2abc9d;
 }
-/* line 1425, ../sass/common.scss */
+/* line 1426, ../sass/common.scss */
 .chat_box .msg.in .info span .cor {
   left: -0.5rem;
   background: url("../images/ll.png") no-repeat center center;
   background-size: 0.5rem auto;
 }
 /* line 1434, ../sass/common.scss */
+.chat_box .msg.in .voice_bar audio {
+  position: absolute;
+  left: -2000px;
+  opacity: 0;
+}
+/* line 1439, ../sass/common.scss */
+.chat_box .msg.in .voice_bar .voice_1 {
+  width: 2px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  left: 10px;
+  background: url("../images/voice_1.png") no-repeat center center;
+  background-size: 2px auto;
+}
+/* line 1449, ../sass/common.scss */
+.chat_box .msg.in .voice_bar .voice_2 {
+  width: 3px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 12px;
+  background: url("../images/voice_2.png") no-repeat center center;
+  background-size: 3px auto;
+}
+/* line 1459, ../sass/common.scss */
+.chat_box .msg.in .voice_bar .voice_3 {
+  width: 4px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  left: 14px;
+  background: url("../images/voice_3.png") no-repeat center center;
+  background-size: 4px auto;
+}
+/* line 1470, ../sass/common.scss */
+.chat_box .msg.in .voice_bar.active .voice_1 {
+  animation: showhide_1 1.5s infinite;
+  -webkit-animation: showhide_1 1.5s infinite;
+}
+/* line 1474, ../sass/common.scss */
+.chat_box .msg.in .voice_bar.active .voice_2 {
+  animation: showhide_2 1.5s infinite;
+  -webkit-animation: showhide_2 1.5s infinite;
+}
+/* line 1478, ../sass/common.scss */
+.chat_box .msg.in .voice_bar.active .voice_3 {
+  animation: showhide_3 1.5s infinite;
+  -webkit-animation: showhide_3 1.5s infinite;
+}
+/* line 1486, ../sass/common.scss */
 .chat_box .msg.out .avatar {
   float: right;
 }
-/* line 1437, ../sass/common.scss */
+/* line 1489, ../sass/common.scss */
 .chat_box .msg.out .info {
   margin-top: 1.1rem;
   margin-right: 4.75rem;
@@ -1957,14 +2012,134 @@ a.link_a_2 {
   margin-left: 4rem;
   text-align: right;
 }
-/* line 1441, ../sass/common.scss */
+/* line 1493, ../sass/common.scss */
 .chat_box .msg.out .info span .cor {
   right: -0.5rem;
   background: url("../images/lr.png") no-repeat center center;
   background-size: 0.5rem auto;
 }
+/* line 1501, ../sass/common.scss */
+.chat_box .msg.out .voice_bar audio {
+  position: absolute;
+  left: -2000px;
+  opacity: 0;
+}
+/* line 1506, ../sass/common.scss */
+.chat_box .msg.out .voice_bar .voice_1 {
+  width: 2px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 10px;
+  background: url("../images/voice_4.png") no-repeat center center;
+  background-size: 2px auto;
+}
+/* line 1516, ../sass/common.scss */
+.chat_box .msg.out .voice_bar .voice_2 {
+  width: 3px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  right: 12px;
+  background: url("../images/voice_5.png") no-repeat center center;
+  background-size: 3px auto;
+}
+/* line 1526, ../sass/common.scss */
+.chat_box .msg.out .voice_bar .voice_3 {
+  width: 4px;
+  height: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 14px;
+  background: url("../images/voice_6.png") no-repeat center center;
+  background-size: 4px auto;
+}
+/* line 1537, ../sass/common.scss */
+.chat_box .msg.out .voice_bar.active .voice_1 {
+  animation: showhide_1 1.5s infinite;
+  -webkit-animation: showhide_1 1.5s infinite;
+}
+/* line 1541, ../sass/common.scss */
+.chat_box .msg.out .voice_bar.active .voice_2 {
+  animation: showhide_2 1.5s infinite;
+  -webkit-animation: showhide_2 1.5s infinite;
+}
+/* line 1545, ../sass/common.scss */
+.chat_box .msg.out .voice_bar.active .voice_3 {
+  animation: showhide_3 1.5s infinite;
+  -webkit-animation: showhide_3 1.5s infinite;
+}
 
-/* line 1451, ../sass/common.scss */
+@keyframes showhide_1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showhide_1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showhide_2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showhide_2 {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showhide_3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showhide_3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 1620, ../sass/common.scss */
 .chat_footer {
   height: 5rem;
   padding-top: 0rem;
@@ -1979,11 +2154,11 @@ a.link_a_2 {
   left: 0;
   right: 0;
 }
-/* line 1461, ../sass/common.scss */
+/* line 1630, ../sass/common.scss */
 .chat_footer.emoj_show {
   bottom: 20rem;
 }
-/* line 1464, ../sass/common.scss */
+/* line 1633, ../sass/common.scss */
 .chat_footer .voice {
   width: 3.5rem;
   height: 3.5rem;
@@ -1992,12 +2167,12 @@ a.link_a_2 {
   background-size: 3.5rem auto;
   float: left;
 }
-/* line 1471, ../sass/common.scss */
+/* line 1640, ../sass/common.scss */
 .chat_footer .voice.bord {
   background: url("../images/bord.png") no-repeat center center;
   background-size: 3.5rem auto;
 }
-/* line 1476, ../sass/common.scss */
+/* line 1645, ../sass/common.scss */
 .chat_footer .add {
   width: 3.5rem;
   height: 3.5rem;
@@ -2007,7 +2182,7 @@ a.link_a_2 {
   float: right;
   position: relative;
 }
-/* line 1484, ../sass/common.scss */
+/* line 1653, ../sass/common.scss */
 .chat_footer .add input {
   width: 3.5rem;
   height: 3.5rem;
@@ -2019,7 +2194,7 @@ a.link_a_2 {
   background: transparent;
   opacity: 0;
 }
-/* line 1496, ../sass/common.scss */
+/* line 1665, ../sass/common.scss */
 .chat_footer .send_message {
   width: 3.5rem;
   height: 2.5rem;
@@ -2034,14 +2209,14 @@ a.link_a_2 {
   text-align: center;
   color: #fff;
 }
-/* line 1510, ../sass/common.scss */
+/* line 1679, ../sass/common.scss */
 .chat_footer .input_box {
   margin-top: 0.75rem;
   margin-right: 4.5rem;
   margin-bottom: 0rem;
   margin-left: 4rem;
 }
-/* line 1512, ../sass/common.scss */
+/* line 1681, ../sass/common.scss */
 .chat_footer .input_box .emoj {
   width: 3.5rem;
   height: 3.5rem;
@@ -2049,7 +2224,7 @@ a.link_a_2 {
   background-size: 3.5rem auto;
   float: right;
 }
-/* line 1519, ../sass/common.scss */
+/* line 1688, ../sass/common.scss */
 .chat_footer .input_box .input_wrap {
   margin-right: 4rem;
   height: 3.5rem;
@@ -2057,12 +2232,12 @@ a.link_a_2 {
   border-bottom: 1px solid #bebebe;
   box-sizing: border-box;
 }
-/* line 1525, ../sass/common.scss */
+/* line 1694, ../sass/common.scss */
 .chat_footer .input_box .input_wrap input {
   font-size: 1.4rem;
   line-height: 1.5rem;
 }
-/* line 1531, ../sass/common.scss */
+/* line 1700, ../sass/common.scss */
 .chat_footer .voice_on_btn {
   margin-right: 4rem;
   height: 3.5rem;
@@ -2075,7 +2250,7 @@ a.link_a_2 {
   display: none;
 }
 
-/* line 1543, ../sass/common.scss */
+/* line 1712, ../sass/common.scss */
 .emoj_box {
   height: 20rem;
   padding-top: 1.15rem;
@@ -2092,17 +2267,17 @@ a.link_a_2 {
   right: 0;
   display: none;
 }
-/* line 1555, ../sass/common.scss */
+/* line 1724, ../sass/common.scss */
 .emoj_box.emoj_show {
   display: block;
 }
 
-/* line 1559, ../sass/common.scss */
+/* line 1728, ../sass/common.scss */
 .swiper-container {
   width: 100%;
   height: 100%;
 }
-/* line 1562, ../sass/common.scss */
+/* line 1731, ../sass/common.scss */
 .swiper-container ul {
   padding-top: 0rem;
   padding-right: 1.65rem;
@@ -2112,7 +2287,7 @@ a.link_a_2 {
   width: 100%;
   text-align: justify;
 }
-/* line 1567, ../sass/common.scss */
+/* line 1736, ../sass/common.scss */
 .swiper-container ul li {
   padding-bottom: 2.5rem;
   width: 5rem;
@@ -2122,18 +2297,18 @@ a.link_a_2 {
   text-align: center;
   vertical-align: top;
 }
-/* line 1575, ../sass/common.scss */
+/* line 1744, ../sass/common.scss */
 .swiper-container ul li .emoj_img {
   width: 5rem;
   height: 5rem;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 1580, ../sass/common.scss */
+/* line 1749, ../sass/common.scss */
 .swiper-container ul li .emoj_img img {
   width: 100%;
 }
-/* line 1584, ../sass/common.scss */
+/* line 1753, ../sass/common.scss */
 .swiper-container ul li span {
   height: 2.5rem;
   line-height: 2.5rem;
@@ -2146,25 +2321,25 @@ a.link_a_2 {
   left: 0;
   right: 0;
 }
-/* line 1597, ../sass/common.scss */
+/* line 1766, ../sass/common.scss */
 .swiper-container ul .justify_fix {
   display: inline-block;
   width: 100%;
   height: 0;
   overflow: hidden;
 }
-/* line 1604, ../sass/common.scss */
+/* line 1773, ../sass/common.scss */
 .swiper-container .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
   background: #bebebe;
 }
-/* line 1608, ../sass/common.scss */
+/* line 1777, ../sass/common.scss */
 .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #a3a3a3;
 }
 
-/* line 1613, ../sass/common.scss */
+/* line 1782, ../sass/common.scss */
 .mic_pop {
   width: 10rem;
   height: 10rem;
@@ -2178,17 +2353,17 @@ a.link_a_2 {
   z-index: 9999;
   display: none;
 }
-/* line 1625, ../sass/common.scss */
+/* line 1794, ../sass/common.scss */
 .mic_pop .mic_wrap {
   position: relative;
 }
-/* line 1627, ../sass/common.scss */
+/* line 1796, ../sass/common.scss */
 .mic_pop .mic_wrap img {
   width: 6.4rem;
   display: block;
   margin: 1.8rem auto;
 }
-/* line 1632, ../sass/common.scss */
+/* line 1801, ../sass/common.scss */
 .mic_pop .mic_wrap .voice_bar {
   position: absolute;
   left: 50%;
@@ -2272,7 +2447,7 @@ a.link_a_2 {
     height: 18px;
   }
 }
-/* line 1717, ../sass/common.scss */
+/* line 1886, ../sass/common.scss */
 .acc_list a {
   padding-top: 1rem;
   padding-right: 1.15rem;
@@ -2285,19 +2460,19 @@ a.link_a_2 {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 1725, ../sass/common.scss */
+/* line 1894, ../sass/common.scss */
 .acc_list a .left_img {
   width: 8rem;
   height: 6.25rem;
   float: left;
   background-color: #00b7ee;
 }
-/* line 1730, ../sass/common.scss */
+/* line 1899, ../sass/common.scss */
 .acc_list a .left_img img {
   width: 100%;
   height: 100%;
 }
-/* line 1735, ../sass/common.scss */
+/* line 1904, ../sass/common.scss */
 .acc_list a .info {
   padding-left: 0.6rem;
   height: 6.25rem;
@@ -2307,7 +2482,7 @@ a.link_a_2 {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 1743, ../sass/common.scss */
+/* line 1912, ../sass/common.scss */
 .acc_list a .info h2 {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -2317,7 +2492,7 @@ a.link_a_2 {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1752, ../sass/common.scss */
+/* line 1921, ../sass/common.scss */
 .acc_list a .info p {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -2327,7 +2502,7 @@ a.link_a_2 {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1761, ../sass/common.scss */
+/* line 1930, ../sass/common.scss */
 .acc_list a .info span {
   font-size: 0.9rem;
   top: 1.5rem;
@@ -2336,14 +2511,14 @@ a.link_a_2 {
   position: absolute;
 }
 
-/* line 1771, ../sass/common.scss */
+/* line 1940, ../sass/common.scss */
 .post_an {
   padding-top: 1rem;
   padding-right: 1.15rem;
   padding-bottom: 1rem;
   padding-left: 1.15rem;
 }
-/* line 1773, ../sass/common.scss */
+/* line 1942, ../sass/common.scss */
 .post_an textarea {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2351,7 +2526,7 @@ a.link_a_2 {
   text-align: justify;
 }
 
-/* line 1780, ../sass/common.scss */
+/* line 1949, ../sass/common.scss */
 .history_info {
   position: fixed;
   top: 5.5rem;
@@ -2370,7 +2545,7 @@ a.link_a_2 {
   cursor: pointer;
 }
 
-/* line 1797, ../sass/common.scss */
+/* line 1966, ../sass/common.scss */
 .icon-back {
   width: 1.95rem;
   height: 1.95rem;
@@ -2378,7 +2553,7 @@ a.link_a_2 {
   background-position: 0 7%;
 }
 
-/* line 1803, ../sass/common.scss */
+/* line 1972, ../sass/common.scss */
 .icon-close {
   width: 1.75rem;
   height: 1.75rem;
@@ -2386,7 +2561,7 @@ a.link_a_2 {
   background-position: 0 37%;
 }
 
-/* line 1809, ../sass/common.scss */
+/* line 1978, ../sass/common.scss */
 .icon-class,
 .icon-group,
 .icon-notice,
@@ -2397,27 +2572,27 @@ a.link_a_2 {
   background-position: 0 37%;
 }
 
-/* line 1818, ../sass/common.scss */
+/* line 1987, ../sass/common.scss */
 .icon-notice {
   background-position: 0 68%;
 }
 
-/* line 1821, ../sass/common.scss */
+/* line 1990, ../sass/common.scss */
 .icon-class {
   background-position: 0 25.2%;
 }
 
-/* line 1824, ../sass/common.scss */
+/* line 1993, ../sass/common.scss */
 .icon-group {
   background-position: 0 47.6%;
 }
 
-/* line 1827, ../sass/common.scss */
+/* line 1996, ../sass/common.scss */
 .icon-user {
   background-position: 0 81%;
 }
 
-/* line 1830, ../sass/common.scss */
+/* line 1999, ../sass/common.scss */
 .icon-warning {
   width: 2rem;
   height: 1.75rem;
@@ -2425,7 +2600,7 @@ a.link_a_2 {
   background-position: 0 90.1%;
 }
 
-/* line 1836, ../sass/common.scss */
+/* line 2005, ../sass/common.scss */
 .icon-nochoose {
   width: 1.55rem;
   height: 1.5rem;
@@ -2433,7 +2608,7 @@ a.link_a_2 {
   background-position: 0 57.5%;
 }
 
-/* line 1842, ../sass/common.scss */
+/* line 2011, ../sass/common.scss */
 .icon-choose {
   width: 1.55rem;
   height: 1.5rem;
@@ -2441,7 +2616,7 @@ a.link_a_2 {
   background-position: 0 16.5%;
 }
 
-/* line 1848, ../sass/common.scss */
+/* line 2017, ../sass/common.scss */
 .icon-wx {
   width: 2.25rem;
   height: 2rem;
@@ -2449,7 +2624,7 @@ a.link_a_2 {
   background-position: 0 100%;
 }
 
-/* line 1854, ../sass/common.scss */
+/* line 2023, ../sass/common.scss */
 .icon-active {
   width: 1.35rem;
   height: 1.3rem;
