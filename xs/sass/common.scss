@@ -1428,6 +1428,54 @@ a.link_a_2 {
                         background: url("../images/ll.png") no-repeat center center;
                         background-size: 0.5rem auto;
                     }
+                    &.file {
+                        .file_wrap {
+                            overflow: hidden;
+                            p {
+                                @include margin-right(110);
+                                max-width: 8rem;
+                                overflow: hidden;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
+                            }
+                            .icon {
+                                @include width(88);
+                                @include padding-top(64);
+                                @include font-size(18);
+                                @include margin-top(5);
+                                color: #666666;
+                                float: right;
+                                background: url("../images/file.png") no-repeat top center;
+                                background-size: 4.4rem auto;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    &.voice_file {
+                        .file_wrap {
+                            overflow: hidden;
+                            p {
+                                @include margin-right(110);
+                                max-width: 8rem;
+                                overflow: hidden;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
+                            }
+                            .icon {
+                                @include width(88);
+                                @include padding-top(64);
+                                @include font-size(18);
+                                @include margin-top(5);
+                                color: #666666;
+                                float: right;
+                                background: url("../images/voice_file.png") no-repeat top center;
+                                background-size: 4.4rem auto;
+                                text-align: center;
+                            }
+                        }
+                    }
                 }
             }
             .voice_bar {
@@ -1481,6 +1529,33 @@ a.link_a_2 {
                     }
                 }
             }
+            .video_bar {
+                background-color: transparent!important;
+                background: transparent;
+                padding: 0;
+                .cor {
+                    background: url("../images/video_arrow_l.png") no-repeat center center!important;
+                    background-size: 0.5rem auto!important;
+                }
+                video {
+                    position: absolute;
+                    left: -2000px;
+                    opacity: 0;
+                }
+                .video_hoder {
+                    @include width(313);
+                    @include height(256);
+                    @include border-radius(5);
+                    vertical-align: top;
+                }
+                .timer {
+                    @include font-size(22);
+                    font-style: normal;
+                    color: #666666;
+                    text-align: right;
+                    display: block;
+                }
+            }
         }
         &.out {
             .avatar {
@@ -1494,6 +1569,56 @@ a.link_a_2 {
                         right: -0.5rem;
                         background: url("../images/lr.png") no-repeat center center;
                         background-size: 0.5rem auto;
+                    }
+                    &.file {
+                        .file_wrap {
+                            display: block;
+                            overflow: hidden;
+                            p {
+                                @include margin-left(110);
+                                max-width: 8rem;
+                                overflow: hidden;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
+                            }
+                            .icon {
+                                @include width(88);
+                                @include padding-top(64);
+                                @include font-size(18);
+                                @include margin-top(5);
+                                color: #666666;
+                                float: left;
+                                background: url("../images/file.png") no-repeat top center;
+                                background-size: 4.4rem auto;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    &.voice_file {
+                        .file_wrap {
+                            display: block;
+                            overflow: hidden;
+                            p {
+                                @include margin-left(110);
+                                max-width: 8rem;
+                                overflow: hidden;
+                                -webkit-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
+                            }
+                            .icon {
+                                @include width(88);
+                                @include padding-top(64);
+                                @include font-size(18);
+                                @include margin-top(5);
+                                color: #666666;
+                                float: left;
+                                background: url("../images/voice_file.png") no-repeat top center;
+                                background-size: 4.4rem auto;
+                                text-align: center;
+                            }
+                        }
                     }
                 }
             }
@@ -1546,6 +1671,33 @@ a.link_a_2 {
                         animation: showhide_3 1.5s infinite;
                         -webkit-animation: showhide_3 1.5s infinite;
                     }
+                }
+            }
+            .video_bar {
+                background-color: transparent!important;
+                background: transparent;
+                padding: 0;
+                .cor {
+                    background: url("../images/video_arrow_r.png") no-repeat center center!important;
+                    background-size: 0.5rem auto!important;
+                }
+                video {
+                    position: absolute;
+                    left: -2000px;
+                    opacity: 0;
+                }
+                .video_hoder {
+                    @include width(313);
+                    @include height(256);
+                    @include border-radius(5);
+                    vertical-align: top;
+                }
+                .timer {
+                    @include font-size(22);
+                    font-style: normal;
+                    color: #666666;
+                    text-align: right;
+                    display: block;
                 }
             }
         }

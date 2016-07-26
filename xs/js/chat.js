@@ -13,11 +13,11 @@ $(".emoj").click(function() {
 
 //new add 0721
 //发送emoj
-$(".emoj_img").click(function(){
-   var img_src = $(this).find("img").attr("src");
-   alert("待发送emoj："+img_src);
-   //ajax
-   //...
+$(".emoj_img").click(function() {
+    var img_src = $(this).find("img").attr("src");
+    alert("待发送emoj：" + img_src);
+    //ajax
+    //...
 })
 
 
@@ -44,9 +44,16 @@ document.addEventListener('touchmove', function(e) {
 }, false);
 
 //需要滚动到底部时调用
+//0726 add 添加高度判断
 function scrollChat() {
-    myScroll.refresh();
-    myScroll.scrollTo(0, myScroll.maxScrollY, 1000, IScroll.utils.ease.bounce)
+    var max_h = Math.abs(myScroll.maxScrollY),
+        current_h = Math.abs(myScroll.y);
+    // 若此时已网上滚动了500px高度，则视为查看历史信息，不触发滚动到底部
+    // 临界点可自己修改
+    if (max_h - current_h < 500) {
+        myScroll.refresh();
+        myScroll.scrollTo(0, myScroll.maxScrollY, 1000, IScroll.utils.ease.bounce)
+    }
 }
 
 //input focus 滚动页面 显示输入框

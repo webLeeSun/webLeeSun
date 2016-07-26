@@ -168,6 +168,102 @@
                         <span><b class="cor"></b>聊天测试内容聊天测试内容聊天测试内容聊天测试内容聊天测试内容</span>
                     </div>
                 </div>
+
+                <!-- 0726 add -->
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span class="file">
+                          <b class="cor"></b>
+                          <a href="/xs/video/test.txt" download="file" class="file_wrap">
+                            <div class="icon">22.4KB</div>
+                            <p>学声公开课微信在线互动交流公开课等等等</p>
+                          </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="msg out">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span class="file">
+                          <b class="cor"></b>
+                          <a href="/xs/video/test.rar" class="file_wrap">
+                            <div class="icon">22.4KB</div>
+                            <p>学声公开课微信在线互动交流公开课等等等学</p>
+                          </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span class="voice_file">
+                          <b class="cor"></b>
+                          <a href="/xs/video/test.mp3" download="file" class="file_wrap">
+                            <div class="icon">22.4KB</div>
+                            <p>学声公开课微信在线互动交流.mp3</p>
+                          </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="msg out">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span class="voice_file">
+                          <b class="cor"></b>
+                          <a href="/xs/video/test.mp3" download="file" class="file_wrap">
+                            <div class="icon">22.4KB</div>
+                            <p>学声公开课微信在线互动交流.mp3</p>
+                          </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="msg in">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span class="video_bar">
+                          <b class="cor"></b>
+                          <video>
+                            <source src="/xs/video/mov_bbb.mp4" type="video/mp4" />
+                            Your browser does not support HTML5 video.
+                          </video>
+                          <img class="video_hoder" src="/xs/images/video_hoder.png">
+                          <i class="timer">13:23</i>
+                        </span>
+                    </div>
+                </div>
+                <div class="msg out">
+                    <div class="avatar">
+                        <img src="/xs/images/class_demo.png">
+                    </div>
+                    <div class="info">
+                        <h3>王一（导师）</h3>
+                        <span class="video_bar">
+                          <b class="cor"></b>
+                          <video>
+                            <source src="/xs/video/mov_bbb.mp4" type="video/mp4" />
+                            Your browser does not support HTML5 video.
+                          </video>
+                          <img class="video_hoder" src="/xs/images/video_hoder.png">
+                          <i class="timer">13:23</i>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -295,7 +391,6 @@
 <script src="/xs/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
 <script src="/xs/js/iscroll-lite.js" charset="utf-8"></script>
 <script src="/xs/js/swiper-3.3.1.jquery.min.js" charset="utf-8"></script>
-<script src="/xs/js/layer.js" charset="utf-8"></script>
 <script src="/xs/js/chat.js" charset="utf-8"></script>
 <script src="/xs/js/voice.js" charset="utf-8"></script>
 <script type="text/javascript">
@@ -326,34 +421,50 @@
 
     //0722 add
     /*新增播放控制*/
-$(".chat_box").on('click', '.voice_bar', function(event) {
-    event.preventDefault();
-    //清除所有正在播放的动画
-    var othis = $(this);
-    var currentAudio = othis.find('audio')[0];
+    $(".chat_box").on('click', '.voice_bar', function(event) {
+        event.preventDefault();
+        //清除所有正在播放的动画
+        var othis = $(this);
+        var currentAudio = othis.find('audio')[0];
 
-    //如果当前项正在播放，则清除动画、重置时间、停止播放
-    if (!currentAudio.paused) {
-        othis.removeClass('active');
-        currentAudio.currentTime = 0;
-        currentAudio.pause();
-    } else {
-        $('.voice_bar').removeClass('active');
-        //停止所有播放的audio
-        for (var i = 0; i < $('audio').length; i++) {
-            $('audio')[i].currentTime = 0;
-            $('audio')[i].pause();
-        }
-        //当前项开会播放动画
-        othis.addClass('active')
-            //重置播放时间，开始播放
-        currentAudio.addEventListener('ended', function() {
+        //如果当前项正在播放，则清除动画、重置时间、停止播放
+        if (!currentAudio.paused) {
             othis.removeClass('active');
-        }, false);
-        currentAudio.currentTime = 0;
-        currentAudio.play();
-    }
-});
+            currentAudio.currentTime = 0;
+            currentAudio.pause();
+        } else {
+            $('.voice_bar').removeClass('active');
+            //停止所有播放的audio
+            for (var i = 0; i < $('audio').length; i++) {
+                $('audio')[i].currentTime = 0;
+                $('audio')[i].pause();
+            }
+            //当前项开会播放动画
+            othis.addClass('active')
+                //重置播放时间，开始播放
+            currentAudio.addEventListener('ended', function() {
+                othis.removeClass('active');
+            }, false);
+            currentAudio.currentTime = 0;
+            currentAudio.play();
+        }
+    });
+
+    //0726 add
+    /*视频播放*/
+    $(".chat_box").on('click', '.video_bar', function(event) {
+        event.preventDefault();
+
+        //停止所有播放的video
+        for (var i = 0; i < $('video').length; i++) {
+            $('video')[i].currentTime = 0;
+            $('video')[i].pause();
+        }
+
+        var othis = $(this);
+        var currentvideo = othis.find('video')[0];
+        currentvideo.play();
+    });
 </script>
 
 </html>
