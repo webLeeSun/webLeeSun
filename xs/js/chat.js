@@ -156,7 +156,7 @@ $('.chat_box').on("touchend", ".info", function(e) {
                 //0726 add 短按则跳转链接
                 if($(this).find(".file_wrap").length>0){
                   var url = $(this).find(".file_wrap").attr("data");
-                  window.location.href=url;
+                  window.open(url);
                 }
             }
         }

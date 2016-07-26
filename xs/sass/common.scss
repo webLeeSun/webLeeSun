@@ -1377,7 +1377,6 @@ a.link_a_2 {
             }
         }
         .info {
-
             h3 {
                 @include font-size(24);
                 @include margin-bottom(10);
@@ -1396,6 +1395,7 @@ a.link_a_2 {
                 box-sizing: border-box;
                 display: inline-block;
                 text-align: left;
+                word-break: break-all;
                 .cor {
                     @include width(10);
                     @include height(15);
@@ -1443,14 +1443,19 @@ a.link_a_2 {
                             }
                             .icon {
                                 @include width(88);
-                                @include padding-top(64);
+                                @include padding-top(68);
                                 @include font-size(18);
+                                @include line-height(22);
                                 @include margin-top(5);
                                 color: #666666;
                                 float: right;
                                 background: url("../images/file.png") no-repeat top center;
                                 background-size: 4.4rem auto;
                                 text-align: center;
+                                overflow: hidden;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
                             }
                         }
                     }
@@ -1467,14 +1472,19 @@ a.link_a_2 {
                             }
                             .icon {
                                 @include width(88);
-                                @include padding-top(64);
+                                @include padding-top(68);
                                 @include font-size(18);
+                                @include line-height(22);
                                 @include margin-top(5);
                                 color: #666666;
                                 float: right;
                                 background: url("../images/voice_file.png") no-repeat top center;
                                 background-size: 4.4rem auto;
                                 text-align: center;
+                                overflow: hidden;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
                             }
                         }
                     }
@@ -1548,8 +1558,18 @@ a.link_a_2 {
                     @include width(313);
                     @include height(256);
                     @include border-radius(5);
-                    background: url("../images/video_hoder.png") no-repeat center center;
-                    background-size: auto 12.8rem;
+                    position: relative;
+                    .start{
+                        @include width(84);
+                        @include height(84);
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        margin-left:-2.1rem;
+                        margin-top:-2.1rem;
+                        background: url("../images/start.png") no-repeat center center;
+                        background-size: 4.2rem auto;
+                    }
                 }
                 .timer {
                     @include font-size(22);
@@ -1587,14 +1607,19 @@ a.link_a_2 {
                             }
                             .icon {
                                 @include width(88);
-                                @include padding-top(64);
+                                @include padding-top(68);
                                 @include font-size(18);
+                                @include line-height(22);
                                 @include margin-top(5);
                                 color: #666666;
                                 float: left;
                                 background: url("../images/file.png") no-repeat top center;
                                 background-size: 4.4rem auto;
                                 text-align: center;
+                                overflow: hidden;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
                             }
                         }
                     }
@@ -1612,14 +1637,19 @@ a.link_a_2 {
                             }
                             .icon {
                                 @include width(88);
-                                @include padding-top(64);
+                                @include padding-top(68);
                                 @include font-size(18);
+                                @include line-height(22);
                                 @include margin-top(5);
                                 color: #666666;
                                 float: left;
                                 background: url("../images/voice_file.png") no-repeat top center;
                                 background-size: 4.4rem auto;
                                 text-align: center;
+                                overflow: hidden;
+                                -webkit-line-clamp: 2;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
                             }
                         }
                     }
@@ -1693,8 +1723,18 @@ a.link_a_2 {
                     @include width(313);
                     @include height(256);
                     @include border-radius(5);
-                    background: url("../images/video_hoder.png") no-repeat center center;
-                    background-size: auto 12.8rem;
+                    position: relative;
+                    .start{
+                        @include width(84);
+                        @include height(84);
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        margin-left:-2.1rem;
+                        margin-top:-2.1rem;
+                        background: url("../images/start.png") no-repeat center center;
+                        background-size: 4.2rem auto;
+                    }
                 }
                 .timer {
                     @include font-size(22);
