@@ -153,21 +153,17 @@ textarea {
         background-size: 1.5rem auto;
     }
     .control_panel {
-        @include width(234);
+        @include width(230);
         @include right(22);
         @include top(92);
         @include border-radius(5);
         display: none;
-        z-index: 3;
+        z-index: 999999;
         position: absolute;
         div {
-            @include line-height(52);
             @include padding(0,10,0,10);
             border-bottom: 1px solid #78b2a6;
             background-color: #016f58;
-            &.active {
-                background-color: #025745;
-            }
             &:first-child {
                 border-top-left-radius: 0.25rem;
                 border-top-right-radius: 0.25rem;
@@ -176,22 +172,29 @@ textarea {
                 border-bottom-left-radius: 0.25rem;
                 border-bottom-right-radius: 0.25rem;
             }
-            span {
+            a {
                 @include padding-left(60);
-                @include font-size(24);
-                @include line-height(52);
+                @include font-size(30);
+                @include line-height(64);
                 display: inline-block;
                 color: #fff;
-                &.voice_on {
+                left: auto;
+                top: auto;
+                position: static;
+                &.voice_toggle {
                     background: url("../images/voice_on.png") no-repeat left center;
                     background-size: 2.8rem auto;
+                    &.off {
+                        background: url("../images/voice_off.png") no-repeat left center;
+                        background-size: 2.8rem auto;
+                    }
                 }
-                &.voice_off {
-                    background: url("../images/voice_off.png") no-repeat left center;
+                &.view {
+                    background: url("../images/top_user.png") no-repeat left center;
                     background-size: 2.8rem auto;
                 }
-                &.members {
-                    background: url("../images/members.png") no-repeat left center;
+                &.toptip {
+                    background: url("../images/top_file.png") no-repeat left center;
                     background-size: 2.8rem auto;
                 }
             }
@@ -1382,10 +1385,10 @@ a.link_a_2 {
                 @include margin-bottom(10);
             }
             span {
-                @include font-size(24);
+                @include font-size(30);
                 @include border-radius(5);
                 @include padding(15,15,15,15);
-                @include line-height(34);
+                @include line-height(38);
                 min-height: 3.2rem;
                 color: #fff;
                 text-align: center;
@@ -1559,14 +1562,14 @@ a.link_a_2 {
                     @include height(256);
                     @include border-radius(5);
                     position: relative;
-                    .start{
+                    .start {
                         @include width(84);
                         @include height(84);
                         position: absolute;
                         left: 50%;
                         top: 50%;
-                        margin-left:-2.1rem;
-                        margin-top:-2.1rem;
+                        margin-left: -2.1rem;
+                        margin-top: -2.1rem;
                         background: url("../images/start.png") no-repeat center center;
                         background-size: 4.2rem auto;
                     }
@@ -1724,14 +1727,14 @@ a.link_a_2 {
                     @include height(256);
                     @include border-radius(5);
                     position: relative;
-                    .start{
+                    .start {
                         @include width(84);
                         @include height(84);
                         position: absolute;
                         left: 50%;
                         top: 50%;
-                        margin-left:-2.1rem;
-                        margin-top:-2.1rem;
+                        margin-left: -2.1rem;
+                        margin-top: -2.1rem;
                         background: url("../images/start.png") no-repeat center center;
                         background-size: 4.2rem auto;
                     }

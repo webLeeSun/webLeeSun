@@ -23,6 +23,8 @@ $(".emoj_img").click(function() {
 
 //初始化iscroll
 var myScroll;
+// 最新修改
+var jump_flag = true;
 
 function loaded() {
     myScroll = new IScroll('#wrapper', {
@@ -33,10 +35,19 @@ function loaded() {
         $("#text_input").blur();
         myScroll.refresh();
 
+        // 最新修改
+        jump_flag = false;
+        clearInterval(timerhandle);
+        $(".back_space").remove();
+
         //new add 0721
         $(".chat_footer").removeClass("emoj_show");
         $(".emoj_box").removeClass("emoj_show");
         $("#wrapper").removeClass("emoj_show");
+    });
+    // 最新修改
+    myScroll.on('scrollEnd', function() {
+        jump_flag = true;
     });
 }
 document.addEventListener('touchmove', function(e) {
@@ -86,6 +97,20 @@ $(".control_btn").click(function() {
     $(".header .control_panel").toggle();
 })
 
+//最新修改
+$(".voice_toggle").click(function() {
+    $(this).toggleClass("off");
+    if ($(this).hasClass("off")) {
+        $(this).text("关闭发言");
+        //do something
+        //ajax...
+    } else {
+        $(this).text("开启发言");
+        //do something
+        //ajax...
+    }
+})
+
 //切换语音文字
 $(".voice").click(function() {
     $(this).toggleClass("bord");
@@ -123,7 +148,8 @@ var timer = 0,
     timerhandle = null;
 //0726 add 绑定事件修改
 $('.chat_box').on("touchstart", ".info", function(e) {
-    e.stopPropagation();
+    //最新修改 删除下面的阻止冒泡
+    // e.stopPropagation();
     if ($(this).parent().hasClass("out")) {
         if (e.target.outerHTML == '<b class="back_space"></b>') {
             $(e.target).parent().parent().parent().remove();
@@ -154,9 +180,10 @@ $('.chat_box').on("touchend", ".info", function(e) {
                 $(".back_space").remove();
 
                 //0726 add 短按则跳转链接
-                if($(this).find(".file_wrap").length>0){
-                  var url = $(this).find(".file_wrap").attr("data");
-                  window.open(url);
+                //最新修改 添加jump_flag为真（滑动停止时）触发跳转。
+                if ($(this).find(".file_wrap").length > 0 && jump_flag) {
+                    var url = $(this).find(".file_wrap").attr("data");
+                    window.open(url);
                 }
             }
         }
