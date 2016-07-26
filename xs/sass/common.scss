@@ -1377,6 +1377,7 @@ a.link_a_2 {
             }
         }
         .info {
+
             h3 {
                 @include font-size(24);
                 @include margin-bottom(10);
@@ -1420,7 +1421,8 @@ a.link_a_2 {
                 float: left;
             }
             .info {
-                @include margin(0,80,0,95);
+                @include margin-left(15);
+                display: inline-block;
                 span {
                     background-color: #2abc9d;
                     .cor {
@@ -1546,7 +1548,8 @@ a.link_a_2 {
                     @include width(313);
                     @include height(256);
                     @include border-radius(5);
-                    vertical-align: top;
+                    background: url("../images/video_hoder.png") no-repeat center center;
+                    background-size: auto 12.8rem;
                 }
                 .timer {
                     @include font-size(22);
@@ -1690,7 +1693,8 @@ a.link_a_2 {
                     @include width(313);
                     @include height(256);
                     @include border-radius(5);
-                    vertical-align: top;
+                    background: url("../images/video_hoder.png") no-repeat center center;
+                    background-size: auto 12.8rem;
                 }
                 .timer {
                     @include font-size(22);

@@ -121,32 +121,44 @@ $("#newImg").on("change", function() {
 //长按撤回
 var timer = 0,
     timerhandle = null;
-$('.msg.out').on("touchstart", ".info", function(e) {
+//0726 add 绑定事件修改
+$('.chat_box').on("touchstart", ".info", function(e) {
     e.stopPropagation();
-    if (e.target.outerHTML == '<b class="back_space"></b>') {
-        $(e.target).parent().parent().parent().remove();
-        //ajax
-        //...
-        $("#chat").append('<span class="back">你撤回了一条消息</span>');
-    } else {
-        $(".back_space").remove();
-        var othis = $(this);
-        timer = 0;
-        clearInterval(timerhandle);
-        timerhandle = setInterval(function() {
-            timer++;
-            if (timer >= 1) {
-                clearInterval(timerhandle);
-                othis.find("span").append('<b class="back_space"></b>');
-            }
-        }, 1000);
-    }
-});
-$('.msg.out').on("touchend", ".info", function(e) {
-        if (timer < 1) {
+    if ($(this).parent().hasClass("out")) {
+        if (e.target.outerHTML == '<b class="back_space"></b>') {
+            $(e.target).parent().parent().parent().remove();
+            //ajax
+            //...
+            $("#chat").append('<span class="back">你撤回了一条消息</span>');
+        } else {
+            $(".back_space").remove();
+            var othis = $(this);
             timer = 0;
             clearInterval(timerhandle);
-            $(".back_space").remove();
+            timerhandle = setInterval(function() {
+                timer++;
+                if (timer >= 1) {
+                    clearInterval(timerhandle);
+                    othis.find("span").append('<b class="back_space"></b>');
+                }
+            }, 1000);
+        }
+    }
+});
+//0726 add 绑定事件修改
+$('.chat_box').on("touchend", ".info", function(e) {
+        if ($(this).parent().hasClass("out")) {
+            if (timer < 1) {
+                timer = 0;
+                clearInterval(timerhandle);
+                $(".back_space").remove();
+
+                //0726 add 短按则跳转链接
+                if($(this).find(".file_wrap").length>0){
+                  var url = $(this).find(".file_wrap").attr("data");
+                  window.location.href=url;
+                }
+            }
         }
     })
     //websocketJs
