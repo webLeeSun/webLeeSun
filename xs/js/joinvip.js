@@ -20,22 +20,22 @@ var vm = new Vue({
             e.preventDefault();
             var othis = $(e.target);
             var hobby = othis.text();
-            if (othis.parent().hasClass("active")) {
-                othis.parent().removeClass("active");
+            if (othis.parent().parent().hasClass("active")) {
+                othis.parent().parent().removeClass("active");
                 vm.submit_data.hobby.$remove(hobby);
             } else {
                 if (vm.submit_data.hobby.length == 2) {
-                    $.each($(".fav_list").find("a"), function(i, item) {
+                    $.each($(".fav_list").find("span"), function(i, item) {
                         if ($(this).text() == vm.submit_data.hobby[0]) {
-                            $(this).parent().removeClass("active");
+                            $(this).parent().parent().removeClass("active");
                             vm.submit_data.hobby.$remove($(this).text());
                             return false;
                         }
                     });
-                    othis.parent().addClass("active");
+                    othis.parent().parent().addClass("active");
                     vm.submit_data.hobby.push(hobby);
                 } else {
-                    othis.parent().addClass("active");
+                    othis.parent().parent().addClass("active");
                     vm.submit_data.hobby.push(hobby);
                 }
             }
@@ -59,7 +59,6 @@ var vm = new Vue({
     watch: {
         'submit_data': {
             handler: function(val, oldVal) {
-                console.log(vm.submit_data.birthday);
                 if (vm.submit_data.name != "" && vm.submit_data.email != "" && vm.submit_data.address != "" && vm.submit_data.profession != "" && vm.submit_data.birthday != "" && vm.submit_data.money != "") {
                     if (vm.submit_data.hobby.length != 0) {
                         vm.pay_flag = true;

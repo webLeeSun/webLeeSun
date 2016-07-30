@@ -145,7 +145,7 @@ textarea {
         @include width(30);
         @include height(30);
         @include right(22);
-        @include top(70);
+        @include top(80);
         display: none;
         z-index: 2;
         position: absolute;
@@ -153,29 +153,30 @@ textarea {
         background-size: 1.5rem auto;
     }
     .control_panel {
-        @include width(230);
+        @include width(234);
         @include right(22);
-        @include top(92);
-        @include border-radius(5);
+        @include top(102);
+        @include border-radius(10);
+        background-color: #424444;
         display: none;
         z-index: 999999;
         position: absolute;
         div {
-            @include padding(0,10,0,10);
-            border-bottom: 1px solid #78b2a6;
-            background-color: #016f58;
+            @include margin(0,12,0,12);
+            border-bottom: 1px solid #9a9b9b;
             &:first-child {
-                border-top-left-radius: 0.25rem;
-                border-top-right-radius: 0.25rem;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
             }
             &:last-child {
-                border-bottom-left-radius: 0.25rem;
-                border-bottom-right-radius: 0.25rem;
+                border-bottom: none;
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
             }
             a {
-                @include padding-left(60);
-                @include font-size(30);
-                @include line-height(64);
+                @include padding-left(80);
+                @include font-size(24);
+                @include line-height(66);
                 display: inline-block;
                 color: #fff;
                 left: auto;
@@ -302,6 +303,10 @@ a.mid_btn {
         @include right(33);
         margin: 0;
         position: fixed;
+    }
+    &.short {
+        @include width(364);
+        margin: 1.8rem auto;
     }
 }
 .pb {
@@ -649,16 +654,29 @@ a.link_a {
             }
         }
         a {
-            @include width(140);
-            @include height(56);
+            @include width(148);
+            @include height(94);
             @include font-size(24);
-            @include line-height(54);
-            @include border-radius(56);
+            @include border-radius(10);
             text-align: center;
             box-sizing: border-box;
             border: 1px solid #2abc9d;
             color: #2abc9d;
             display: inline-block;
+            &.active {
+                background: #2abc9d;
+                color: #fff;
+            }
+            span {
+                @include width(148);
+                @include height(94);
+                @include line-height(34);
+                @include padding(0,12,0,12);
+                box-sizing: border-box;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
         }
     }
 }
@@ -831,7 +849,7 @@ a.link_a {
     overflow: hidden;
     .ga {
         float: left;
-        margin: 0 2%;
+        margin: 0 2% 0.75rem;
         width: 21%;
         .ga_img {
             padding-bottom: 100%;
@@ -861,6 +879,9 @@ a.link_a_2 {
     @include font-size(28);
     display: block;
     border-top: 1px solid #bebebe;
+    &:first-child {
+        border: none;
+    }
 }
 .my_confirm {
     position: fixed;
@@ -1386,14 +1407,15 @@ a.link_a_2 {
             }
             span {
                 @include font-size(30);
-                @include border-radius(5);
+                @include border-radius(10);
                 @include padding(15,15,15,15);
                 @include line-height(38);
                 min-height: 3.2rem;
-                color: #fff;
                 text-align: center;
                 min-width: 5rem;
-                background-color: #008a6d;
+                background-color: #fff;
+                border: 1px solid #a0a0a0;
+                color: #010101;
                 position: relative;
                 box-sizing: border-box;
                 display: inline-block;
@@ -1407,15 +1429,15 @@ a.link_a_2 {
                     position: absolute;
                 }
                 .back_space {
-                    @include width(107);
-                    @include height(57);
+                    @include width(124);
+                    @include height(66);
                     z-index: 99;
                     display: block;
                     position: absolute;
-                    top: -2.9rem;
+                    top: -3.3rem;
                     left: -2rem;
                     background: url("../images/back_space.png") no-repeat center center;
-                    background-size: auto 2.85rem;
+                    background-size: auto 3.3rem;
                 }
             }
         }
@@ -1424,10 +1446,13 @@ a.link_a_2 {
                 float: left;
             }
             .info {
-                @include margin-left(15);
-                display: inline-block;
+                @include margin-left(95);
+                @include margin-right(95);
+                display: block;
                 span {
-                    background-color: #2abc9d;
+                    background-color: #a3ec60;
+                    border: 1px solid #86ce37;
+                    color: #000;
                     .cor {
                         left: -0.5rem;
                         background: url("../images/ll.png") no-repeat center center;
@@ -1546,11 +1571,13 @@ a.link_a_2 {
             }
             .video_bar {
                 background-color: transparent!important;
-                background: transparent;
-                padding: 0;
+                background: transparent!important;
+                padding: 0 !important;
+                border: none!important;
                 .cor {
                     background: url("../images/video_arrow_l.png") no-repeat center center!important;
                     background-size: 0.5rem auto!important;
+                    display: none;
                 }
                 video {
                     position: absolute;
@@ -1560,7 +1587,7 @@ a.link_a_2 {
                 .video_hoder {
                     @include width(313);
                     @include height(256);
-                    @include border-radius(5);
+                    @include border-radius(10);
                     position: relative;
                     .start {
                         @include width(84);
@@ -1582,13 +1609,26 @@ a.link_a_2 {
                     display: block;
                 }
             }
+            .img_bar {
+                max-width: 50%;
+                padding: 0;
+                background: transparent;
+                border: none;
+                img {
+                    display: block;
+                    width: auto;
+                    max-width: 100%;
+                    vertical-align: top;
+                    border-radius: .5rem;
+                }
+            }
         }
         &.out {
             .avatar {
                 float: right;
             }
             .info {
-                @include margin(22,95,0,80);
+                @include margin(22,95,0,95);
                 text-align: right;
                 span {
                     .cor {
@@ -1711,11 +1751,13 @@ a.link_a_2 {
             }
             .video_bar {
                 background-color: transparent!important;
-                background: transparent;
-                padding: 0;
+                background: transparent!important;
+                padding: 0 !important;
+                border: none!important;
                 .cor {
                     background: url("../images/video_arrow_r.png") no-repeat center center!important;
                     background-size: 0.5rem auto!important;
+                    display: none;
                 }
                 video {
                     position: absolute;
@@ -1725,7 +1767,7 @@ a.link_a_2 {
                 .video_hoder {
                     @include width(313);
                     @include height(256);
-                    @include border-radius(5);
+                    @include border-radius(10);
                     position: relative;
                     .start {
                         @include width(84);
@@ -1745,6 +1787,19 @@ a.link_a_2 {
                     color: #666666;
                     text-align: right;
                     display: block;
+                }
+            }
+            .img_bar {
+                max-width: 50%;
+                padding: 0;
+                background: transparent;
+                border: none;
+                img {
+                    display: block;
+                    width: auto;
+                    max-width: 100%;
+                    vertical-align: top;
+                    border-radius: .5rem;
                 }
             }
         }

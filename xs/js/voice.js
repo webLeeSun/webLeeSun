@@ -59,12 +59,23 @@ wx.ready(function() {
     });
     //开始录音
     $('.voice_on_btn').bind("touchstart", function() {
+        // 0731添加——pdf问题7：一遍播放音频，一遍开始
+        //停止所有播放的audio
+        $('.voice_bar').removeClass('active');
+        for (var i = 0; i < $('audio').length; i++) {
+            $('audio')[i].currentTime = 0;
+            $('audio')[i].pause();
+        }
+        //关于pdf问题4、5：如果需要隐藏录音的图标，hide即可
+        //$(".mic_pop").hide();
+
         $(".mic_pop").toggle();
         wx.startRecord();
     });
     //结束录音-上传
     $('.voice_on_btn').bind("touchend", function() {
         $(".mic_pop").toggle();
+
         wx.stopRecord({
             success: function(res) {
                 localId = res.localId;

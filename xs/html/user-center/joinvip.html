@@ -64,22 +64,34 @@
             <h3 class="fav_title">请您任选下面1-2个感兴趣的版块</h3>
             <div class="fav_list">
                 <div class="fav_outer">
-                    <a href="javascript:;" v-on:click="choose_hobby">足球讲解</a>
+                    <a href="javascript:;">
+                      <span v-on:click="choose_hobby">足球讲解足球讲解足球讲解</span>
+                    </a>
                 </div>
                 <div class="fav_outer">
-                    <a href="javascript:;" v-on:click="choose_hobby">配音</a>
+                    <a href="javascript:;">
+                      <span v-on:click="choose_hobby">配音</span>
+                    </a>
                 </div>
                 <div class="fav_outer">
-                    <a href="javascript:;" v-on:click="choose_hobby">表演</a>
+                    <a href="javascript:;">
+                      <span v-on:click="choose_hobby">表演</span>
+                    </a>
                 </div>
                 <div class="fav_outer">
-                    <a href="javascript:;" v-on:click="choose_hobby">主持艺术</a>
+                    <a href="javascript:;">
+                      <span v-on:click="choose_hobby">主持艺术</span>
+                    </a>
                 </div>
                 <div class="fav_outer">
-                    <a href="javascript:;" v-on:click="choose_hobby">朗诵</a>
+                    <a href="javascript:;">
+                      <span v-on:click="choose_hobby">朗诵</span>
+                    </a>
                 </div>
                 <div class="fav_outer">
-                    <a href="javascript:;" v-on:click="choose_hobby">商务演讲</a>
+                    <a href="javascript:;">
+                      <span v-on:click="choose_hobby">商务演讲</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -99,7 +111,7 @@
     </div>
 
     <div class="pb">
-        <a href="javascript:;" class="mid_btn spe" v-bind:class="{ 'active': pay_flag}" v-on:click="pay_action">立即支付</a>
+        <a href="javascript:;" class="mid_btn spe short" v-bind:class="{ 'active': pay_flag}" v-on:click="pay_action">立即支付</a>
     </div>
 
     <div class="cur" v-bind:class="{ 'show': pop_flag}">

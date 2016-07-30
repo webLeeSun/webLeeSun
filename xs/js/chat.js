@@ -1,4 +1,3 @@
-//new add 0721
 //emoj打开
 $(".emoj").click(function() {
     $(".chat_footer").toggleClass("emoj_show");
@@ -11,7 +10,6 @@ $(".emoj").click(function() {
     });
 })
 
-//new add 0721
 //发送emoj
 $(".emoj_img").click(function() {
     var img_src = $(this).find("img").attr("src");
@@ -23,7 +21,6 @@ $(".emoj_img").click(function() {
 
 //初始化iscroll
 var myScroll;
-// 最新修改
 var jump_flag = true;
 
 function loaded() {
@@ -35,17 +32,15 @@ function loaded() {
         $("#text_input").blur();
         myScroll.refresh();
 
-        // 最新修改
         jump_flag = false;
         clearInterval(timerhandle);
         $(".back_space").remove();
 
-        //new add 0721
         $(".chat_footer").removeClass("emoj_show");
         $(".emoj_box").removeClass("emoj_show");
         $("#wrapper").removeClass("emoj_show");
     });
-    // 最新修改
+
     myScroll.on('scrollEnd', function() {
         jump_flag = true;
     });
@@ -55,7 +50,6 @@ document.addEventListener('touchmove', function(e) {
 }, false);
 
 //需要滚动到底部时调用
-//0726 add 添加高度判断
 function scrollChat() {
     var max_h = Math.abs(myScroll.maxScrollY),
         current_h = Math.abs(myScroll.y);
@@ -75,7 +69,6 @@ $("#text_input").focus(function() {
         }, 100);
     }, 200);
 
-    //new add 0721
     $(".chat_footer").removeClass("emoj_show");
     $(".emoj_box").removeClass("emoj_show");
     $("#wrapper").removeClass("emoj_show");
@@ -97,7 +90,6 @@ $(".control_btn").click(function() {
     $(".header .control_panel").toggle();
 })
 
-//最新修改
 $(".voice_toggle").click(function() {
     $(this).toggleClass("off");
     if ($(this).hasClass("off")) {
@@ -117,7 +109,21 @@ $(".voice").click(function() {
     $(".input_wrap").toggle();
     $(".voice_on_btn").toggle();
 
-    //new add 0721
+    // 0731添加——进入语音后隐藏文字发送按钮
+    if ($(this).hasClass("bord")) {
+        $(".add").show();
+        $(".send_message").hide();
+    } else {
+        if($.trim($("#text_input").val()) != ""){
+            $(".add").hide();
+            $(".send_message").show();
+        } else {
+            $(".add").show();
+            $(".send_message").hide();
+        }
+    }
+    
+
     $(".chat_footer").removeClass("emoj_show");
     $(".emoj_box").removeClass("emoj_show");
     $("#wrapper").removeClass("emoj_show");
@@ -146,10 +152,7 @@ $("#newImg").on("change", function() {
 //长按撤回
 var timer = 0,
     timerhandle = null;
-//0726 add 绑定事件修改
 $('.chat_box').on("touchstart", ".info", function(e) {
-    //最新修改 删除下面的阻止冒泡
-    // e.stopPropagation();
     if ($(this).parent().hasClass("out")) {
         if (e.target.outerHTML == '<b class="back_space"></b>') {
             $(e.target).parent().parent().parent().remove();
@@ -169,9 +172,16 @@ $('.chat_box').on("touchstart", ".info", function(e) {
                 }
             }, 1000);
         }
+    } else {
+        var othis = $(this);
+        timer = 0;
+        clearInterval(timerhandle);
+        timerhandle = setInterval(function() {
+            timer++;
+        }, 1000);
     }
 });
-//0726 add 绑定事件修改
+
 $('.chat_box').on("touchend", ".info", function(e) {
         if ($(this).parent().hasClass("out")) {
             if (timer < 1) {
@@ -179,8 +189,6 @@ $('.chat_box').on("touchend", ".info", function(e) {
                 clearInterval(timerhandle);
                 $(".back_space").remove();
 
-                //0726 add 短按则跳转链接
-                //最新修改 添加jump_flag为真（滑动停止时）触发跳转。
                 if ($(this).find(".file_wrap").length > 0 && jump_flag) {
                     var url = $(this).find(".file_wrap").attr("data");
                     window.open(url);
@@ -246,6 +254,10 @@ function say(avatar, nickname, content, time) {
 function onSubmit() {
 
     scrollChat();
+
+    // 0731添加——pdf问题3：发送消息后发送变为添加图标
+    $(".add").show();
+    $(".send_message").hide();
 
     alert("已提交");
     var input = document.getElementById("text_input");
