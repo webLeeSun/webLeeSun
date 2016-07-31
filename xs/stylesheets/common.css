@@ -159,13 +159,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 @media screen and (min-width: 410px) and (orientation: portrait) {
   /* line 8, ../sass/mixin.scss */
   html {
-    font-size: 75%;
+    font-size: 62.5%;
   }
 }
 @media screen and (min-width: 520px) and (orientation: portrait) {
   /* line 14, ../sass/mixin.scss */
   html {
-    font-size: 87.5%;
+    font-size: 62.5%;
   }
 }
 /* line 17, ../sass/common.scss */
@@ -173,9 +173,10 @@ html {
   height: 100%;
   text-rendering: optimizeLegibility;
   -webkit-tap-highlight-color: transparent;
+  font-size: 62.5%;
 }
 
-/* line 22, ../sass/common.scss */
+/* line 23, ../sass/common.scss */
 body {
   background: #f3f3f3;
   color: #202020;
@@ -183,57 +184,57 @@ body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
 }
-/* line 28, ../sass/common.scss */
+/* line 29, ../sass/common.scss */
 body img {
   width: 100%;
 }
-/* line 31, ../sass/common.scss */
+/* line 32, ../sass/common.scss */
 body.hasfooter {
   padding-bottom: 5rem;
 }
-/* line 34, ../sass/common.scss */
+/* line 35, ../sass/common.scss */
 body.hasfooter_spe {
   padding-bottom: 12.25rem;
 }
-/* line 37, ../sass/common.scss */
+/* line 38, ../sass/common.scss */
 body.bg_w {
   background: #fff;
 }
 
-/* line 41, ../sass/common.scss */
+/* line 42, ../sass/common.scss */
 a img {
   border: 0;
 }
 
-/* line 44, ../sass/common.scss */
+/* line 45, ../sass/common.scss */
 a {
   text-decoration: none;
   outline: 0;
   color: inherit;
 }
 
-/* line 49, ../sass/common.scss */
+/* line 50, ../sass/common.scss */
 a:visited {
   text-decoration: none;
 }
 
-/* line 52, ../sass/common.scss */
+/* line 53, ../sass/common.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 55, ../sass/common.scss */
+/* line 56, ../sass/common.scss */
 a:active {
   border: 0 none;
   outline: none;
 }
 
-/* line 59, ../sass/common.scss */
+/* line 60, ../sass/common.scss */
 p {
   word-wrap: break-word;
 }
 
-/* line 62, ../sass/common.scss */
+/* line 63, ../sass/common.scss */
 input,
 select {
   border: 0;
@@ -245,7 +246,7 @@ select {
   background: transparent;
 }
 
-/* line 72, ../sass/common.scss */
+/* line 73, ../sass/common.scss */
 textarea {
   border: 0;
   margin: 0;
@@ -257,25 +258,25 @@ textarea {
   resize: none;
 }
 
-/* line 82, ../sass/common.scss */
+/* line 83, ../sass/common.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 85, ../sass/common.scss */
+/* line 86, ../sass/common.scss */
 .header {
   height: 4.6rem;
   position: relative;
   background: #2bbc9d;
 }
-/* line 89, ../sass/common.scss */
+/* line 90, ../sass/common.scss */
 .header a {
   left: 1.1rem;
   top: 1.35rem;
   position: absolute;
 }
-/* line 94, ../sass/common.scss */
+/* line 95, ../sass/common.scss */
 .header h2 {
   font-size: 1.8rem;
   line-height: 4.6rem;
@@ -289,7 +290,7 @@ textarea {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 104, ../sass/common.scss */
+/* line 105, ../sass/common.scss */
 .header a.search {
   right: 1.1rem;
   top: 1.35rem;
@@ -300,7 +301,7 @@ textarea {
   background: url("../images/search.png") no-repeat center center;
   background-size: 1.85rem auto;
 }
-/* line 114, ../sass/common.scss */
+/* line 115, ../sass/common.scss */
 .header a.control_btn {
   right: 1.1rem;
   top: 1.35rem;
@@ -311,7 +312,7 @@ textarea {
   background: url("../images/contr_btn.png") no-repeat center center;
   background-size: 1.85rem auto;
 }
-/* line 124, ../sass/common.scss */
+/* line 125, ../sass/common.scss */
 .header a.user_btn {
   right: 1.1rem;
   top: 1.25rem;
@@ -322,7 +323,7 @@ textarea {
   background: url("../images/users.png") no-repeat center center;
   background-size: 1.4rem auto;
 }
-/* line 134, ../sass/common.scss */
+/* line 135, ../sass/common.scss */
 .header a.more_btn {
   right: 1.1rem;
   top: 1.3rem;
@@ -333,7 +334,7 @@ textarea {
   background: url("../images/more.png") no-repeat center center;
   background-size: 1.85rem auto;
 }
-/* line 144, ../sass/common.scss */
+/* line 145, ../sass/common.scss */
 .header .cor {
   width: 1.5rem;
   height: 1.5rem;
@@ -345,7 +346,7 @@ textarea {
   background: url("../images/t_arrow.png") no-repeat center center;
   background-size: 1.5rem auto;
 }
-/* line 155, ../sass/common.scss */
+/* line 156, ../sass/common.scss */
 .header .control_panel {
   width: 11.7rem;
   right: 1.1rem;
@@ -356,7 +357,7 @@ textarea {
   z-index: 999999;
   position: absolute;
 }
-/* line 164, ../sass/common.scss */
+/* line 165, ../sass/common.scss */
 .header .control_panel div {
   margin-top: 0rem;
   margin-right: 0.6rem;
@@ -364,18 +365,18 @@ textarea {
   margin-left: 0.6rem;
   border-bottom: 1px solid #9a9b9b;
 }
-/* line 167, ../sass/common.scss */
+/* line 168, ../sass/common.scss */
 .header .control_panel div:first-child {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-/* line 171, ../sass/common.scss */
+/* line 172, ../sass/common.scss */
 .header .control_panel div:last-child {
   border-bottom: none;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
-/* line 176, ../sass/common.scss */
+/* line 177, ../sass/common.scss */
 .header .control_panel div a {
   padding-left: 4rem;
   font-size: 1.2rem;
@@ -386,27 +387,27 @@ textarea {
   top: auto;
   position: static;
 }
-/* line 185, ../sass/common.scss */
+/* line 186, ../sass/common.scss */
 .header .control_panel div a.voice_toggle {
   background: url("../images/voice_on.png") no-repeat left center;
   background-size: 2.8rem auto;
 }
-/* line 188, ../sass/common.scss */
+/* line 189, ../sass/common.scss */
 .header .control_panel div a.voice_toggle.off {
   background: url("../images/voice_off.png") no-repeat left center;
   background-size: 2.8rem auto;
 }
-/* line 193, ../sass/common.scss */
+/* line 194, ../sass/common.scss */
 .header .control_panel div a.view {
   background: url("../images/top_user.png") no-repeat left center;
   background-size: 2.8rem auto;
 }
-/* line 197, ../sass/common.scss */
+/* line 198, ../sass/common.scss */
 .header .control_panel div a.toptip {
   background: url("../images/top_file.png") no-repeat left center;
   background-size: 2.8rem auto;
 }
-/* line 204, ../sass/common.scss */
+/* line 205, ../sass/common.scss */
 .header .right_btn {
   font-size: 1.4rem;
   line-height: 4.6rem;
@@ -417,7 +418,7 @@ textarea {
   position: absolute;
 }
 
-/* line 214, ../sass/common.scss */
+/* line 215, ../sass/common.scss */
 .footer {
   height: 5rem;
   position: fixed;
@@ -427,7 +428,7 @@ textarea {
   background: #2abc9d;
   overflow: hidden;
 }
-/* line 222, ../sass/common.scss */
+/* line 223, ../sass/common.scss */
 .footer a {
   display: block;
   float: left;
@@ -435,26 +436,26 @@ textarea {
   height: 100%;
   text-align: center;
 }
-/* line 228, ../sass/common.scss */
+/* line 229, ../sass/common.scss */
 .footer a span {
   margin: 0 auto;
   margin-top: 0.4rem;
   margin-bottom: 0.5rem;
   display: block;
 }
-/* line 234, ../sass/common.scss */
+/* line 235, ../sass/common.scss */
 .footer a h3 {
   font-size: 1.2rem;
   line-height: 1.2rem;
   color: #fff;
   text-align: center;
 }
-/* line 240, ../sass/common.scss */
+/* line 241, ../sass/common.scss */
 .footer a.active {
   background: #0f8d72;
 }
 
-/* line 245, ../sass/common.scss */
+/* line 246, ../sass/common.scss */
 .login_wrap {
   margin-top: 1.5rem;
   border: solid #bebebe;
@@ -462,7 +463,7 @@ textarea {
   background: #fff;
 }
 
-/* line 251, ../sass/common.scss */
+/* line 252, ../sass/common.scss */
 .ele_box {
   height: 4.15rem;
   margin-top: 0rem;
@@ -472,22 +473,22 @@ textarea {
   border-bottom: 1px solid #bebebe;
   overflow: hidden;
 }
-/* line 256, ../sass/common.scss */
+/* line 257, ../sass/common.scss */
 .ele_box:last-child {
   border-bottom: none;
 }
-/* line 259, ../sass/common.scss */
+/* line 260, ../sass/common.scss */
 .ele_box .ml_input {
   margin-right: 7.5rem;
 }
-/* line 262, ../sass/common.scss */
+/* line 263, ../sass/common.scss */
 .ele_box input {
   margin-top: 1.25rem;
   line-height: 1.65rem;
   font-size: 1.4rem;
   color: #202020;
 }
-/* line 268, ../sass/common.scss */
+/* line 269, ../sass/common.scss */
 .ele_box span.get_code {
   width: 7.25rem;
   height: 1.9rem;
@@ -500,12 +501,12 @@ textarea {
   text-align: center;
   background: #bebebe;
 }
-/* line 279, ../sass/common.scss */
+/* line 280, ../sass/common.scss */
 .ele_box span.get_code.active {
   background: #2abc9d;
 }
 
-/* line 284, ../sass/common.scss */
+/* line 285, ../sass/common.scss */
 a.mid_btn {
   height: 3.55rem;
   line-height: 3.55rem;
@@ -520,15 +521,15 @@ a.mid_btn {
   color: #fff;
   background: #bebebe;
 }
-/* line 294, ../sass/common.scss */
+/* line 295, ../sass/common.scss */
 a.mid_btn.active {
   background: #2abc9d;
 }
-/* line 297, ../sass/common.scss */
+/* line 298, ../sass/common.scss */
 a.mid_btn.spe.active {
   background: #fe6a2a;
 }
-/* line 300, ../sass/common.scss */
+/* line 301, ../sass/common.scss */
 a.mid_btn.spe.active.fixed {
   bottom: 3rem;
   left: 1.65rem;
@@ -536,27 +537,27 @@ a.mid_btn.spe.active.fixed {
   margin: 0;
   position: fixed;
 }
-/* line 307, ../sass/common.scss */
+/* line 308, ../sass/common.scss */
 a.mid_btn.short {
   width: 18.2rem;
   margin: 1.8rem auto;
 }
 
-/* line 312, ../sass/common.scss */
+/* line 313, ../sass/common.scss */
 .pb {
   padding-bottom: 1.8rem;
 }
 
-/* line 315, ../sass/common.scss */
+/* line 316, ../sass/common.scss */
 .section {
   margin-top: 1.5rem;
   background: #fff;
 }
-/* line 318, ../sass/common.scss */
+/* line 319, ../sass/common.scss */
 .section.mg {
   padding-bottom: 14rem;
 }
-/* line 321, ../sass/common.scss */
+/* line 322, ../sass/common.scss */
 .section .user_box {
   padding-top: 1.5rem;
   padding-right: 1.15rem;
@@ -567,40 +568,40 @@ a.mid_btn.short {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 327, ../sass/common.scss */
+/* line 328, ../sass/common.scss */
 .section .user_box .avatar {
   width: 7.85rem;
   height: 7.85rem;
   float: left;
   border-radius: 100%;
 }
-/* line 332, ../sass/common.scss */
+/* line 333, ../sass/common.scss */
 .section .user_box .avatar img {
   border-radius: 100%;
   width: 100%;
   height: 100%;
 }
-/* line 338, ../sass/common.scss */
+/* line 339, ../sass/common.scss */
 .section .user_box .info {
   padding-left: 1rem;
   height: 7.85rem;
   vertical-align: middle;
   display: table-cell;
 }
-/* line 343, ../sass/common.scss */
+/* line 344, ../sass/common.scss */
 .section .user_box .info .fo {
   margin-bottom: 0.75rem;
   font-size: 1.4rem;
   overflow: hidden;
 }
-/* line 347, ../sass/common.scss */
+/* line 348, ../sass/common.scss */
 .section .user_box .info .fo label {
   line-height: 1.4rem;
   width: 9rem;
   display: block;
   float: left;
 }
-/* line 353, ../sass/common.scss */
+/* line 354, ../sass/common.scss */
 .section .user_box .info .fo p {
   line-height: 1.4rem;
   margin-left: 9rem;
@@ -608,11 +609,11 @@ a.mid_btn.short {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 360, ../sass/common.scss */
+/* line 361, ../sass/common.scss */
 .section .user_box .info .fo:last-child {
   margin-bottom: 0;
 }
-/* line 366, ../sass/common.scss */
+/* line 367, ../sass/common.scss */
 .section .warning {
   padding-top: 1rem;
   padding-right: 1.65rem;
@@ -621,13 +622,13 @@ a.mid_btn.short {
   border-top: 1px solid #bebebe;
   position: relative;
 }
-/* line 370, ../sass/common.scss */
+/* line 371, ../sass/common.scss */
 .section .warning span.icon-warning {
   left: 1.25rem;
   top: 2.2rem;
   position: absolute;
 }
-/* line 375, ../sass/common.scss */
+/* line 376, ../sass/common.scss */
 .section .warning p {
   font-size: 1.2rem;
   line-height: 2.2rem;
@@ -635,20 +636,20 @@ a.mid_btn.short {
   text-align: justify;
 }
 
-/* line 383, ../sass/common.scss */
+/* line 384, ../sass/common.scss */
 .user_box {
   border-bottom: 1px solid #bebebe;
 }
 
-/* line 386, ../sass/common.scss */
+/* line 387, ../sass/common.scss */
 .myclass_wrap {
   background: #fff;
 }
-/* line 389, ../sass/common.scss */
+/* line 390, ../sass/common.scss */
 .myclass_wrap li:last-child .class_box {
   border-bottom: 0;
 }
-/* line 393, ../sass/common.scss */
+/* line 394, ../sass/common.scss */
 .myclass_wrap .class_box {
   margin-top: 0rem;
   margin-right: 1.15rem;
@@ -661,26 +662,26 @@ a.mid_btn.short {
   border-bottom: 1px solid #bebebe;
   background: #fff;
 }
-/* line 398, ../sass/common.scss */
+/* line 399, ../sass/common.scss */
 .myclass_wrap .class_box .des_box {
   padding-right: 3rem;
   position: relative;
 }
-/* line 401, ../sass/common.scss */
+/* line 402, ../sass/common.scss */
 .myclass_wrap .class_box .des_box h2 {
   font-size: 1.4rem;
   line-height: 2.9rem;
 }
-/* line 405, ../sass/common.scss */
+/* line 406, ../sass/common.scss */
 .myclass_wrap .class_box .des_box p {
   font-size: 1.2rem;
   line-height: 2.7rem;
 }
-/* line 408, ../sass/common.scss */
+/* line 409, ../sass/common.scss */
 .myclass_wrap .class_box .des_box p span {
   margin-left: 2.5rem;
 }
-/* line 412, ../sass/common.scss */
+/* line 413, ../sass/common.scss */
 .myclass_wrap .class_box .des_box .progress {
   top: 0.75rem;
   width: 2.5rem;
@@ -691,17 +692,17 @@ a.mid_btn.short {
   background-size: 2.5rem auto;
   text-align: center;
 }
-/* line 421, ../sass/common.scss */
+/* line 422, ../sass/common.scss */
 .myclass_wrap .class_box .des_box .progress span {
   font-size: 1.1rem;
   color: #202020;
 }
-/* line 424, ../sass/common.scss */
+/* line 425, ../sass/common.scss */
 .myclass_wrap .class_box .des_box .progress span b {
   font-weight: normal;
   color: #202020;
 }
-/* line 431, ../sass/common.scss */
+/* line 432, ../sass/common.scss */
 .myclass_wrap .class_box .in_class {
   width: 9.9rem;
   height: 2.4rem;
@@ -715,12 +716,12 @@ a.mid_btn.short {
   display: block;
   background: #29c0a0;
 }
-/* line 443, ../sass/common.scss */
+/* line 444, ../sass/common.scss */
 .myclass_wrap .class_box .in_class.over {
   background: #bebebe;
 }
 
-/* line 449, ../sass/common.scss */
+/* line 450, ../sass/common.scss */
 h2.link_title {
   font-size: 1.5rem;
   line-height: 3.95rem;
@@ -732,7 +733,7 @@ h2.link_title {
   font-weight: 600;
 }
 
-/* line 456, ../sass/common.scss */
+/* line 457, ../sass/common.scss */
 a.link_a {
   line-height: 4.15rem;
   margin-top: 0rem;
@@ -744,26 +745,26 @@ a.link_a {
   border-bottom: 1px solid #bebebe;
   position: relative;
 }
-/* line 463, ../sass/common.scss */
+/* line 464, ../sass/common.scss */
 a.link_a:last-child {
   border-bottom: none;
 }
-/* line 466, ../sass/common.scss */
+/* line 467, ../sass/common.scss */
 a.link_a.g_icon {
   padding-left: 4.75rem;
   background: url("../images/icon-group.png") no-repeat 0.5rem center;
   background-size: 2.5rem auto;
 }
-/* line 470, ../sass/common.scss */
+/* line 471, ../sass/common.scss */
 a.link_a.g_icon.g_icon.ot {
   background: url("../images/icon-group-ot.png") no-repeat 0.5rem center;
   background-size: 2.5rem auto;
 }
-/* line 475, ../sass/common.scss */
+/* line 476, ../sass/common.scss */
 a.link_a.g_icon:last-child {
   border-bottom: 1px solid #bebebe;
 }
-/* line 478, ../sass/common.scss */
+/* line 479, ../sass/common.scss */
 a.link_a span {
   line-height: 4.15rem;
   font-size: 1.2rem;
@@ -773,12 +774,12 @@ a.link_a span {
   right: 0;
   top: 0;
 }
-/* line 487, ../sass/common.scss */
+/* line 488, ../sass/common.scss */
 a.link_a .time_box {
   float: right;
   color: #bebebe;
 }
-/* line 490, ../sass/common.scss */
+/* line 491, ../sass/common.scss */
 a.link_a .time_box input {
   width: 4rem;
   font-size: 1.2rem;
@@ -788,7 +789,7 @@ a.link_a .time_box input {
   vertical-align: middle;
 }
 
-/* line 500, ../sass/common.scss */
+/* line 501, ../sass/common.scss */
 .info_a {
   line-height: 4.15rem;
   margin-top: 0rem;
@@ -799,7 +800,7 @@ a.link_a .time_box input {
   display: block;
 }
 
-/* line 506, ../sass/common.scss */
+/* line 507, ../sass/common.scss */
 .hy_title {
   line-height: 4rem;
   font-size: 1.5rem;
@@ -807,7 +808,7 @@ a.link_a .time_box input {
   text-align: center;
 }
 
-/* line 512, ../sass/common.scss */
+/* line 513, ../sass/common.scss */
 .hy_tab {
   line-height: 4rem;
   font-size: 1.3rem;
@@ -815,33 +816,33 @@ a.link_a .time_box input {
   border-top: 1px solid #bebebe;
   overflow: hidden;
 }
-/* line 518, ../sass/common.scss */
+/* line 519, ../sass/common.scss */
 .hy_tab a {
   display: block;
   float: left;
   width: 25%;
   text-align: center;
 }
-/* line 523, ../sass/common.scss */
+/* line 524, ../sass/common.scss */
 .hy_tab a span {
   line-height: 4rem;
   display: inline-block;
 }
-/* line 527, ../sass/common.scss */
+/* line 528, ../sass/common.scss */
 .hy_tab a.active span {
   color: #2abc9d;
   border-bottom: 2px solid #2abc9d;
 }
 
-/* line 534, ../sass/common.scss */
+/* line 535, ../sass/common.scss */
 .pro_ul li {
   border-bottom: 1rem solid #f3f3f3;
 }
-/* line 536, ../sass/common.scss */
+/* line 537, ../sass/common.scss */
 .pro_ul li:last-child {
   border-bottom: none;
 }
-/* line 539, ../sass/common.scss */
+/* line 540, ../sass/common.scss */
 .pro_ul li .pi {
   margin-top: 0rem;
   margin-right: 1.15rem;
@@ -851,11 +852,11 @@ a.link_a .time_box input {
   border-top: 1px solid #bebebe;
   overflow: hidden;
 }
-/* line 544, ../sass/common.scss */
+/* line 545, ../sass/common.scss */
 .pro_ul li .pi:first-child {
   border-top: 0;
 }
-/* line 547, ../sass/common.scss */
+/* line 548, ../sass/common.scss */
 .pro_ul li .pi:nth-child(2) {
   padding-top: 0rem;
   padding-right: 1.15rem;
@@ -863,13 +864,13 @@ a.link_a .time_box input {
   padding-left: 1.15rem;
   margin: 0;
 }
-/* line 551, ../sass/common.scss */
+/* line 552, ../sass/common.scss */
 .pro_ul li .pi h3 {
   line-height: 4.15rem;
   font-size: 1.4rem;
   font-weight: 600;
 }
-/* line 556, ../sass/common.scss */
+/* line 557, ../sass/common.scss */
 .pro_ul li .pi label {
   font-size: 1.2rem;
   line-height: 4.15rem;
@@ -879,7 +880,7 @@ a.link_a .time_box input {
   display: block;
   float: left;
 }
-/* line 565, ../sass/common.scss */
+/* line 566, ../sass/common.scss */
 .pro_ul li .pi p {
   font-size: 1.2rem;
   line-height: 4.15rem;
@@ -888,37 +889,37 @@ a.link_a .time_box input {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 573, ../sass/common.scss */
+/* line 574, ../sass/common.scss */
 .pro_ul li .pi span {
   font-size: 1.2rem;
   float: right;
 }
-/* line 582, ../sass/common.scss */
+/* line 583, ../sass/common.scss */
 .pro_ul.spe li .pi h3 {
   padding-left: 1.75rem;
   background: url("../images/ycho.png") no-repeat left center;
   background-size: 1.45rem auto;
 }
-/* line 587, ../sass/common.scss */
+/* line 588, ../sass/common.scss */
 .pro_ul.spe li .pi span {
   color: #fe6a2a;
 }
-/* line 589, ../sass/common.scss */
+/* line 590, ../sass/common.scss */
 .pro_ul.spe li .pi span.vip {
   padding: 0.7rem 0;
   text-align: right;
 }
-/* line 592, ../sass/common.scss */
+/* line 593, ../sass/common.scss */
 .pro_ul.spe li .pi span.vip b {
   font-weight: normal;
   display: block;
   line-height: 2rem;
 }
-/* line 596, ../sass/common.scss */
+/* line 597, ../sass/common.scss */
 .pro_ul.spe li .pi span.vip b:first-child {
   text-decoration: line-through;
 }
-/* line 602, ../sass/common.scss */
+/* line 603, ../sass/common.scss */
 .pro_ul.spe li .pi:last-child {
   padding-top: 0rem;
   padding-right: 1.15rem;
@@ -928,7 +929,7 @@ a.link_a .time_box input {
   margin: 0;
 }
 
-/* line 611, ../sass/common.scss */
+/* line 612, ../sass/common.scss */
 .form_ele {
   margin-top: 0rem;
   margin-right: 1.15rem;
@@ -938,11 +939,11 @@ a.link_a .time_box input {
   border-bottom: 1px solid #bebebe;
   overflow: hidden;
 }
-/* line 616, ../sass/common.scss */
+/* line 617, ../sass/common.scss */
 .form_ele:last-child {
   border-bottom: none;
 }
-/* line 619, ../sass/common.scss */
+/* line 620, ../sass/common.scss */
 .form_ele label {
   font-size: 1.2rem;
   line-height: 4.15rem;
@@ -952,47 +953,47 @@ a.link_a .time_box input {
   display: block;
   float: left;
 }
-/* line 627, ../sass/common.scss */
+/* line 628, ../sass/common.scss */
 .form_ele label span {
   color: #c30000;
 }
-/* line 631, ../sass/common.scss */
+/* line 632, ../sass/common.scss */
 .form_ele .ele_wrap {
   font-size: 1.2rem;
   line-height: 4.15rem;
   margin-left: 8.25rem;
 }
 
-/* line 637, ../sass/common.scss */
+/* line 638, ../sass/common.scss */
 .fav_warp {
   padding-top: 1.8rem;
   padding-right: 1.75rem;
   padding-bottom: 2.4rem;
   padding-left: 1.75rem;
 }
-/* line 639, ../sass/common.scss */
+/* line 640, ../sass/common.scss */
 .fav_warp .fav_title {
   font-size: 1.2rem;
   line-height: 1.6rem;
   text-align: center;
 }
-/* line 644, ../sass/common.scss */
+/* line 645, ../sass/common.scss */
 .fav_warp .fav_list {
   overflow: hidden;
 }
-/* line 646, ../sass/common.scss */
+/* line 647, ../sass/common.scss */
 .fav_warp .fav_list .fav_outer {
   margin-top: 2.5rem;
   width: 33%;
   text-align: center;
   float: left;
 }
-/* line 651, ../sass/common.scss */
+/* line 652, ../sass/common.scss */
 .fav_warp .fav_list .fav_outer.active a {
   background: #2abc9d;
   color: #fff;
 }
-/* line 656, ../sass/common.scss */
+/* line 657, ../sass/common.scss */
 .fav_warp .fav_list a {
   width: 7.4rem;
   height: 4.7rem;
@@ -1004,12 +1005,12 @@ a.link_a .time_box input {
   color: #2abc9d;
   display: inline-block;
 }
-/* line 666, ../sass/common.scss */
+/* line 667, ../sass/common.scss */
 .fav_warp .fav_list a.active {
   background: #2abc9d;
   color: #fff;
 }
-/* line 670, ../sass/common.scss */
+/* line 671, ../sass/common.scss */
 .fav_warp .fav_list a span {
   width: 7.4rem;
   height: 4.7rem;
@@ -1024,7 +1025,7 @@ a.link_a .time_box input {
   text-align: center;
 }
 
-/* line 683, ../sass/common.scss */
+/* line 684, ../sass/common.scss */
 .orders {
   padding-top: 0rem;
   padding-right: 1.6rem;
@@ -1033,13 +1034,13 @@ a.link_a .time_box input {
   line-height: 4.4rem;
   overflow: hidden;
 }
-/* line 687, ../sass/common.scss */
+/* line 688, ../sass/common.scss */
 .orders .od {
   width: 50%;
   text-align: center;
   float: left;
 }
-/* line 691, ../sass/common.scss */
+/* line 692, ../sass/common.scss */
 .orders .od span {
   padding-left: 2.5rem;
   font-size: 1.4rem;
@@ -1048,7 +1049,7 @@ a.link_a .time_box input {
   min-width: 6rem;
   text-align: left;
 }
-/* line 698, ../sass/common.scss */
+/* line 699, ../sass/common.scss */
 .orders .od span b {
   width: 1.45rem;
   height: 1.45rem;
@@ -1056,18 +1057,18 @@ a.link_a .time_box input {
   left: 0;
   position: absolute;
 }
-/* line 704, ../sass/common.scss */
+/* line 705, ../sass/common.scss */
 .orders .od span b.icon-nochoose {
   background: url("../images/ncho.png") no-repeat center center;
   background-size: 1.45rem auto;
 }
-/* line 708, ../sass/common.scss */
+/* line 709, ../sass/common.scss */
 .orders .od span b.icon-choose {
   background: url("../images/ycho.png") no-repeat center center;
   background-size: 1.45rem auto;
 }
 
-/* line 716, ../sass/common.scss */
+/* line 717, ../sass/common.scss */
 .cur {
   display: none;
   position: fixed;
@@ -1078,11 +1079,11 @@ a.link_a .time_box input {
   background: rgba(0, 0, 0, 0.45);
   z-index: 99;
 }
-/* line 725, ../sass/common.scss */
+/* line 726, ../sass/common.scss */
 .cur.show {
   display: block;
 }
-/* line 728, ../sass/common.scss */
+/* line 729, ../sass/common.scss */
 .cur .pay_panel {
   position: fixed;
   left: 0;
@@ -1090,7 +1091,7 @@ a.link_a .time_box input {
   bottom: 0;
   background: #fff;
 }
-/* line 734, ../sass/common.scss */
+/* line 735, ../sass/common.scss */
 .cur .pay_panel .panel_title {
   height: 4.15rem;
   line-height: 4.15rem;
@@ -1101,7 +1102,7 @@ a.link_a .time_box input {
   border-bottom: 1px solid #bebebe;
   overflow: hidden;
 }
-/* line 740, ../sass/common.scss */
+/* line 741, ../sass/common.scss */
 .cur .pay_panel .panel_title label {
   line-height: 4.15rem;
   font-size: 1.5rem;
@@ -1109,19 +1110,19 @@ a.link_a .time_box input {
   display: block;
   float: left;
 }
-/* line 747, ../sass/common.scss */
+/* line 748, ../sass/common.scss */
 .cur .pay_panel .panel_title span {
   font-size: 1.4rem;
   float: right;
   color: #fe6a2a;
 }
-/* line 751, ../sass/common.scss */
+/* line 752, ../sass/common.scss */
 .cur .pay_panel .panel_title span b {
   font-size: 1.2rem;
   margin-right: 0.25rem;
   font-weight: normal;
 }
-/* line 758, ../sass/common.scss */
+/* line 759, ../sass/common.scss */
 .cur .pay_panel .panel_main {
   padding-top: 0rem;
   padding-right: 1.5rem;
@@ -1129,37 +1130,37 @@ a.link_a .time_box input {
   padding-left: 1.5rem;
   background: #f3f3f3;
 }
-/* line 761, ../sass/common.scss */
+/* line 762, ../sass/common.scss */
 .cur .pay_panel .panel_main .t {
   height: 4.15rem;
   line-height: 4.15rem;
   border-bottom: 1px solid #bebebe;
   overflow: hidden;
 }
-/* line 766, ../sass/common.scss */
+/* line 767, ../sass/common.scss */
 .cur .pay_panel .panel_main .t:last-child {
   border-bottom: none;
 }
-/* line 769, ../sass/common.scss */
+/* line 770, ../sass/common.scss */
 .cur .pay_panel .panel_main .t h2 {
   font-size: 1.4rem;
   color: #515151;
 }
-/* line 773, ../sass/common.scss */
+/* line 774, ../sass/common.scss */
 .cur .pay_panel .panel_main .t .m {
   font-size: 1.4rem;
   padding-left: 3rem;
   float: left;
   position: relative;
 }
-/* line 778, ../sass/common.scss */
+/* line 779, ../sass/common.scss */
 .cur .pay_panel .panel_main .t .m b {
   top: 1rem;
   display: block;
   left: 0;
   position: absolute;
 }
-/* line 785, ../sass/common.scss */
+/* line 786, ../sass/common.scss */
 .cur .pay_panel .panel_main .t span.active-icon {
   width: 1.45rem;
   height: 1.45rem;
@@ -1169,7 +1170,7 @@ a.link_a .time_box input {
   display: block;
   float: right;
 }
-/* line 796, ../sass/common.scss */
+/* line 797, ../sass/common.scss */
 .cur .pay_panel .panel_end {
   padding-top: 1.5rem;
   padding-right: 0rem;
@@ -1178,7 +1179,7 @@ a.link_a .time_box input {
   border-top: 1px solid #bebebe;
   text-align: center;
 }
-/* line 800, ../sass/common.scss */
+/* line 801, ../sass/common.scss */
 .cur .pay_panel .panel_end a.pay_now {
   font-size: 1.5rem;
   width: 14.4rem;
@@ -1191,7 +1192,7 @@ a.link_a .time_box input {
   display: inline-block;
 }
 
-/* line 814, ../sass/common.scss */
+/* line 815, ../sass/common.scss */
 .search_bar {
   margin-top: 1rem;
   margin-right: 1.6rem;
@@ -1202,7 +1203,7 @@ a.link_a .time_box input {
   background: #fff;
   overflow: hidden;
 }
-/* line 820, ../sass/common.scss */
+/* line 821, ../sass/common.scss */
 .search_bar span {
   width: 1.2rem;
   height: 1.2rem;
@@ -1212,14 +1213,14 @@ a.link_a .time_box input {
   background: url("../images/search-black.png") no-repeat center center;
   background-size: 1.2rem auto;
 }
-/* line 829, ../sass/common.scss */
+/* line 830, ../sass/common.scss */
 .search_bar .search_input {
   margin-left: 3rem;
   line-height: 2.2rem;
   font-size: 1.2rem;
 }
 
-/* line 835, ../sass/common.scss */
+/* line 836, ../sass/common.scss */
 .suggest_box {
   margin-top: 1.6rem;
   margin-right: 1.15rem;
@@ -1233,14 +1234,14 @@ a.link_a .time_box input {
   border: 1px solid #bebebe;
   background: #fff;
 }
-/* line 841, ../sass/common.scss */
+/* line 842, ../sass/common.scss */
 .suggest_box textarea {
   font-size: 1.2rem;
   line-height: 1.6rem;
   min-height: 13rem;
 }
 
-/* line 847, ../sass/common.scss */
+/* line 848, ../sass/common.scss */
 .group_avatars {
   padding-top: 1.5rem;
   padding-right: 0.35rem;
@@ -1248,19 +1249,19 @@ a.link_a .time_box input {
   padding-left: 0.35rem;
   overflow: hidden;
 }
-/* line 850, ../sass/common.scss */
+/* line 851, ../sass/common.scss */
 .group_avatars .ga {
   float: left;
   margin: 0 2% 0.75rem;
   width: 21%;
 }
-/* line 854, ../sass/common.scss */
+/* line 855, ../sass/common.scss */
 .group_avatars .ga .ga_img {
   padding-bottom: 100%;
   width: 100%;
   position: relative;
 }
-/* line 858, ../sass/common.scss */
+/* line 859, ../sass/common.scss */
 .group_avatars .ga .ga_img img {
   width: 100%;
   height: 100%;
@@ -1268,7 +1269,7 @@ a.link_a .time_box input {
   top: 0;
   left: 0;
 }
-/* line 866, ../sass/common.scss */
+/* line 867, ../sass/common.scss */
 .group_avatars .ga .ga_name {
   line-height: 2.3rem;
   font-size: 1.1rem;
@@ -1278,7 +1279,7 @@ a.link_a .time_box input {
   white-space: nowrap;
 }
 
-/* line 876, ../sass/common.scss */
+/* line 877, ../sass/common.scss */
 a.link_a_2 {
   line-height: 4.15rem;
   padding-top: 0rem;
@@ -1289,12 +1290,12 @@ a.link_a_2 {
   display: block;
   border-top: 1px solid #bebebe;
 }
-/* line 882, ../sass/common.scss */
+/* line 883, ../sass/common.scss */
 a.link_a_2:first-child {
   border: none;
 }
 
-/* line 886, ../sass/common.scss */
+/* line 887, ../sass/common.scss */
 .my_confirm {
   position: fixed;
   z-index: 99;
@@ -1304,7 +1305,7 @@ a.link_a_2:first-child {
   right: 0;
   background: rgba(0, 0, 0, 0.45);
 }
-/* line 894, ../sass/common.scss */
+/* line 895, ../sass/common.scss */
 .my_confirm .main_info {
   width: 23.4rem;
   border-radius: 0.5rem;
@@ -1320,25 +1321,25 @@ a.link_a_2:first-child {
   margin-left: -11.7rem;
   overflow: hidden;
 }
-/* line 905, ../sass/common.scss */
+/* line 906, ../sass/common.scss */
 .my_confirm .main_info h2 {
   line-height: 4rem;
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
 }
-/* line 911, ../sass/common.scss */
+/* line 912, ../sass/common.scss */
 .my_confirm .main_info p {
   line-height: 2.3rem;
   font-size: 1.2rem;
   padding-bottom: 1.2rem;
   border-bottom: 1px solid #bebebe;
 }
-/* line 917, ../sass/common.scss */
+/* line 918, ../sass/common.scss */
 .my_confirm .main_info.no_title p {
   padding-top: 1.2rem;
 }
-/* line 920, ../sass/common.scss */
+/* line 921, ../sass/common.scss */
 .my_confirm .main_info .btns {
   margin-top: 0.8rem;
   margin-right: 0rem;
@@ -1349,7 +1350,7 @@ a.link_a_2:first-child {
   overflow: hidden;
   background: url("../images/p.png") repeat-y center top;
 }
-/* line 926, ../sass/common.scss */
+/* line 927, ../sass/common.scss */
 .my_confirm .main_info .btns a {
   font-size: 1.4rem;
   display: block;
@@ -1357,16 +1358,16 @@ a.link_a_2:first-child {
   float: left;
   text-align: center;
 }
-/* line 932, ../sass/common.scss */
+/* line 933, ../sass/common.scss */
 .my_confirm .main_info .btns a.cancle_pop {
   color: #565656;
 }
-/* line 935, ../sass/common.scss */
+/* line 936, ../sass/common.scss */
 .my_confirm .main_info .btns a.make_sure {
   color: #fe4d2a;
 }
 
-/* line 942, ../sass/common.scss */
+/* line 943, ../sass/common.scss */
 .tips_box {
   margin-top: 1.5rem;
   margin-right: 1.15rem;
@@ -1376,18 +1377,18 @@ a.link_a_2:first-child {
   background: #fff;
   border: 1px solid #bebebe;
 }
-/* line 947, ../sass/common.scss */
+/* line 948, ../sass/common.scss */
 .tips_box h2 {
   font-size: 1.5rem;
   line-height: 4rem;
   text-align: center;
   font-weight: 600;
 }
-/* line 952, ../sass/common.scss */
+/* line 953, ../sass/common.scss */
 .tips_box h2.bb {
   border-bottom: 1px solid #bebebe;
 }
-/* line 956, ../sass/common.scss */
+/* line 957, ../sass/common.scss */
 .tips_box p {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -1397,25 +1398,25 @@ a.link_a_2:first-child {
   margin-left: 1.5rem;
   text-align: justify;
 }
-/* line 962, ../sass/common.scss */
+/* line 963, ../sass/common.scss */
 .tips_box .pay_info {
   padding-top: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 0rem;
   padding-left: 1.5rem;
 }
-/* line 964, ../sass/common.scss */
+/* line 965, ../sass/common.scss */
 .tips_box .pay_info p {
   font-size: 1.4rem;
   line-height: 2.75rem;
   margin: 0;
 }
-/* line 970, ../sass/common.scss */
+/* line 971, ../sass/common.scss */
 .tips_box .btns_bt {
   margin-top: 1.5rem;
   border-top: 1px solid #bebebe;
 }
-/* line 974, ../sass/common.scss */
+/* line 975, ../sass/common.scss */
 .tips_box .btns {
   margin-top: 1rem;
   margin-right: 0rem;
@@ -1426,7 +1427,7 @@ a.link_a_2:first-child {
   overflow: hidden;
   background: url("../images/p.png") repeat-y center top;
 }
-/* line 980, ../sass/common.scss */
+/* line 981, ../sass/common.scss */
 .tips_box .btns a {
   font-size: 1.5rem;
   display: block;
@@ -1434,16 +1435,16 @@ a.link_a_2:first-child {
   float: left;
   text-align: center;
 }
-/* line 986, ../sass/common.scss */
+/* line 987, ../sass/common.scss */
 .tips_box .btns a.cancle {
   color: #565656;
 }
-/* line 989, ../sass/common.scss */
+/* line 990, ../sass/common.scss */
 .tips_box .btns a.goon {
   color: #fe4d2a;
 }
 
-/* line 995, ../sass/common.scss */
+/* line 996, ../sass/common.scss */
 .group_title {
   line-height: 1.4rem;
   font-size: 1.4rem;
@@ -1456,7 +1457,7 @@ a.link_a_2:first-child {
   font-weight: 600;
 }
 
-/* line 1003, ../sass/common.scss */
+/* line 1004, ../sass/common.scss */
 .nb_tips {
   margin-top: 1.5rem;
   margin-right: 1.15rem;
@@ -1468,14 +1469,14 @@ a.link_a_2:first-child {
   background: #fff;
   box-shadow: 0 0 5px #eee;
 }
-/* line 1010, ../sass/common.scss */
+/* line 1011, ../sass/common.scss */
 .nb_tips h2 {
   font-size: 1.5rem;
   line-height: 4rem;
   text-align: center;
   font-weight: 600;
 }
-/* line 1016, ../sass/common.scss */
+/* line 1017, ../sass/common.scss */
 .nb_tips p {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -1486,13 +1487,13 @@ a.link_a_2:first-child {
   text-align: justify;
 }
 
-/* line 1023, ../sass/common.scss */
+/* line 1024, ../sass/common.scss */
 .view_list {
   padding-bottom: 12.5rem;
   margin-top: 1rem;
   background: #fff;
 }
-/* line 1027, ../sass/common.scss */
+/* line 1028, ../sass/common.scss */
 .view_list a.v_one {
   padding-top: 1.5rem;
   padding-right: 1.15rem;
@@ -1502,13 +1503,13 @@ a.link_a_2:first-child {
   overflow: hidden;
   display: block;
 }
-/* line 1032, ../sass/common.scss */
+/* line 1033, ../sass/common.scss */
 .view_list a.v_one .v_wrap {
   display: table;
   width: 100%;
   box-sizing: border-box;
 }
-/* line 1036, ../sass/common.scss */
+/* line 1037, ../sass/common.scss */
 .view_list a.v_one .v_wrap .avatar {
   width: 7rem;
   height: 7rem;
@@ -1516,12 +1517,12 @@ a.link_a_2:first-child {
   position: relative;
   background: #008668;
 }
-/* line 1042, ../sass/common.scss */
+/* line 1043, ../sass/common.scss */
 .view_list a.v_one .v_wrap .avatar img {
   width: 100%;
   height: 100%;
 }
-/* line 1046, ../sass/common.scss */
+/* line 1047, ../sass/common.scss */
 .view_list a.v_one .v_wrap .avatar span.check {
   width: 1.45rem;
   height: 1.45rem;
@@ -1533,7 +1534,7 @@ a.link_a_2:first-child {
   background-size: 1.45rem auto;
   visibility: hidden;
 }
-/* line 1058, ../sass/common.scss */
+/* line 1059, ../sass/common.scss */
 .view_list a.v_one .v_wrap .info {
   height: 7rem;
   padding-left: 1.5rem;
@@ -1542,7 +1543,7 @@ a.link_a_2:first-child {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 1065, ../sass/common.scss */
+/* line 1066, ../sass/common.scss */
 .view_list a.v_one .v_wrap .info h2 {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -1551,7 +1552,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1073, ../sass/common.scss */
+/* line 1074, ../sass/common.scss */
 .view_list a.v_one .v_wrap .info p {
   font-size: 1.2rem;
   line-height: 1.2rem;
@@ -1562,21 +1563,21 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1088, ../sass/common.scss */
+/* line 1089, ../sass/common.scss */
 .view_list.admin_list a.v_one .v_wrap {
   background: none;
 }
-/* line 1097, ../sass/common.scss */
+/* line 1098, ../sass/common.scss */
 .view_list.edit a.v_one .v_wrap .avatar span.check {
   visibility: visible;
 }
-/* line 1105, ../sass/common.scss */
+/* line 1106, ../sass/common.scss */
 .view_list.edit a.v_one.active .v_wrap .avatar span.check {
   background: url("../images/ycho.png") no-repeat center center;
   background-size: 1.55rem auto;
 }
 
-/* line 1115, ../sass/common.scss */
+/* line 1116, ../sass/common.scss */
 .edit_footer {
   height: 4.35rem;
   background: #f3f1f1;
@@ -1587,85 +1588,85 @@ a.link_a_2:first-child {
   overflow: hidden;
   display: none;
 }
-/* line 1124, ../sass/common.scss */
+/* line 1125, ../sass/common.scss */
 .edit_footer a {
   line-height: 4.35rem;
   display: block;
   float: left;
   text-align: center;
 }
-/* line 1130, ../sass/common.scss */
+/* line 1131, ../sass/common.scss */
 .edit_footer span {
   padding-left: 2.25rem;
   font-size: 1.4rem;
   color: #fff;
   display: inline-block;
 }
-/* line 1136, ../sass/common.scss */
+/* line 1137, ../sass/common.scss */
 .edit_footer a.check_all {
   width: 22%;
 }
-/* line 1138, ../sass/common.scss */
+/* line 1139, ../sass/common.scss */
 .edit_footer a.check_all span {
   color: #202020;
   background: url("../images/pick_all.png") no-repeat left center;
   background-size: 1.55rem auto;
 }
-/* line 1144, ../sass/common.scss */
+/* line 1145, ../sass/common.scss */
 .edit_footer a.check_all.active span {
   background: url("../images/ycho.png") no-repeat left center;
   background-size: 1.55rem auto;
 }
-/* line 1150, ../sass/common.scss */
+/* line 1151, ../sass/common.scss */
 .edit_footer a.add {
   width: 22%;
   background: #2abc9d;
 }
-/* line 1153, ../sass/common.scss */
+/* line 1154, ../sass/common.scss */
 .edit_footer a.add span {
   background: url("../images/plus.png") no-repeat left center;
   background-size: 1.55rem auto;
 }
-/* line 1158, ../sass/common.scss */
+/* line 1159, ../sass/common.scss */
 .edit_footer a.change_admin {
   width: 31%;
   margin: 0 1.5%;
   background: #2abc9d;
 }
-/* line 1162, ../sass/common.scss */
+/* line 1163, ../sass/common.scss */
 .edit_footer a.change_admin span {
   background: url("../images/admin.png") no-repeat left center;
   background-size: auto 1.5rem;
 }
-/* line 1167, ../sass/common.scss */
+/* line 1168, ../sass/common.scss */
 .edit_footer a.delete {
   width: 22%;
   background: #ff4035;
 }
-/* line 1170, ../sass/common.scss */
+/* line 1171, ../sass/common.scss */
 .edit_footer a.delete span {
   background: url("../images/delete.png") no-repeat left center;
   background-size: 1.55rem auto;
 }
-/* line 1175, ../sass/common.scss */
+/* line 1176, ../sass/common.scss */
 .edit_footer.show {
   display: block;
 }
-/* line 1179, ../sass/common.scss */
+/* line 1180, ../sass/common.scss */
 .edit_footer.student a.delete {
   float: right;
 }
-/* line 1182, ../sass/common.scss */
+/* line 1183, ../sass/common.scss */
 .edit_footer.student a.add {
   float: right;
   margin-right: 1.5%;
 }
 
-/* line 1190, ../sass/common.scss */
+/* line 1191, ../sass/common.scss */
 .class_list li:last-child a.c_one {
   border-bottom: none;
 }
-/* line 1194, ../sass/common.scss */
+/* line 1195, ../sass/common.scss */
 .class_list a.c_one {
   padding-top: 1.5rem;
   padding-right: 1.15rem;
@@ -1675,24 +1676,24 @@ a.link_a_2:first-child {
   overflow: hidden;
   display: block;
 }
-/* line 1199, ../sass/common.scss */
+/* line 1200, ../sass/common.scss */
 .class_list a.c_one .c_wrap {
   display: table;
   width: 100%;
   overflow: hidden;
 }
-/* line 1203, ../sass/common.scss */
+/* line 1204, ../sass/common.scss */
 .class_list a.c_one .c_wrap .class_img {
   width: 9.1rem;
   height: 9.1rem;
   float: left;
 }
-/* line 1207, ../sass/common.scss */
+/* line 1208, ../sass/common.scss */
 .class_list a.c_one .c_wrap .class_img img {
   width: 100%;
   height: 100%;
 }
-/* line 1212, ../sass/common.scss */
+/* line 1213, ../sass/common.scss */
 .class_list a.c_one .c_wrap .info {
   height: 9.1rem;
   padding-left: 1.4rem;
@@ -1705,7 +1706,7 @@ a.link_a_2:first-child {
   vertical-align: middle;
   position: relative;
 }
-/* line 1223, ../sass/common.scss */
+/* line 1224, ../sass/common.scss */
 .class_list a.c_one .c_wrap .info h2 {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -1716,7 +1717,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1233, ../sass/common.scss */
+/* line 1234, ../sass/common.scss */
 .class_list a.c_one .c_wrap .info p.p2 {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -1727,7 +1728,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1243, ../sass/common.scss */
+/* line 1244, ../sass/common.scss */
 .class_list a.c_one .c_wrap .info .p1,
 .class_list a.c_one .c_wrap .info h3 {
   font-size: 1.2rem;
@@ -1738,7 +1739,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1253, ../sass/common.scss */
+/* line 1254, ../sass/common.scss */
 .class_list a.c_one .c_wrap .info .tag {
   width: 1.55rem;
   height: 4.45rem;
@@ -1747,23 +1748,23 @@ a.link_a_2:first-child {
   top: 0;
   right: 0;
 }
-/* line 1264, ../sass/common.scss */
+/* line 1265, ../sass/common.scss */
 .class_list a.c_one.new .tag {
   background: url("../images/new.png") no-repeat center center;
   background-size: 1.55rem auto;
 }
-/* line 1270, ../sass/common.scss */
+/* line 1271, ../sass/common.scss */
 .class_list a.c_one.doing .tag {
   background: url("../images/doing.png") no-repeat center center;
   background-size: 1.55rem auto;
 }
-/* line 1276, ../sass/common.scss */
+/* line 1277, ../sass/common.scss */
 .class_list a.c_one.overtime .tag {
   background: url("../images/overtime.png") no-repeat center center;
   background-size: 1.55rem auto;
 }
 
-/* line 1283, ../sass/common.scss */
+/* line 1284, ../sass/common.scss */
 .yy_btn {
   height: 3.8rem;
   line-height: 3.8rem;
@@ -1777,7 +1778,7 @@ a.link_a_2:first-child {
   text-align: center;
 }
 
-/* line 1295, ../sass/common.scss */
+/* line 1296, ../sass/common.scss */
 .order_footer {
   height: 12.25rem;
   background: #f3f3f3;
@@ -1786,7 +1787,7 @@ a.link_a_2:first-child {
   left: 0;
   right: 0;
 }
-/* line 1302, ../sass/common.scss */
+/* line 1303, ../sass/common.scss */
 .order_footer .mm_box {
   height: 4.25rem;
   padding-top: 0rem;
@@ -1798,7 +1799,7 @@ a.link_a_2:first-child {
   box-sizing: border-box;
   overflow: hidden;
 }
-/* line 1309, ../sass/common.scss */
+/* line 1310, ../sass/common.scss */
 .order_footer .mm_box .check {
   font-size: 1.2rem;
   padding-left: 2rem;
@@ -1808,43 +1809,43 @@ a.link_a_2:first-child {
   background: url("../images/ycho.png") no-repeat left center;
   background-size: 1.55rem auto;
 }
-/* line 1318, ../sass/common.scss */
+/* line 1319, ../sass/common.scss */
 .order_footer .mm_box .money {
   font-size: 1.2rem;
   line-height: 4.2rem;
   float: right;
   color: #ef3e00;
 }
-/* line 1323, ../sass/common.scss */
+/* line 1324, ../sass/common.scss */
 .order_footer .mm_box .money b {
   font-weight: normal;
 }
-/* line 1328, ../sass/common.scss */
+/* line 1329, ../sass/common.scss */
 .order_footer .mm_box.vip .check {
   line-height: 1.4rem;
   margin-top: 0.5rem;
 }
-/* line 1332, ../sass/common.scss */
+/* line 1333, ../sass/common.scss */
 .order_footer .mm_box.vip .money {
   line-height: 1.4rem;
   text-align: right;
 }
-/* line 1335, ../sass/common.scss */
+/* line 1336, ../sass/common.scss */
 .order_footer .mm_box.vip .money span {
   margin-top: 0.5rem;
   display: block;
 }
-/* line 1338, ../sass/common.scss */
+/* line 1339, ../sass/common.scss */
 .order_footer .mm_box.vip .money span b.line {
   text-decoration: line-through;
 }
 
-/* line 1346, ../sass/common.scss */
+/* line 1347, ../sass/common.scss */
 .pay_back {
   margin: 7.8rem auto;
   text-align: center;
 }
-/* line 1349, ../sass/common.scss */
+/* line 1350, ../sass/common.scss */
 .pay_back h2 {
   font-size: 1.4rem;
   padding-top: 10rem;
@@ -1852,7 +1853,7 @@ a.link_a_2:first-child {
   background-size: 8.5rem auto;
   text-align: center;
 }
-/* line 1356, ../sass/common.scss */
+/* line 1357, ../sass/common.scss */
 .pay_back a.back {
   font-size: 1.5rem;
   margin-top: 3rem;
@@ -1866,7 +1867,7 @@ a.link_a_2:first-child {
   display: inline-block;
 }
 
-/* line 1369, ../sass/common.scss */
+/* line 1370, ../sass/common.scss */
 .chat_box {
   margin-top: 0rem;
   margin-right: 0.9rem;
@@ -1875,14 +1876,14 @@ a.link_a_2:first-child {
   padding-bottom: 2rem;
   z-index: 99;
 }
-/* line 1373, ../sass/common.scss */
+/* line 1374, ../sass/common.scss */
 .chat_box .time {
   font-size: 1.2rem;
   line-height: 4rem;
   display: block;
   text-align: center;
 }
-/* line 1379, ../sass/common.scss */
+/* line 1380, ../sass/common.scss */
 .chat_box .tip {
   font-size: 1.4rem;
   line-height: 4rem;
@@ -1890,34 +1891,34 @@ a.link_a_2:first-child {
   text-align: center;
   color: #ff1212;
 }
-/* line 1386, ../sass/common.scss */
+/* line 1387, ../sass/common.scss */
 .chat_box .back {
   font-size: 1.2rem;
   line-height: 3.5rem;
   display: block;
   text-align: center;
 }
-/* line 1392, ../sass/common.scss */
+/* line 1393, ../sass/common.scss */
 .chat_box .msg {
   margin-top: 1.4rem;
   margin-bottom: 1.4rem;
 }
-/* line 1395, ../sass/common.scss */
+/* line 1396, ../sass/common.scss */
 .chat_box .msg .avatar {
   width: 3.5rem;
   width: 3.5rem;
 }
-/* line 1398, ../sass/common.scss */
+/* line 1399, ../sass/common.scss */
 .chat_box .msg .avatar img {
   width: 100%;
   height: 100%;
 }
-/* line 1404, ../sass/common.scss */
+/* line 1405, ../sass/common.scss */
 .chat_box .msg .info h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-/* line 1408, ../sass/common.scss */
+/* line 1409, ../sass/common.scss */
 .chat_box .msg .info span {
   font-size: 1.5rem;
   border-radius: 0.5rem;
@@ -1929,16 +1930,16 @@ a.link_a_2:first-child {
   min-height: 3.2rem;
   text-align: center;
   min-width: 5rem;
-  background-color: #fff;
-  border: 1px solid #a0a0a0;
-  color: #010101;
+  background-color: #a3ec60;
+  border: 1px solid #86ce37;
+  color: #000;
   position: relative;
   box-sizing: border-box;
   display: inline-block;
   text-align: left;
   word-break: break-all;
 }
-/* line 1424, ../sass/common.scss */
+/* line 1425, ../sass/common.scss */
 .chat_box .msg .info span .cor {
   width: 0.5rem;
   height: 0.75rem;
@@ -1946,7 +1947,7 @@ a.link_a_2:first-child {
   display: block;
   position: absolute;
 }
-/* line 1431, ../sass/common.scss */
+/* line 1432, ../sass/common.scss */
 .chat_box .msg .info span .back_space {
   width: 6.2rem;
   height: 3.3rem;
@@ -1958,33 +1959,33 @@ a.link_a_2:first-child {
   background: url("../images/back_space.png") no-repeat center center;
   background-size: auto 3.3rem;
 }
-/* line 1445, ../sass/common.scss */
+/* line 1446, ../sass/common.scss */
 .chat_box .msg.in .avatar {
   float: left;
 }
-/* line 1448, ../sass/common.scss */
+/* line 1449, ../sass/common.scss */
 .chat_box .msg.in .info {
   margin-left: 4.75rem;
   margin-right: 4.75rem;
   display: block;
 }
-/* line 1452, ../sass/common.scss */
+/* line 1453, ../sass/common.scss */
 .chat_box .msg.in .info span {
-  background-color: #a3ec60;
-  border: 1px solid #86ce37;
-  color: #000;
+  background-color: #fff;
+  border: 1px solid #a0a0a0;
+  color: #010101;
 }
-/* line 1456, ../sass/common.scss */
+/* line 1457, ../sass/common.scss */
 .chat_box .msg.in .info span .cor {
   left: -0.5rem;
   background: url("../images/ll.png") no-repeat center center;
   background-size: 0.5rem auto;
 }
-/* line 1462, ../sass/common.scss */
+/* line 1463, ../sass/common.scss */
 .chat_box .msg.in .info span.file .file_wrap {
   overflow: hidden;
 }
-/* line 1464, ../sass/common.scss */
+/* line 1465, ../sass/common.scss */
 .chat_box .msg.in .info span.file .file_wrap p {
   margin-right: 5.5rem;
   max-width: 8rem;
@@ -1993,7 +1994,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1472, ../sass/common.scss */
+/* line 1473, ../sass/common.scss */
 .chat_box .msg.in .info span.file .file_wrap .icon {
   width: 4.4rem;
   padding-top: 3.4rem;
@@ -2010,11 +2011,11 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1491, ../sass/common.scss */
+/* line 1492, ../sass/common.scss */
 .chat_box .msg.in .info span.voice_file .file_wrap {
   overflow: hidden;
 }
-/* line 1493, ../sass/common.scss */
+/* line 1494, ../sass/common.scss */
 .chat_box .msg.in .info span.voice_file .file_wrap p {
   margin-right: 5.5rem;
   max-width: 8rem;
@@ -2023,7 +2024,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1501, ../sass/common.scss */
+/* line 1502, ../sass/common.scss */
 .chat_box .msg.in .info span.voice_file .file_wrap .icon {
   width: 4.4rem;
   padding-top: 3.4rem;
@@ -2040,13 +2041,13 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1522, ../sass/common.scss */
+/* line 1523, ../sass/common.scss */
 .chat_box .msg.in .voice_bar audio {
   position: absolute;
   left: -2000px;
   opacity: 0;
 }
-/* line 1527, ../sass/common.scss */
+/* line 1528, ../sass/common.scss */
 .chat_box .msg.in .voice_bar .voice_1 {
   width: 2px;
   height: 6px;
@@ -2057,7 +2058,7 @@ a.link_a_2:first-child {
   background: url("../images/voice_1.png") no-repeat center center;
   background-size: 2px auto;
 }
-/* line 1537, ../sass/common.scss */
+/* line 1538, ../sass/common.scss */
 .chat_box .msg.in .voice_bar .voice_2 {
   width: 3px;
   height: 10px;
@@ -2068,7 +2069,7 @@ a.link_a_2:first-child {
   background: url("../images/voice_2.png") no-repeat center center;
   background-size: 3px auto;
 }
-/* line 1547, ../sass/common.scss */
+/* line 1548, ../sass/common.scss */
 .chat_box .msg.in .voice_bar .voice_3 {
   width: 4px;
   height: 14px;
@@ -2079,48 +2080,48 @@ a.link_a_2:first-child {
   background: url("../images/voice_3.png") no-repeat center center;
   background-size: 4px auto;
 }
-/* line 1558, ../sass/common.scss */
+/* line 1559, ../sass/common.scss */
 .chat_box .msg.in .voice_bar.active .voice_1 {
   animation: showhide_1 1.5s infinite;
   -webkit-animation: showhide_1 1.5s infinite;
 }
-/* line 1562, ../sass/common.scss */
+/* line 1563, ../sass/common.scss */
 .chat_box .msg.in .voice_bar.active .voice_2 {
   animation: showhide_2 1.5s infinite;
   -webkit-animation: showhide_2 1.5s infinite;
 }
-/* line 1566, ../sass/common.scss */
+/* line 1567, ../sass/common.scss */
 .chat_box .msg.in .voice_bar.active .voice_3 {
   animation: showhide_3 1.5s infinite;
   -webkit-animation: showhide_3 1.5s infinite;
 }
-/* line 1572, ../sass/common.scss */
+/* line 1573, ../sass/common.scss */
 .chat_box .msg.in .video_bar {
   background-color: transparent !important;
   background: transparent !important;
   padding: 0 !important;
   border: none !important;
 }
-/* line 1577, ../sass/common.scss */
+/* line 1578, ../sass/common.scss */
 .chat_box .msg.in .video_bar .cor {
   background: url("../images/video_arrow_l.png") no-repeat center center !important;
   background-size: 0.5rem auto !important;
   display: none;
 }
-/* line 1582, ../sass/common.scss */
+/* line 1583, ../sass/common.scss */
 .chat_box .msg.in .video_bar video {
   position: absolute;
   left: -2000px;
   opacity: 0;
 }
-/* line 1587, ../sass/common.scss */
+/* line 1588, ../sass/common.scss */
 .chat_box .msg.in .video_bar .video_hoder {
   width: 15.65rem;
   height: 12.8rem;
   border-radius: 0.5rem;
   position: relative;
 }
-/* line 1592, ../sass/common.scss */
+/* line 1593, ../sass/common.scss */
 .chat_box .msg.in .video_bar .video_hoder .start {
   width: 4.2rem;
   height: 4.2rem;
@@ -2132,7 +2133,7 @@ a.link_a_2:first-child {
   background: url("../images/start.png") no-repeat center center;
   background-size: 4.2rem auto;
 }
-/* line 1604, ../sass/common.scss */
+/* line 1605, ../sass/common.scss */
 .chat_box .msg.in .video_bar .timer {
   font-size: 1.1rem;
   font-style: normal;
@@ -2140,14 +2141,14 @@ a.link_a_2:first-child {
   text-align: right;
   display: block;
 }
-/* line 1612, ../sass/common.scss */
+/* line 1613, ../sass/common.scss */
 .chat_box .msg.in .img_bar {
-  max-width: 50%;
-  padding: 0;
-  background: transparent;
-  border: none;
+  max-width: 50% !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
 }
-/* line 1617, ../sass/common.scss */
+/* line 1618, ../sass/common.scss */
 .chat_box .msg.in .img_bar img {
   display: block;
   width: auto;
@@ -2155,11 +2156,11 @@ a.link_a_2:first-child {
   vertical-align: top;
   border-radius: .5rem;
 }
-/* line 1627, ../sass/common.scss */
+/* line 1628, ../sass/common.scss */
 .chat_box .msg.out .avatar {
   float: right;
 }
-/* line 1630, ../sass/common.scss */
+/* line 1631, ../sass/common.scss */
 .chat_box .msg.out .info {
   margin-top: 1.1rem;
   margin-right: 4.75rem;
@@ -2167,18 +2168,18 @@ a.link_a_2:first-child {
   margin-left: 4.75rem;
   text-align: right;
 }
-/* line 1634, ../sass/common.scss */
+/* line 1635, ../sass/common.scss */
 .chat_box .msg.out .info span .cor {
   right: -0.5rem;
   background: url("../images/lr.png") no-repeat center center;
   background-size: 0.5rem auto;
 }
-/* line 1640, ../sass/common.scss */
+/* line 1641, ../sass/common.scss */
 .chat_box .msg.out .info span.file .file_wrap {
   display: block;
   overflow: hidden;
 }
-/* line 1643, ../sass/common.scss */
+/* line 1644, ../sass/common.scss */
 .chat_box .msg.out .info span.file .file_wrap p {
   margin-left: 5.5rem;
   max-width: 8rem;
@@ -2187,7 +2188,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1651, ../sass/common.scss */
+/* line 1652, ../sass/common.scss */
 .chat_box .msg.out .info span.file .file_wrap .icon {
   width: 4.4rem;
   padding-top: 3.4rem;
@@ -2204,12 +2205,12 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1670, ../sass/common.scss */
+/* line 1671, ../sass/common.scss */
 .chat_box .msg.out .info span.voice_file .file_wrap {
   display: block;
   overflow: hidden;
 }
-/* line 1673, ../sass/common.scss */
+/* line 1674, ../sass/common.scss */
 .chat_box .msg.out .info span.voice_file .file_wrap p {
   margin-left: 5.5rem;
   max-width: 8rem;
@@ -2218,7 +2219,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1681, ../sass/common.scss */
+/* line 1682, ../sass/common.scss */
 .chat_box .msg.out .info span.voice_file .file_wrap .icon {
   width: 4.4rem;
   padding-top: 3.4rem;
@@ -2235,13 +2236,13 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 1702, ../sass/common.scss */
+/* line 1703, ../sass/common.scss */
 .chat_box .msg.out .voice_bar audio {
   position: absolute;
   left: -2000px;
   opacity: 0;
 }
-/* line 1707, ../sass/common.scss */
+/* line 1708, ../sass/common.scss */
 .chat_box .msg.out .voice_bar .voice_1 {
   width: 2px;
   height: 6px;
@@ -2252,7 +2253,7 @@ a.link_a_2:first-child {
   background: url("../images/voice_4.png") no-repeat center center;
   background-size: 2px auto;
 }
-/* line 1717, ../sass/common.scss */
+/* line 1718, ../sass/common.scss */
 .chat_box .msg.out .voice_bar .voice_2 {
   width: 3px;
   height: 10px;
@@ -2263,7 +2264,7 @@ a.link_a_2:first-child {
   background: url("../images/voice_5.png") no-repeat center center;
   background-size: 3px auto;
 }
-/* line 1727, ../sass/common.scss */
+/* line 1728, ../sass/common.scss */
 .chat_box .msg.out .voice_bar .voice_3 {
   width: 4px;
   height: 14px;
@@ -2274,48 +2275,48 @@ a.link_a_2:first-child {
   background: url("../images/voice_6.png") no-repeat center center;
   background-size: 4px auto;
 }
-/* line 1738, ../sass/common.scss */
+/* line 1739, ../sass/common.scss */
 .chat_box .msg.out .voice_bar.active .voice_1 {
   animation: showhide_1 1.5s infinite;
   -webkit-animation: showhide_1 1.5s infinite;
 }
-/* line 1742, ../sass/common.scss */
+/* line 1743, ../sass/common.scss */
 .chat_box .msg.out .voice_bar.active .voice_2 {
   animation: showhide_2 1.5s infinite;
   -webkit-animation: showhide_2 1.5s infinite;
 }
-/* line 1746, ../sass/common.scss */
+/* line 1747, ../sass/common.scss */
 .chat_box .msg.out .voice_bar.active .voice_3 {
   animation: showhide_3 1.5s infinite;
   -webkit-animation: showhide_3 1.5s infinite;
 }
-/* line 1752, ../sass/common.scss */
+/* line 1753, ../sass/common.scss */
 .chat_box .msg.out .video_bar {
   background-color: transparent !important;
   background: transparent !important;
   padding: 0 !important;
   border: none !important;
 }
-/* line 1757, ../sass/common.scss */
+/* line 1758, ../sass/common.scss */
 .chat_box .msg.out .video_bar .cor {
   background: url("../images/video_arrow_r.png") no-repeat center center !important;
   background-size: 0.5rem auto !important;
   display: none;
 }
-/* line 1762, ../sass/common.scss */
+/* line 1763, ../sass/common.scss */
 .chat_box .msg.out .video_bar video {
   position: absolute;
   left: -2000px;
   opacity: 0;
 }
-/* line 1767, ../sass/common.scss */
+/* line 1768, ../sass/common.scss */
 .chat_box .msg.out .video_bar .video_hoder {
   width: 15.65rem;
   height: 12.8rem;
   border-radius: 0.5rem;
   position: relative;
 }
-/* line 1772, ../sass/common.scss */
+/* line 1773, ../sass/common.scss */
 .chat_box .msg.out .video_bar .video_hoder .start {
   width: 4.2rem;
   height: 4.2rem;
@@ -2327,7 +2328,7 @@ a.link_a_2:first-child {
   background: url("../images/start.png") no-repeat center center;
   background-size: 4.2rem auto;
 }
-/* line 1784, ../sass/common.scss */
+/* line 1785, ../sass/common.scss */
 .chat_box .msg.out .video_bar .timer {
   font-size: 1.1rem;
   font-style: normal;
@@ -2335,14 +2336,14 @@ a.link_a_2:first-child {
   text-align: right;
   display: block;
 }
-/* line 1792, ../sass/common.scss */
+/* line 1793, ../sass/common.scss */
 .chat_box .msg.out .img_bar {
-  max-width: 50%;
-  padding: 0;
-  background: transparent;
-  border: none;
+  max-width: 50% !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
 }
-/* line 1797, ../sass/common.scss */
+/* line 1798, ../sass/common.scss */
 .chat_box .msg.out .img_bar img {
   display: block;
   width: auto;
@@ -2417,7 +2418,7 @@ a.link_a_2:first-child {
     opacity: 1;
   }
 }
-/* line 1874, ../sass/common.scss */
+/* line 1875, ../sass/common.scss */
 .chat_footer {
   height: 5rem;
   padding-top: 0rem;
@@ -2432,11 +2433,11 @@ a.link_a_2:first-child {
   left: 0;
   right: 0;
 }
-/* line 1884, ../sass/common.scss */
+/* line 1885, ../sass/common.scss */
 .chat_footer.emoj_show {
   bottom: 20rem;
 }
-/* line 1887, ../sass/common.scss */
+/* line 1888, ../sass/common.scss */
 .chat_footer .voice {
   width: 3.5rem;
   height: 3.5rem;
@@ -2445,12 +2446,12 @@ a.link_a_2:first-child {
   background-size: 3.5rem auto;
   float: left;
 }
-/* line 1894, ../sass/common.scss */
+/* line 1895, ../sass/common.scss */
 .chat_footer .voice.bord {
   background: url("../images/bord.png") no-repeat center center;
   background-size: 3.5rem auto;
 }
-/* line 1899, ../sass/common.scss */
+/* line 1900, ../sass/common.scss */
 .chat_footer .add {
   width: 3.5rem;
   height: 3.5rem;
@@ -2460,7 +2461,7 @@ a.link_a_2:first-child {
   float: right;
   position: relative;
 }
-/* line 1907, ../sass/common.scss */
+/* line 1908, ../sass/common.scss */
 .chat_footer .add input {
   width: 3.5rem;
   height: 3.5rem;
@@ -2472,7 +2473,7 @@ a.link_a_2:first-child {
   background: transparent;
   opacity: 0;
 }
-/* line 1919, ../sass/common.scss */
+/* line 1920, ../sass/common.scss */
 .chat_footer .send_message {
   width: 3.5rem;
   height: 2.5rem;
@@ -2487,14 +2488,14 @@ a.link_a_2:first-child {
   text-align: center;
   color: #fff;
 }
-/* line 1933, ../sass/common.scss */
+/* line 1934, ../sass/common.scss */
 .chat_footer .input_box {
   margin-top: 0.75rem;
   margin-right: 4.5rem;
   margin-bottom: 0rem;
   margin-left: 4rem;
 }
-/* line 1935, ../sass/common.scss */
+/* line 1936, ../sass/common.scss */
 .chat_footer .input_box .emoj {
   width: 3.5rem;
   height: 3.5rem;
@@ -2502,7 +2503,7 @@ a.link_a_2:first-child {
   background-size: 3.5rem auto;
   float: right;
 }
-/* line 1942, ../sass/common.scss */
+/* line 1943, ../sass/common.scss */
 .chat_footer .input_box .input_wrap {
   margin-right: 4rem;
   height: 3.5rem;
@@ -2510,12 +2511,12 @@ a.link_a_2:first-child {
   border-bottom: 1px solid #bebebe;
   box-sizing: border-box;
 }
-/* line 1948, ../sass/common.scss */
+/* line 1949, ../sass/common.scss */
 .chat_footer .input_box .input_wrap input {
   font-size: 1.4rem;
   line-height: 1.5rem;
 }
-/* line 1954, ../sass/common.scss */
+/* line 1955, ../sass/common.scss */
 .chat_footer .voice_on_btn {
   margin-right: 4rem;
   height: 3.5rem;
@@ -2528,7 +2529,7 @@ a.link_a_2:first-child {
   display: none;
 }
 
-/* line 1966, ../sass/common.scss */
+/* line 1967, ../sass/common.scss */
 .emoj_box {
   height: 20rem;
   padding-top: 1.15rem;
@@ -2545,17 +2546,17 @@ a.link_a_2:first-child {
   right: 0;
   display: none;
 }
-/* line 1978, ../sass/common.scss */
+/* line 1979, ../sass/common.scss */
 .emoj_box.emoj_show {
   display: block;
 }
 
-/* line 1982, ../sass/common.scss */
+/* line 1983, ../sass/common.scss */
 .swiper-container {
   width: 100%;
   height: 100%;
 }
-/* line 1985, ../sass/common.scss */
+/* line 1986, ../sass/common.scss */
 .swiper-container ul {
   padding-top: 0rem;
   padding-right: 1.65rem;
@@ -2565,7 +2566,7 @@ a.link_a_2:first-child {
   width: 100%;
   text-align: justify;
 }
-/* line 1990, ../sass/common.scss */
+/* line 1991, ../sass/common.scss */
 .swiper-container ul li {
   padding-bottom: 2.5rem;
   width: 5rem;
@@ -2575,18 +2576,18 @@ a.link_a_2:first-child {
   text-align: center;
   vertical-align: top;
 }
-/* line 1998, ../sass/common.scss */
+/* line 1999, ../sass/common.scss */
 .swiper-container ul li .emoj_img {
   width: 5rem;
   height: 5rem;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 2003, ../sass/common.scss */
+/* line 2004, ../sass/common.scss */
 .swiper-container ul li .emoj_img img {
   width: 100%;
 }
-/* line 2007, ../sass/common.scss */
+/* line 2008, ../sass/common.scss */
 .swiper-container ul li span {
   height: 2.5rem;
   line-height: 2.5rem;
@@ -2599,25 +2600,25 @@ a.link_a_2:first-child {
   left: 0;
   right: 0;
 }
-/* line 2020, ../sass/common.scss */
+/* line 2021, ../sass/common.scss */
 .swiper-container ul .justify_fix {
   display: inline-block;
   width: 100%;
   height: 0;
   overflow: hidden;
 }
-/* line 2027, ../sass/common.scss */
+/* line 2028, ../sass/common.scss */
 .swiper-container .swiper-pagination-bullet {
   width: 5px;
   height: 5px;
   background: #bebebe;
 }
-/* line 2031, ../sass/common.scss */
+/* line 2032, ../sass/common.scss */
 .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #a3a3a3;
 }
 
-/* line 2036, ../sass/common.scss */
+/* line 2037, ../sass/common.scss */
 .mic_pop {
   width: 10rem;
   height: 10rem;
@@ -2631,17 +2632,17 @@ a.link_a_2:first-child {
   z-index: 9999;
   display: none;
 }
-/* line 2048, ../sass/common.scss */
+/* line 2049, ../sass/common.scss */
 .mic_pop .mic_wrap {
   position: relative;
 }
-/* line 2050, ../sass/common.scss */
+/* line 2051, ../sass/common.scss */
 .mic_pop .mic_wrap img {
   width: 6.4rem;
   display: block;
   margin: 1.8rem auto;
 }
-/* line 2055, ../sass/common.scss */
+/* line 2056, ../sass/common.scss */
 .mic_pop .mic_wrap .voice_bar {
   position: absolute;
   left: 50%;
@@ -2725,7 +2726,7 @@ a.link_a_2:first-child {
     height: 18px;
   }
 }
-/* line 2140, ../sass/common.scss */
+/* line 2141, ../sass/common.scss */
 .acc_list a {
   padding-top: 1rem;
   padding-right: 1.15rem;
@@ -2738,19 +2739,19 @@ a.link_a_2:first-child {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 2148, ../sass/common.scss */
+/* line 2149, ../sass/common.scss */
 .acc_list a .left_img {
   width: 8rem;
   height: 6.25rem;
   float: left;
   background-color: #00b7ee;
 }
-/* line 2153, ../sass/common.scss */
+/* line 2154, ../sass/common.scss */
 .acc_list a .left_img img {
   width: 100%;
   height: 100%;
 }
-/* line 2158, ../sass/common.scss */
+/* line 2159, ../sass/common.scss */
 .acc_list a .info {
   padding-left: 0.6rem;
   height: 6.25rem;
@@ -2760,7 +2761,7 @@ a.link_a_2:first-child {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 2166, ../sass/common.scss */
+/* line 2167, ../sass/common.scss */
 .acc_list a .info h2 {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -2770,7 +2771,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 2175, ../sass/common.scss */
+/* line 2176, ../sass/common.scss */
 .acc_list a .info p {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -2780,7 +2781,7 @@ a.link_a_2:first-child {
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/* line 2184, ../sass/common.scss */
+/* line 2185, ../sass/common.scss */
 .acc_list a .info span {
   font-size: 0.9rem;
   top: 1.5rem;
@@ -2789,14 +2790,14 @@ a.link_a_2:first-child {
   position: absolute;
 }
 
-/* line 2194, ../sass/common.scss */
+/* line 2195, ../sass/common.scss */
 .post_an {
   padding-top: 1rem;
   padding-right: 1.15rem;
   padding-bottom: 1rem;
   padding-left: 1.15rem;
 }
-/* line 2196, ../sass/common.scss */
+/* line 2197, ../sass/common.scss */
 .post_an textarea {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -2804,7 +2805,7 @@ a.link_a_2:first-child {
   text-align: justify;
 }
 
-/* line 2203, ../sass/common.scss */
+/* line 2204, ../sass/common.scss */
 .history_info {
   position: fixed;
   top: 5.5rem;
@@ -2823,7 +2824,7 @@ a.link_a_2:first-child {
   cursor: pointer;
 }
 
-/* line 2220, ../sass/common.scss */
+/* line 2221, ../sass/common.scss */
 .icon-back {
   width: 1.95rem;
   height: 1.95rem;
@@ -2831,7 +2832,7 @@ a.link_a_2:first-child {
   background-position: 0 7%;
 }
 
-/* line 2226, ../sass/common.scss */
+/* line 2227, ../sass/common.scss */
 .icon-close {
   width: 1.75rem;
   height: 1.75rem;
@@ -2839,7 +2840,7 @@ a.link_a_2:first-child {
   background-position: 0 37%;
 }
 
-/* line 2232, ../sass/common.scss */
+/* line 2233, ../sass/common.scss */
 .icon-class,
 .icon-group,
 .icon-notice,
@@ -2850,27 +2851,27 @@ a.link_a_2:first-child {
   background-position: 0 37%;
 }
 
-/* line 2241, ../sass/common.scss */
+/* line 2242, ../sass/common.scss */
 .icon-notice {
   background-position: 0 68%;
 }
 
-/* line 2244, ../sass/common.scss */
+/* line 2245, ../sass/common.scss */
 .icon-class {
   background-position: 0 25.2%;
 }
 
-/* line 2247, ../sass/common.scss */
+/* line 2248, ../sass/common.scss */
 .icon-group {
   background-position: 0 47.6%;
 }
 
-/* line 2250, ../sass/common.scss */
+/* line 2251, ../sass/common.scss */
 .icon-user {
   background-position: 0 81%;
 }
 
-/* line 2253, ../sass/common.scss */
+/* line 2254, ../sass/common.scss */
 .icon-warning {
   width: 2rem;
   height: 1.75rem;
@@ -2878,7 +2879,7 @@ a.link_a_2:first-child {
   background-position: 0 90.1%;
 }
 
-/* line 2259, ../sass/common.scss */
+/* line 2260, ../sass/common.scss */
 .icon-nochoose {
   width: 1.55rem;
   height: 1.5rem;
@@ -2886,7 +2887,7 @@ a.link_a_2:first-child {
   background-position: 0 57.5%;
 }
 
-/* line 2265, ../sass/common.scss */
+/* line 2266, ../sass/common.scss */
 .icon-choose {
   width: 1.55rem;
   height: 1.5rem;
@@ -2894,7 +2895,7 @@ a.link_a_2:first-child {
   background-position: 0 16.5%;
 }
 
-/* line 2271, ../sass/common.scss */
+/* line 2272, ../sass/common.scss */
 .icon-wx {
   width: 2.25rem;
   height: 2rem;
@@ -2902,7 +2903,7 @@ a.link_a_2:first-child {
   background-position: 0 100%;
 }
 
-/* line 2277, ../sass/common.scss */
+/* line 2278, ../sass/common.scss */
 .icon-active {
   width: 1.35rem;
   height: 1.3rem;

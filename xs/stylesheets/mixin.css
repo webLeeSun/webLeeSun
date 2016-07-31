@@ -7,12 +7,12 @@
 @media screen and (min-width: 410px) and (orientation: portrait) {
   /* line 8, ../sass/mixin.scss */
   html {
-    font-size: 75%;
+    font-size: 62.5%;
   }
 }
 @media screen and (min-width: 520px) and (orientation: portrait) {
   /* line 14, ../sass/mixin.scss */
   html {
-    font-size: 87.5%;
+    font-size: 62.5%;
   }
 }
