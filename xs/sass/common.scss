@@ -249,6 +249,38 @@ textarea {
     border-width: 1px 0 1px 0;
     background: #fff;
 }
+.phone_show {
+    @include margin-top(30);
+    @include margin-bottom(100);
+    @include height(95);
+    @include line-height(95);
+    @include padding(0,23,0,50);
+    overflow: hidden;
+    background: #fff;
+    color: #202020;
+    label {
+        @include width(130);
+        @include line-height(95);
+        @include font-size(28);
+        display: block;
+        float: left;
+    }
+    span {
+        @include margin-left(130);
+        @include line-height(95);
+        @include font-size(28);
+        @include padding-left(50);
+        display: block;
+    }
+}
+.ele_title{
+  @include height(83);
+  @include padding(0,23,0,23);
+  @include font-size(28);
+  @include line-height(83);
+  display: block;
+  color: #282828
+}
 .ele_box {
     @include height(83);
     @include margin(0,23,0,23);
@@ -280,6 +312,18 @@ textarea {
         &.active {
             background: #2abc9d;
         }
+    }
+    &.spe{
+      @include margin(0,0,0,0);
+      @include padding(0,23,0,23);
+      border-bottom: none;
+      background: #fff;
+    }
+    &.code_spe{
+      @include margin(30,0,0,0);
+      @include padding(0,23,0,23);
+      border-bottom: none;
+      background: #fff;
     }
 }
 a.mid_btn {
@@ -366,7 +410,6 @@ a.mid_btn {
     }
     .warning {
         @include padding(20,33,20,33);
-        border-top: 1px solid #bebebe;
         position: relative;
         span.icon-warning {
             @include left(25);
@@ -634,6 +677,41 @@ a.link_a {
         @include line-height(83);
         @include margin-left(165);
     }
+    &.spe {
+        @include margin(0,0,0,0);
+        @include padding(0,23,0,23);
+        .ele_wrap {
+            img {
+                @include width(50);
+                @include height(50);
+                @include border-radius(50);
+                @include margin-top(16);
+                display: block;
+            }
+            &.unable {
+                position: relative;
+                input {
+                    @include margin-right(90);
+                    width: auto;
+                }
+                .unable_tip {
+                    @include font-size(20);
+                    @include line-height(83);
+                    color: #666;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    &.spe {
+                        @include line-height(50);
+                    }
+                }
+            }
+        }
+    }
+}
+.endholder {
+    @include height(310);
+    background: #fff;
 }
 .fav_warp {
     @include padding(36,35,48,35);
@@ -1414,9 +1492,9 @@ a.link_a_2 {
                 min-height: 3.2rem;
                 text-align: center;
                 min-width: 5rem;
-                    background-color: #a3ec60;
-                    border: 1px solid #86ce37;
-                    color: #000;
+                background-color: #a3ec60;
+                border: 1px solid #86ce37;
+                color: #000;
                 position: relative;
                 box-sizing: border-box;
                 display: inline-block;
@@ -1451,9 +1529,9 @@ a.link_a_2 {
                 @include margin-right(95);
                 display: block;
                 span {
-                background-color: #fff;
-                border: 1px solid #a0a0a0;
-                color: #010101;
+                    background-color: #fff;
+                    border: 1px solid #a0a0a0;
+                    color: #010101;
                     .cor {
                         left: -0.5rem;
                         background: url("../images/ll.png") no-repeat center center;
@@ -1612,7 +1690,7 @@ a.link_a_2 {
             }
             .img_bar {
                 max-width: 50%!important;
-                padding: 0!important;
+                padding: 0 !important;
                 background: transparent!important;
                 border: none!important;
                 img {
@@ -1620,7 +1698,7 @@ a.link_a_2 {
                     width: auto;
                     max-width: 100%;
                     vertical-align: top;
-                    border-radius: .5rem;
+                    border-radius: 0.5rem;
                 }
             }
         }
@@ -1792,7 +1870,7 @@ a.link_a_2 {
             }
             .img_bar {
                 max-width: 50%!important;
-                padding: 0!important;
+                padding: 0 !important;
                 background: transparent!important;
                 border: none!important;
                 img {
@@ -1800,7 +1878,7 @@ a.link_a_2 {
                     width: auto;
                     max-width: 100%;
                     vertical-align: top;
-                    border-radius: .5rem;
+                    border-radius: 0.5rem;
                 }
             }
         }
