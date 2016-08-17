@@ -263,18 +263,59 @@
     </div>
 </body>
 <script src="https://s.ssl.pdim.gs/static/a06553779bc1e8be.js" charset="utf-8"></script>
+<script src="https://s.ssl.pdim.gs/static/4e92da92ab6710c6.js" charset="utf-8"></script>
 <script type="text/javascript">
     $(function() {
+        var clientWrap = $(".client"),
+            toolWrap = $(".tool"),
+            clientNav = $(".client-tab"),
+            toolNav = $(".tool-tab");
+
+        function hashCheck(){
+            var tab = $.hash("tab"),
+            citem = $.hash("citem"),
+            titem = $.hash("titem");
+            if(tab){
+                if(tab=="client"){
+                    clientWrap.addClass('active');
+                    toolWrap.removeClass('active');
+                    clientNav.addClass('active');
+                    toolNav.removeClass('active');
+                    if(citem){
+                        $($(".client-bar").find("li")[citem-1]).addClass('active').siblings().removeClass('active');
+                        $(".client-item.item-"+citem).addClass('active').siblings().removeClass('active');
+                    }
+                }else if(tab="tool"){
+                    clientWrap.removeClass('active');
+                    toolWrap.addClass('active');
+                    clientNav.removeClass('active');
+                    toolNav.addClass('active');
+                    if(titem){
+                        $($(".tool-bar").find("li")[titem-1]).addClass('active').siblings().removeClass('active');
+                        $(".tool-item.item-"+titem).addClass('active').siblings().removeClass('active');
+                    }
+                }
+            }
+        }
+        hashCheck();
+
+
         // nav-tab checkout
         $(".change-tab").click(function(event) {
             var othis = $(this);
             othis.addClass('active').siblings('.change-tab').removeClass('active');
             if(othis.hasClass('client-tab')){
-                $(".client").addClass('active');
-                $(".tool").removeClass('active');
+                clientWrap.addClass('active');
+                toolWrap.removeClass('active');
+
+                $.hash("tab","client");
+                hashCheck()
             }else if(othis.hasClass('tool-tab')){
-                $(".client").removeClass('active');
-                $(".tool").addClass('active');
+                clientWrap.removeClass('active');
+                toolWrap.addClass('active');
+
+                $.hash("tab","tool");
+                hashCheck()
             }
         });
 
@@ -284,6 +325,8 @@
                 othis.addClass('active').siblings('li').removeClass('active');
                 var item_class = "item-" + (parseInt(index) + 1);
                 $(".client-item."+item_class).addClass('active').siblings().removeClass('active');
+
+                $.hash("citem",(parseInt(index) + 1));
             });
         });
         $(".tool-bar li").each(function(index, el) {
@@ -292,6 +335,8 @@
                 othis.addClass('active').siblings('li').removeClass('active');
                 var item_class = "item-" + (parseInt(index) + 1);
                 $(".tool-item."+item_class).addClass('active').siblings().removeClass('active');
+
+                $.hash("titem",(parseInt(index) + 1));
             });
         });
     })
