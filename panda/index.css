@@ -362,58 +362,11 @@
 }
 /*All icon*/
 /* line 232, icon/*.png */
-.icon-sprite, .icon-android, .icon-androidpad, .icon-androidpadwhite,
+.icon-sprite, .icon-android, .icon-androidpad, .icon-androidpadwhite, .client-bar ul li.t4:hover span, .client-bar ul li.active span, .icon-androidwhite, .client-bar ul li.t3:hover span, .icon-back, .icon-backhover, .header-wrap a.back-btn:hover span.icon-back, .icon-bell, .icon-camera, .icon-cut, .icon-ipad, .icon-ipadwhite, .client-bar ul li.t2:hover span, .icon-iphone, .icon-iphonewhite, .client-bar ul li.t1:hover span, .icon-pc, .icon-pctool, .icon-pctoolwhite, .tool-bar ul li.active:nth-child(1) span, .tool-bar ul li:hover:nth-child(1) span, .icon-pcwhite, .client-bar ul li.t6:hover span, .icon-phonetool, .icon-phonetoolwhite, .tool-bar ul li.active:nth-child(2) span, .tool-bar ul li:hover:nth-child(2) span, .icon-star, .icon-tv, .icon-tvwhite, .client-bar ul li.t5:hover span, .icon-uwp, .icon-uwpwhite, .client-bar ul li.t7:hover span {
+  background-image: url('https://i.ssl.pdim.gs/7e8cf1ce6353c1fbe2b1ead62842445b.png');
+  background-repeat: no-repeat;
+}
 
-
-.icon-androidwhite,
-.icon-back,
-.icon-backhover,
-.icon-bell,
-.icon-camera,
-.icon-cut,
-.icon-ipad,
-.icon-ipadwhite,
-.icon-iphone,
-.icon-iphonewhite,
-.icon-pc,
-.icon-pctool,
-.icon-pctoolwhite,
-.icon-pcwhite,
-.icon-phonetool,
-.icon-phonetoolwhite,
-.icon-star,
-.icon-tv,
-.icon-tvwhite,
-.icon-uwp,
-.icon-uwpwhite{
-  background-image: url('https://i.ssl.pdim.gs/7e8cf1ce6353c1fbe2b1ead62842445b.png');
-  background-repeat: no-repeat;
-}
-.header-wrap a.back-btn:hover span.icon-back,
-.tool-bar ul li:hover:nth-child(1) span,
-.tool-bar ul li:hover:nth-child(2) span,
-.client-bar ul li:hover:nth-child(1) span,
-.client-bar ul li:hover:nth-child(2) span,
-.client-bar ul li:hover:nth-child(3) span,
-.client-bar ul li:hover:nth-child(4) span,
-.client-bar ul li:hover:nth-child(5) span,
-.client-bar ul li:hover:nth-child(6) span,
-.client-bar ul li:hover:nth-child(7) span{
-  background-image: url('https://i.ssl.pdim.gs/7e8cf1ce6353c1fbe2b1ead62842445b.png');
-  background-repeat: no-repeat;
-}
-.tool-bar ul li.active:nth-child(1) span,
-.tool-bar ul li.active:nth-child(2) span,
-.client-bar ul li.active:nth-child(1) span,
-.client-bar ul li.active:nth-child(2) span,
-.client-bar ul li.active:nth-child(3) span,
-.client-bar ul li.active:nth-child(4) span,
-.client-bar ul li.active:nth-child(5) span,
-.client-bar ul li.active:nth-child(6) span,
-.client-bar ul li.active:nth-child(7) span{
-  background-image: url('https://i.ssl.pdim.gs/7e8cf1ce6353c1fbe2b1ead62842445b.png');
-  background-repeat: no-repeat;
-}
 /* line 136, words/*.png */
 .words-sprite, .words-android, .words-androidpad, .words-danmakuhelper, .words-hall, .words-hd, .words-ipad, .words-iphone, .words-livehelper, .words-phonelivehelper, .words-superbig, .words-tv, .words-uwp {
   background-image: url('https://i.ssl.pdim.gs/af01bc4fcad11c6f6182bd9e0787757b.png');
@@ -435,14 +388,14 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-androidpadwhite, .client-bar ul li.active:nth-child(4) span, .client-bar ul li:hover:nth-child(4) span {
+.icon-androidpadwhite, .client-bar ul li.t4:hover span, .client-bar ul li.active span {
   background-position: 0 -62px;
   height: 25px;
   width: 26px;
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-androidwhite, .client-bar ul li.active:nth-child(3) span, .client-bar ul li:hover:nth-child(3) span {
+.icon-androidwhite, .client-bar ul li.t3:hover span, .client-bar ul li.active span {
   background-position: 0 -93px;
   height: 25px;
   width: 26px;
@@ -491,7 +444,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-ipadwhite, .client-bar ul li.active:nth-child(2) span, .client-bar ul li:hover:nth-child(2) span {
+.icon-ipadwhite, .client-bar ul li.t2:hover span, .client-bar ul li.active span {
   background-position: 0 -310px;
   height: 25px;
   width: 26px;
@@ -505,7 +458,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-iphonewhite, .client-bar ul li.active:nth-child(1) span, .client-bar ul li:hover:nth-child(1) span {
+.icon-iphonewhite, .client-bar ul li.t1:hover span, .client-bar ul li.active span {
   background-position: 0 -372px;
   height: 25px;
   width: 26px;
@@ -533,7 +486,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pcwhite, .client-bar ul li.active:nth-child(6) span, .client-bar ul li:hover:nth-child(6) span {
+.icon-pcwhite, .client-bar ul li.t6:hover span, .client-bar ul li.active span {
   background-position: 0 -488px;
   height: 25px;
   width: 26px;
@@ -568,7 +521,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-tvwhite, .client-bar ul li.active:nth-child(5) span, .client-bar ul li:hover:nth-child(5) span {
+.icon-tvwhite, .client-bar ul li.t5:hover span, .client-bar ul li.active span {
   background-position: 0 -644px;
   height: 25px;
   width: 26px;
@@ -582,7 +535,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-uwpwhite, .client-bar ul li.active:nth-child(7) span, .client-bar ul li:hover:nth-child(7) span {
+.icon-uwpwhite, .client-bar ul li.t7:hover span, .client-bar ul li.active span {
   background-position: 0 -706px;
   height: 25px;
   width: 26px;
@@ -725,7 +678,7 @@ a {
   height: 46px;
   float: left;
   margin: 5px 0 0;
-  background: url("https://i.ssl.pdim.gs/dc65c60b729b9850e20962ad0cff63c1.png") no-repeat center;
+  background: url("https://i.ssl.pdim.gs/fc127d8cfea2d6149e92cb9653c12adf.png") no-repeat center;
   background-size: 80px auto;
 }
 /* line 74, ../sass/index.scss */
@@ -903,7 +856,7 @@ a {
   color: #fff;
 }
 /* line 252, ../sass/index.scss */
-.client-bar ul li:first-child {
+.client-bar ul li.first {
   -moz-border-radius-topleft: 4px;
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
@@ -912,7 +865,7 @@ a {
   border-bottom-left-radius: 4px;
 }
 /* line 256, ../sass/index.scss */
-.client-bar ul li:last-child {
+.client-bar ul li.last {
   border-right: none;
   -moz-border-radius-topright: 4px;
   -webkit-border-top-right-radius: 4px;
@@ -2425,12 +2378,12 @@ a {
   margin: 0 0 4px;
 }
 /* line 1363, ../sass/index.scss */
-.down-box.style-5 a.down-btn .icon-androidwhite, .down-box.style-5 a.down-btn .client-bar ul li.active:nth-child(3) span, .client-bar ul li.active:nth-child(3) .down-box.style-5 a.down-btn span, .down-box.style-5 a.down-btn .client-bar ul li:hover:nth-child(3) span, .client-bar ul li:hover:nth-child(3) .down-box.style-5 a.down-btn span,
+.down-box.style-5 a.down-btn .icon-androidwhite, .down-box.style-5 a.down-btn .client-bar ul li.t3:hover span, .client-bar ul li.t3:hover .down-box.style-5 a.down-btn span, .down-box.style-5 a.down-btn .client-bar ul li.active span, .client-bar ul li.active .down-box.style-5 a.down-btn span,
 .down-box.style-5 a.down-btn .icon-iphonewhite,
-.down-box.style-5 a.down-btn .client-bar ul li.active:nth-child(1) span,
-.client-bar ul li.active:nth-child(1) .down-box.style-5 a.down-btn span,
-.down-box.style-5 a.down-btn .client-bar ul li:hover:nth-child(1) span,
-.client-bar ul li:hover:nth-child(1) .down-box.style-5 a.down-btn span {
+.down-box.style-5 a.down-btn .client-bar ul li.t1:hover span,
+.client-bar ul li.t1:hover .down-box.style-5 a.down-btn span,
+.down-box.style-5 a.down-btn .client-bar ul li.active span,
+.client-bar ul li.active .down-box.style-5 a.down-btn span {
   display: inline-block;
   width: 26px;
   height: 25px;
