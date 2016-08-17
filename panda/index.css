@@ -395,14 +395,14 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-androidpadwhite, .client-bar ul li.t4:hover span, .client-bar ul li.active span {
+.icon-androidpadwhite, .client-bar ul li.t4:hover span, .client-bar ul li.t4.active span {
   background-position: 0 -62px;
   height: 25px;
   width: 26px;
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-androidwhite, .client-bar ul li.t3:hover span, .client-bar ul li.active span {
+.icon-androidwhite, .client-bar ul li.t3:hover span, .client-bar ul li.t3.active span {
   background-position: 0 -93px;
   height: 25px;
   width: 26px;
@@ -451,7 +451,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-ipadwhite, .client-bar ul li.t2:hover span, .client-bar ul li.active span {
+.icon-ipadwhite, .client-bar ul li.t2:hover span, .client-bar ul li.t2.active span {
   background-position: 0 -310px;
   height: 25px;
   width: 26px;
@@ -465,7 +465,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-iphonewhite, .client-bar ul li.t1:hover span, .client-bar ul li.active span {
+.icon-iphonewhite, .client-bar ul li.t1:hover span, .client-bar ul li.t1.active span {
   background-position: 0 -372px;
   height: 25px;
   width: 26px;
@@ -493,7 +493,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-pcwhite, .client-bar ul li.t6:hover span, .client-bar ul li.active span {
+.icon-pcwhite, .client-bar ul li.t6:hover span, .client-bar ul li.t6.active span {
   background-position: 0 -488px;
   height: 25px;
   width: 26px;
@@ -528,7 +528,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-tvwhite, .client-bar ul li.t5:hover span, .client-bar ul li.active span {
+.icon-tvwhite, .client-bar ul li.t5:hover span, .client-bar ul li.t5.active span {
   background-position: 0 -644px;
   height: 25px;
   width: 26px;
@@ -542,7 +542,7 @@
 }
 
 /* line 84, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-uwpwhite, .client-bar ul li.t7:hover span, .client-bar ul li.active span {
+.icon-uwpwhite, .client-bar ul li.t7:hover span, .client-bar ul li.t7.active span {
   background-position: 0 -706px;
   height: 25px;
   width: 26px;
