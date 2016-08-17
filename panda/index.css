@@ -362,7 +362,14 @@
 }
 /*All icon*/
 /* line 232, icon/*.png */
-.icon-sprite, .icon-android, .icon-androidpad, .icon-androidpadwhite, .client-bar ul li.t4:hover span, .client-bar ul li.active span, .icon-androidwhite, .client-bar ul li.t3:hover span, .icon-back, .icon-backhover, .header-wrap a.back-btn:hover span.icon-back, .icon-bell, .icon-camera, .icon-cut, .icon-ipad, .icon-ipadwhite, .client-bar ul li.t2:hover span, .icon-iphone, .icon-iphonewhite, .client-bar ul li.t1:hover span, .icon-pc, .icon-pctool, .icon-pctoolwhite, .tool-bar ul li.active:nth-child(1) span, .tool-bar ul li:hover:nth-child(1) span, .icon-pcwhite, .client-bar ul li.t6:hover span, .icon-phonetool, .icon-phonetoolwhite, .tool-bar ul li.active:nth-child(2) span, .tool-bar ul li:hover:nth-child(2) span, .icon-star, .icon-tv, .icon-tvwhite, .client-bar ul li.t5:hover span, .icon-uwp, .icon-uwpwhite, .client-bar ul li.t7:hover span {
+.icon-sprite, .icon-android, .icon-androidpad, .icon-androidpadwhite,
+.icon-androidwhite, .icon-back, .icon-backhover,
+.icon-bell, .icon-camera, .icon-cut, .icon-ipad, .icon-ipadwhite,
+.icon-iphone, .icon-iphonewhite,
+ .icon-pc, .icon-pctool,
+ .icon-pctoolwhite,
+.icon-phonetool, .icon-phonetoolwhite,
+ .icon-star, .icon-tv, .icon-tvwhite,.icon-uwp, .icon-uwpwhite {
   background-image: url('https://i.ssl.pdim.gs/7e8cf1ce6353c1fbe2b1ead62842445b.png');
   background-repeat: no-repeat;
 }
