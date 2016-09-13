@@ -32,12 +32,17 @@
         <div class="footer">
             我是底部
         </div>
+        <a href="javascript:;" id="down">下载</a>
     </body>
 
     <script src="https://s.ssl.pdim.gs/static/a06553779bc1e8be.js" charset="utf-8"></script>
     <script type="text/javascript">
-    $.get('http://news-at.zhihu.com/api/4/news/latest',function(data) {
-        console.log(data);
-    });
+        $(function(){
+            $("#down").click(function(event) {
+                /* Act on the event */
+                var scheme = "pandatv://1";
+                window.location.href = scheme;
+            });
+        })
     </script>
 </html>
