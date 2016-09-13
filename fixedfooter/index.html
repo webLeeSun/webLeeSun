@@ -36,9 +36,8 @@
 
     <script src="https://s.ssl.pdim.gs/static/a06553779bc1e8be.js" charset="utf-8"></script>
     <script type="text/javascript">
-        var a = 1;
-        window.resize = function(){
-            $("#consoleHolder").text(a++);
-        }
+    $.get('http://news-at.zhihu.com/api/4/news/latest',function(data) {
+        console.log(data);
+    });
     </script>
 </html>
