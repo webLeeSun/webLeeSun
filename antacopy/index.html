@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>安踏奥运 “去打破”</title>
+    <meta name="description" content="" />
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript">
+        (function(doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px'
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false)
+        })(document, window);
+    </script>
+    <script type='text/javascript' src='js/aq_commom.js'></script>
+</head>
+
+<body>
+    <div class="loading_bg" id="loading_bg">
+        <div class="loading_logo">
+            <div class="imgbox  loading-anm"><img src="images/preload/logo1.png" /></div>
+        </div>
+        <div class="loading_text" id="loading_text">已加载 0 %</div>
+    </div>
+    <div id="main">
+        <div id="bg"></div>
+        <div id="three"></div>
+    </div>
+    <audio id="bgm" src="http://appmusic.qq.com/music/641012099/bgm.mp3" loop preload></audio>
+    <div class="qp_video" id="qp_video">
+        <div class="close">
+            <a href="javascript:;" class="btn_close"></a>
+        </div>
+        <div id="mod_player" class="mod_player"></div>
+    </div>
+    <div class="music pause"></div>
+    <div class="govr"><a href="vr/index.html" onclick="txTrackAction(26)">&nbsp;</a></div>
+    <div class="layer_h" id="layer_qdp">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_left"></div>
+            <div class="jz_right"></div>
+            <div class="content">
+                <p>
+                    <a href="javascript:;" onclick="txTrackAction(17)" data-vid="n0318nleva4" class="btn_showVideo"><img src="images/layer/layer_h_video.jpg" /></a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_rqly">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt vertical_rqly">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(18)" data-vid="e0318i8i3qa" class="btn_showVideo"><img src="images/layer/liyue_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/liyue_product.png" /></p>
+                    <p><img src="images/layer/liyue_text.png" /></p>
+                </div>
+                <div class="tips_xiala">
+                    <span class="floating-arrow"></span>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(19)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_zgl">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt vertical_zgl">
+                    <p><img src="images/layer/zhongguolong_product.png" /></p>
+                    <p><img src="images/layer/zhongguolong_text.png" /></p>
+                </div>
+                <div class="tips_xiala">
+                    <span class="floating-arrow"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_wd">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(15)" data-vid="i0318xocgsj" class="btn_showVideo"><img src="images/layer/wending_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/wending_product.png" /></p>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(16)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_lfx">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(11)" data-vid="c0309c7rapt" class="btn_showVideo"><img src="images/layer/longfuxian_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/longfuxian_product.png" /></p>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(12)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_tp">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(13)" data-vid="p03189bqgp8" class="btn_showVideo"><img src="images/layer/toupai_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/toupai_product.png" /></p>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(14)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_wjy">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(24)" data-vid="l03214yexm1" class="btn_showVideo"><img src="images/layer/jingjing_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/jingjing_product.png" /></p>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(25)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_fyl">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(20)" data-vid="x0320ad0jr0" class="btn_showVideo"><img src="images/layer/faner_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/faner_product.png" /></p>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(21)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s1" id="layer_zjk">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;" onclick="txTrackAction(22)" data-vid="u0320376d0v" class="btn_showVideo"><img src="images/layer/zhangjike_video.jpg" /></a>
+                    </p>
+                    <p><img src="images/layer/zhangjike_product.png" /></p>
+                </div>
+                <div class="btnbox">
+                    <a href="javascript:;" onclick="txTrackAction(23)" class="btn_buy"><img src="images/layer/btn_buy.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s2" id="layer_wa_fyl">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;"><img src="images/layer/wenan_fyl.png" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s2" id="layer_wa_zjk">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;"><img src="images/layer/wenan_zjk.png" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s2" id="layer_wa_wjy">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;"><img src="images/layer/wenan_wjy.png" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layer_s2" id="layer_wa_jqay">
+        <div class="box">
+            <a href="javascript:;" class="btn_close"></a>
+            <div class="jz_top"></div>
+            <div class="jz_bottom"></div>
+            <div class="content">
+                <div class="txt">
+                    <p>
+                        <a href="javascript:;"><img src="images/layer/wenan_jqay.png" /></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/imagesloaded.js"></script>
+    <script type="text/javascript" src="js/img.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/app.video.player.v3.js"></script>
+    <script type="text/javascript" src="js/anta.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.js" id="jslibNode" arg="{'cpid':641012099,'appid':4007203}" cfg="{'toolbar':false,'track':true}"></script>
+    <script type="text/javascript" src="js/project.js"></script>
+    <script type="text/javascript">
+        function isWeiXin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        if (isWeiXin()) {
+            $(".btn_buy").attr("href", "http://m.anta.cn");
+        } else {
+            $(".btn_buy").attr("href", "http://anta.tmall.com");
+        }
+    </script>
+</body>
+
+</html>
