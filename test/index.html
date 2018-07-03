@@ -9,15 +9,22 @@
 </head>
 
 <body>
-    TEST
+    <div>
+        <span id="tset1"></span>----
+        <span id="tset2"></span>
+    </div>
 </body>
 <script>
-    navigator.geolocation.getCurrentPosition(function (position) {
-        longitude = position.coords.longitude;
-        latitude = position.coords.latitude;
-        alert(longitude);
-        alert(latitude);
-    })
+    try {   
+        navigator.geolocation.getCurrentPosition(function (position) {
+            longitude = position.coords.longitude;
+            latitude = position.coords.latitude;
+            document.getElementById("tset1").innerHTML = longitude;
+            document.getElementById("tset2").innerHTML = latitude;
+        })
+    } catch (error) {
+            document.getElementById("tset1").innerHTML = error;
+    }
 </script>
 
 </html>
