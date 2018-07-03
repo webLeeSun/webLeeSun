@@ -9,22 +9,20 @@
 </head>
 
 <body>
-    <div>
-        <span id="tset1"></span>----
-        <span id="tset2"></span>
-    </div>
+    <p id="demo">点击这个按钮，获得您的坐标：</p>
+    <button onclick="getLocation()">试一下</button>
 </body>
 <script>
-    try {   
-        navigator.geolocation.getCurrentPosition(function (position) {
-            longitude = position.coords.longitude;
-            latitude = position.coords.latitude;
-            document.getElementById("tset1").innerHTML = longitude;
-            document.getElementById("tset2").innerHTML = latitude;
-        })
-    } catch (error) {
-            document.getElementById("tset1").innerHTML = error;
-    }
-</script>
-
+        var x=document.getElementById("demo");
+        function getLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }else{
+                x.innerHTML="Geolocation is not supported by this browser.";
+            }
+        }
+        function showPosition(position){
+            x.innerHTML="Latitude: " + position.coords.latitude + "<br />Longitude: " + position.coords.longitude;
+        }
+     </script>
 </html>
