@@ -1,0 +1,274 @@
+// pay-index
+*{
+    font-size:16px;
+}
+body{
+    background-color: #f4f4f4;
+}
+.pay-mid-title{
+    position: absolute;
+    width: 978px;
+    margin: 0 auto;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+    padding: 0 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    top:1px;
+    left: 0;
+    right: 0;
+}
+.pay-mid-recive{
+    float: left;
+    font-size: 20px;
+}
+.pay-mid-amount{    
+    position: absolute;
+    right: 20px;
+    top: -4px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    b{
+        font-weight: normal;
+        font-size: 26px;
+        color: #ffad00;
+        margin: 0 5px;
+    }
+}
+.pay-mid-code-title{
+    font-size: 26px;
+    margin: 0 auto;
+    text-align: center;
+}
+.pay-mid-code-title-spe{
+    width: 320px;
+    margin: 0 auto;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    a{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url("//image.xingyan.panda.tv/21f4dddab9449e02512f290506446ee3_w16_h16.png") no-repeat;
+        right: 5px;
+        top: 4px;
+    }
+}
+.pay-mid-code-img{
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        vertical-align: top;
+    }
+}
+.pay-mid-code-scan{
+    width: 260px;
+    height: 86px;
+    overflow: hidden;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        vertical-align: top;
+    }
+}
+.usebanktopayouter {
+    margin: 30px auto 0;
+    text-align: center;
+}
+.usebanktopay {
+    color: #888888;
+    font-size: 14px;
+    margin: 28px 0;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(136, 136, 136, 0.7);
+    display: inline;
+}
+
+
+.bank-pop-cur{
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    &.show{
+        display:block;
+    }
+}
+.bank-pop{
+    position: fixed;
+    z-index: 1000;
+    width: 600px;
+    height: 396px;
+    background: #ffffff;
+    border-radius: 5px;
+    top: 50%;
+    margin-top: -198px;
+    left: 50%;
+    margin-left: -300px;
+    display: none;
+    &.show{
+        display:block;
+    }
+}
+.pop-head{
+    height: 34px;
+    line-height: 34px;
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+    font-size: 16px;
+    color: #666666;
+    background: #f2f2f2;
+    padding: 0 17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.pop-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 15px;    
+    background-position: 9px 6px;
+    cursor: pointer;
+    background: #1cd39b url("//image.xingyan.panda.tv/333f328748a4beb9fa43a12cfb40c461_w14_h14.png") no-repeat;
+    background-position: 9px 6px;
+}
+.pop-title{
+    font-weight: normal;
+    font-size: 16px;
+    color: #393939;
+    text-align: center;
+    margin: 25px auto 30px;
+}
+.pop-title b{
+    font-weight: normal;
+    font-size: 18px;
+    color: #fc6f08;
+}
+
+.pop-submit{
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    color: #787878;
+    background: #f0f0f0;
+    font-size: 16px;
+    border-radius: 35px;
+    margin: 14px auto 0;
+    text-align: center;
+    cursor: pointer;
+    &.active{
+        color: #ffffff;
+        background: #1cd39b;
+    }
+}
+.charge-pop-channelyeepay.pop {
+    margin:0;
+    padding-left: 35px;
+    height: 205px;
+}
+.charge-pop-channelyeepay span {
+    cursor: pointer;
+    height: 34px;
+    text-indent: -9999px;
+    width: 126px;
+    display: block;
+    &:hover {
+        border: 1px solid #1cd388;
+    }
+}
+
+.charge-pop-channelyeepay li {
+    list-style-type: none;
+    display: block;
+    padding: 1px;
+    float: left;
+    margin:0 10px 16px 0;
+    width: 126px;
+    height: 35px;
+    background: -1px -1px #fff url(//image.xingyan.panda.tv/c4084758ce9ec238099e9fd0c6fb51f7_w683_h185.png) no-repeat;
+    &.active span{
+        border: 1px solid #1cd388;
+    }
+}
+
+.yeepay_check {
+    cursor: pointer;
+    float: left;
+    margin-top: 20px;
+}
+.charge-pop-channelyeepay li.CCB-NET-B2C-OUTER {
+    background-position: -139px -1px;
+}
+
+.charge-pop-channelyeepay li.ABC-NET-B2C-OUTER {
+    background-position: -278px -1px;
+}
+
+.charge-pop-channelyeepay li.CMBCHINA-NET-B2C-OUTER {
+    background-position: -417px -1px;
+}
+
+.charge-pop-channelyeepay li.SHB-NET-B2C-OUTER {
+    background-position: -556px -1px;
+}
+
+.charge-pop-channelyeepay li.BOC-NET-B2C-OUTER {
+    background-position: -1px -51px;
+}
+
+.charge-pop-channelyeepay li.BOCO-NET-B2C-OUTER {
+    background-position: -139px -51px;
+}
+
+.charge-pop-channelyeepay li.CEB-NET-B2C-OUTER {
+    background-position: -278px -51px;
+}
+
+.charge-pop-channelyeepay li.GDB-NET-B2C-OUTER {
+    background-position: -417px -51px;
+}
+
+.charge-pop-channelyeepay li.BCCB-NET-B2C-OUTER {
+    background-position: -556px -49px;
+}
+
+.charge-pop-channelyeepay li.SPDB-NET-B2C-OUTER {
+    background-position: -1px -101px;
+}
+
+.charge-pop-channelyeepay li.CMBC-NET-B2C-OUTER {
+    background-position: -139px -101px;
+}
+
+.charge-pop-channelyeepay li.ECITIC-NET-B2C-OUTER {
+    background-position: -278px -101px;
+}
+
+.charge-pop-channelyeepay li.PINGANBANK-NET-B2C-OUTER {
+    background-position: -417px -101px;
+}
+
+.charge-pop-channelyeepay li.POST-NET-B2C-OUTER {
+    background-position: -556px -99px;
+}
+
+.charge-pop-channelyeepay li.HXB-NET-B2C-OUTER {
+    background-position: -1px -150px;
+}
+
+.charge-pop-channelyeepay li.CIB-NET-B2C-OUTER {
+    background-position: -139px -150px;
+}
