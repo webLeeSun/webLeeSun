@@ -41,7 +41,7 @@ body {
 .reveal h4 {
   font-size: 1em;
 }
-.reveal h1:first-child, .reveal h2:first-child, .reveal h3:first-child, .reveal h4:first-child, .reveal h5:first-child, .reveal h6:first-child) {
+.reveal h1:first-child, .reveal h2:first-child, .reveal h3:first-child, .reveal h4:first-child, .reveal h5:first-child, .reveal h6:first-child {
   margin-top: 0;
 }
 
@@ -266,4 +266,9 @@ body {
 }
 .favicon.lync-in {
   background-image: url(../../img/favicon/lync.in.png);
+}
+@media screen and (max-width: 500px) {
+  .reveal {
+    font-size: 50px;
+  }
 }
